@@ -1,0 +1,41 @@
+{
+  "icon": "nothing-for-now",
+  "title": "Target Data",
+  "items": [
+    {
+      "id": 1,
+      "title": "General Search",
+      "subItem": [
+        {
+          "id": 1,
+          "title": "Search Engines Tool",
+          "pageType": "searchPage",
+          "section": [
+            {
+              "id": 1,
+              "title": "Search Engines Tool",
+              "items": [
+                {
+                  "inputItems": [{ "id": 1, "name": "Google", "type": "text" }],
+                  "submitUrl": "http://google.com/search?q="
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Search Engines Resources",
+          "pageType": "resourcePage",
+          "section": [
+            {
+              "id": 1,
+              "inputItems": [{ "id": 1, "name": "Google", "type": "text" }],
+              "submitUrl": "http://google.com/search?q="
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
