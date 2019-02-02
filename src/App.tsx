@@ -7,29 +7,58 @@ import Welcome from "./components/Welcome";
 // import './App.css';
 
 export interface state {
-  pageType: string;
+  pageType: PageType;
   searchItem: SearchPage;
 }
 
-export type SearchPage = {
+export interface subItem {
   id: string;
   title: string;
-  pageType: string;
+  pageType: PageType;
+  section: {
+    id: string;
+    title: string;
+    items: {}[];
+  }[];
+}
+
+export interface SearchPage extends subItem {
   section: {
     id: string;
     title: string;
     items: {
+      id: string;
       inputItems: { id: string; name: string; type: string }[];
-      submitUrl: string;
+      submitUrl: { [key: string]: string };
+      urlSecondItem: string;
+      submitValue: string;
     }[];
   }[];
-};
+}
 
-export const defaultSearchItem = {
+export interface ResourcePage extends subItem {
+  section: {
+    id: string;
+    title: string;
+    items: {}[];
+    inputItems: { id: string; name: string; type: string }[];
+    submitUrl: string;
+  }[];
+}
+
+export type PageType = "Welcome" | "SearchPage" | "ResourcePage";
+
+export const defaultSearchItem: SearchPage = {
   id: "",
   title: "",
-  pageType: "",
-  section: [{ id: "", title: "", items: [{ inputItems: [{ id: "", name: "", type: "" }], submitUrl: "" }] }]
+  pageType: "Welcome",
+  section: [
+    {
+      id: "",
+      title: "",
+      items: [{ id: "", inputItems: [{ id: "", name: "", type: "" }], submitUrl: {}, urlSecondItem: "", submitValue: "" }]
+    }
+  ]
 };
 
 class App extends PureComponent<{}, state> {
@@ -45,7 +74,7 @@ class App extends PureComponent<{}, state> {
     this.onChangeSearchItem = this.onChangeSearchItem.bind(this);
   }
 
-  onPageTypeChange(pageType: string) {
+  onPageTypeChange(pageType: PageType) {
     this.setState({ pageType });
   }
 

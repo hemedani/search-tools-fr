@@ -1,0 +1,91 @@
+.wrapper-app {
+  width: 100%;
+  display: flex;
+}
+.wrapper-app .menu-side {
+  flex: 2;
+}
+.wrapper-app .panel-side {
+  flex: 8;
+}
+.sbmt-btn {
+  font-family: 'Shabnam', Tahoma;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  min-height: 2.5rem;
+  min-width: 3rem;
+  outline: none;
+  color: #fff;
+  line-height: 2.2;
+  text-decoration: none;
+  z-index: 1;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px 1px #eee;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.sbmt-btn:last-child {
+  margin-left: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.sbmt-btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  transition: all 0.25s;
+}
+.sbmt-btn:hover:after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.i-rod {
+  background-color: #daa520;
+  border: 1px solid #daa520;
+  color: #fff;
+}
+.i-rod:hover {
+  color: #daa520;
+}
+.input-form {
+  width: 100%;
+}
+.input-form input,
+.input-form textarea,
+.input-form select {
+  border: 1px solid #daa520;
+  background-color: #fff;
+}
+.input-form input:focus,
+.input-form textarea:focus,
+.input-form select:focus {
+  background-color: #fff5f0;
+  outline: none;
+}
+.input-form input:disabled,
+.input-form textarea:disabled,
+.input-form select:disabled {
+  background-color: rgba(136,136,136,0.7);
+}
+.input-form .input-text {
+  min-width: 20rem;
+  height: 1.4rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-left: 0.3rem solid #daa520;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}

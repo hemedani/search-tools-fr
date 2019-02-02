@@ -3,35 +3,147 @@
   "title": "Target Data",
   "items": [
     {
-      "id": 1,
+      "id": "0c9edaf7-6255-473e-80a0-cec68b99b914",
       "title": "General Search",
       "subItem": [
         {
-          "id": 1,
+          "id": "a2514188-2c24-43df-bc9a-b578e513ee08",
           "title": "Search Engines Tool",
-          "pageType": "searchPage",
+          "pageType": "SearchPage",
           "section": [
             {
-              "id": 1,
+              "id": "1c878021-479d-4b0c-ac7e-d12e8fe92f53",
               "title": "Search Engines Tool",
               "items": [
                 {
-                  "inputItems": [{ "id": 1, "name": "Google", "type": "text" }],
-                  "submitUrl": "http://google.com/search?q="
+                  "id": "9ec8d292-0458-425e-a559-b245825cbf0d",
+                  "inputItems": [{ "id": "f0634ff6-6b2b-40d4-9251-ab181ed1759e", "name": "Google", "type": "text" }],
+                  "submitUrl": { "Google": "http://google.com/search?q=", "EndPoint": "" },
+                  "urlSecondItem": "googlewindow",
+                  "submitValue": "Google",
+                  "itemType": "input"
+                },
+                {
+                  "id": "a3b8fe29-271a-490a-9e53-6335dfcbb5e6",
+                  "inputItems": [{ "id": "a246de23-e686-4a5a-b0b3-393d5179f3c6", "name": "Google Date", "type": "text" }],
+                  "submitUrl": {
+                    "Google Date": "http://google.com/search?q=",
+                    "EndPoint": "&tbs=cdr:1,cd_min:1/1/0,sbd:1"
+                  },
+                  "urlSecondItem": "google2window",
+                  "submitValue": "Google Date",
+                  "itemType": "input"
+                },
+                {
+                  "id": "4b6fbd6b-9593-4341-9d68-7e4bbfda3084",
+                  "inputItems": [{ "id": "54628eea-03b5-411a-a270-d0a67d432f59", "name": "Bing", "type": "text" }],
+                  "submitUrl": { "Bing": "http://bing.com/search?q=", "EndPoint": "" },
+                  "urlSecondItem": "bingwindow",
+                  "submitValue": "Bing",
+                  "itemType": "input"
+                },
+                {
+                  "id": "32afea0d-dd92-49a6-9926-7693c2ddd20d",
+                  "inputItems": [{ "id": "c08cf981-15ba-423e-a8e2-a80be310eb27", "name": "Yahoo", "type": "text" }],
+                  "submitUrl": { "Yahoo": "http://search.yahoo.com/search?p=", "EndPoint": "" },
+                  "urlSecondItem": "yahoowindow",
+                  "submitValue": "Yahoo",
+                  "itemType": "input"
+                },
+                {
+                  "id": "5ec11877-b396-4b94-a40b-9932f184e04f",
+                  "inputItems": [{ "id": "fa2cece9-0845-4715-9180-ef3f4f47ee50", "name": "Searx", "type": "text" }],
+                  "submitUrl": { "Searx": "https://searx.me/?q=", "EndPoint": "" },
+                  "urlSecondItem": "searxwindow",
+                  "submitValue": "Searx",
+                  "itemType": "input"
+                },
+                {
+                  "id": "38da81b6-5c41-4e9a-b5af-b92d8af73278",
+                  "inputItems": [{ "id": "d971ddc7-7887-4080-971b-a931127106a6", "name": "Yandex", "type": "text" }],
+                  "submitUrl": { "Yandex": "http://www.yandex.com/yandsearch?text=", "EndPoint": "" },
+                  "urlSecondItem": "yandexwindow",
+                  "submitValue": "Yandex",
+                  "itemType": "input"
+                },
+                {
+                  "id": "49210f07-b14e-404b-b31f-02004293741b",
+                  "inputItems": [{ "id": "6f71ce0e-4149-4e14-b723-8f305fbf98b0", "name": "Baidu", "type": "text" }],
+                  "submitUrl": { "Baidu": "http://baidu.com/s?wd=", "EndPoint": "" },
+                  "urlSecondItem": "bdwindow",
+                  "submitValue": "Baidu",
+                  "itemType": "input"
+                },
+                {
+                  "id": "2a19d81d-9666-4c31-bbac-027e189eec5c",
+                  "inputItems": [{ "id": "cb825f8d-6c98-431d-b7cc-f15f32df242e", "name": "Exalead", "type": "text" }],
+                  "submitUrl": { "Exalead": "http://www.exalead.com/search/web/results/?q=", "EndPoint": "" },
+                  "urlSecondItem": "exawindow",
+                  "submitValue": "Exalead",
+                  "itemType": "input"
+                },
+                {
+                  "id": "6c2ea65b-528e-4717-b462-4dc7cada92d5",
+                  "inputItems": [{ "id": "088d5d83-6594-4263-8b16-ebbffd6e83b9", "name": "Duck Go", "type": "text" }],
+                  "submitUrl": { "Duck Go": "https://duckduckgo.com/?q=", "EndPoint": "" },
+                  "urlSecondItem": "ddgwindow",
+                  "submitValue": "Duck Go",
+                  "itemType": "input"
+                },
+                {
+                  "id": "8501715c-91a3-45ca-b447-8b0b099a6d3e",
+                  "inputItems": [{ "id": "b48594cf-bd1f-4d03-8ab0-b65c34176137", "name": "StartPage", "type": "text" }],
+                  "submitUrl": { "StartPage": "https://startpage.com/do/search?q=", "EndPoint": "" },
+                  "urlSecondItem": "spwindow",
+                  "submitValue": "StartPage",
+                  "itemType": "input"
+                },
+                {
+                  "id": "35665bf4-cc0f-49c4-8040-bd9e806da60f",
+                  "inputItems": [{ "id": "e4a6b55f-bfc2-4c05-a97b-dd02ba3db798", "name": "Newsgroups", "type": "text" }],
+                  "submitUrl": { "Newsgroups": "https://groups.google.com/forum/?fromgroups#!search/", "EndPoint": "" },
+                  "urlSecondItem": "gnwswindow",
+                  "submitValue": "Newsgroups",
+                  "itemType": "input"
+                },
+                {
+                  "id": "c3f3d4fb-bfd0-4bbe-83ef-d6de1b2e15d5",
+                  "inputItems": [{ "id": "9ec69fa8-cd02-4c91-a9b4-0aafecc02301", "name": "Blogs", "type": "text" }],
+                  "submitUrl": { "Blogs": "https://www.google.com/search?q=", "EndPoint": "&tbm=nws&tbs=nrt:b" },
+                  "urlSecondItem": "gblgwindow",
+                  "submitValue": "Blogs",
+                  "itemType": "input"
+                }
+              ]
+            },
+            {
+              "id": "02223a5a-59a1-4d58-b643-c3c6be0faf20",
+              "title": "TOR Search Tool (Must be on TOR)",
+              "items": [
+                {
+                  "id": "ad5bf405-138c-4840-b1c5-6df602c48b3d",
+                  "inputItems": [{ "id": "28451810-a541-4214-88b5-651e2558939d", "name": "Not Evil", "type": "text" }],
+                  "submitUrl": { "Not Evil": "http://hss3uro2hsxfogfq.onion/index.php?q=", "EndPoint": "" },
+                  "urlSecondItem": "q23window",
+                  "submitValue": "Not Evil",
+                  "itemType": "input"
                 }
               ]
             }
           ]
         },
         {
-          "id": 1,
+          "id": "a37e921d-c236-4ba7-b811-7c9d4e5e7eb4",
           "title": "Search Engines Resources",
-          "pageType": "resourcePage",
+          "pageType": "ResourcePage",
           "section": [
             {
-              "id": 1,
-              "inputItems": [{ "id": 1, "name": "Google", "type": "text" }],
-              "submitUrl": "http://google.com/search?q="
+              "id": "d72720f9-2ef4-40d2-b080-a93b1546846b",
+              "inputItems": [{ "id": "5328e570-1bf1-4a1c-9607-1141cab805a4", "name": "Google", "type": "text" }],
+              "submitUrl": { "google": "http://google.com/search?q=", "EndPoint": "" },
+              "urlSecondItem": "googlewindow",
+              "submitValue": "Google",
+              "itemType": "input"
             }
           ]
         }

@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <div>Welcome Page</div>;
+export default () => <div className="panel-side">Welcome Page</div>;
