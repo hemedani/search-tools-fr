@@ -67,7 +67,7 @@ const InputForm = ({ submitUrl, inputItems, urlSecondItem, submitValue }: props)
             />
             // {errors.inp.email && touched.email && errors.email}
           ))}
-          <button type="submit" className="sbmt-btn i-rod">
+          <button type="submit" className="sbmt-btn inp-btn i-rod">
             {submitValue}
           </button>
         </form>

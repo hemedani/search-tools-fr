@@ -1,12 +1,132 @@
 .wrapper-app {
   width: 100%;
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
-.wrapper-app .menu-side {
+.wrapper-app .menu-side-wrapper {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2rem 1.5rem;
 }
 .wrapper-app .panel-side {
   flex: 8;
+}
+.encrypted-data {
+  display: flex;
+  margin-top: 1rem;
+}
+.encrypted-data .key,
+.encrypted-data .value {
+  padding: 1rem;
+  border: 1px solid #d3a641;
+  border-radius: 0.6rem;
+  flex: 1;
+}
+.encrypted-data .key {
+  margin-right: 0.5rem;
+}
+.encrypted-data .value {
+  flex: 12;
+  font-size: 0.8rem;
+}
+.menu-side {
+  min-height: 10rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: #256db1;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 10px 1px #143a5e;
+  color: #fffef9;
+  border: 1px solid #7db2e4;
+  display: flex;
+  flex-direction: column;
+}
+.menu-side .title-menu {
+  padding: 0.7rem;
+  background-color: #143a5e;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom: 1px solid #7db2e4;
+}
+.section-menu .menu-title {
+  border-top: 1px solid #7db2e4;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #256db1;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.section-menu .menu-title:before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  left: 1.3rem;
+  bottom: -0.5rem;
+  transform: rotate(45deg);
+  background-color: #256db1;
+  z-index: 1;
+}
+.section-menu .menu-title span i {
+  margin-right: 1rem;
+}
+.section-menu .subitem-menu {
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+  max-height: 0;
+  cursor: pointer;
+  display: flex;
+  background-color: #143a5e;
+}
+.section-menu .subitem-menu.is-show {
+  max-height: 4rem;
+}
+.section-menu .subitem-menu span {
+  padding: 1rem 1.3rem 1rem;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.section-menu .subitem-menu span:before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 3px;
+  left: 0.5rem;
+  top: calc(15% - 1px);
+  background-color: #599cdc;
+  opacity: 0;
+}
+.section-menu .subitem-menu span:hover,
+.section-menu .subitem-menu span.active-page {
+  background-color: #194976;
+}
+.section-menu .subitem-menu span:hover:before,
+.section-menu .subitem-menu span.active-page:before {
+  opacity: 1;
+}
+.section-wrapper {
+  margin: 2rem 1.5rem;
+  border-radius: 0.6rem;
+  border: 1px solid #143a5e;
+  box-shadow: 0px 0px 10px 1px #143a5e;
+}
+.section-wrapper .section-title {
+  background-color: #143a5e;
+  color: Snow;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+.section-wrapper section {
+  padding: 1rem;
 }
 .sbmt-btn {
   font-family: 'Shabnam', Tahoma;
@@ -29,11 +149,6 @@
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
-.sbmt-btn:last-child {
-  margin-left: 0;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
 .sbmt-btn:after {
   content: "";
   position: absolute;
@@ -52,6 +167,11 @@
   bottom: 0;
   background-color: #fff;
 }
+.inp-btn:last-child {
+  margin-left: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 .i-rod {
   background-color: #daa520;
   border: 1px solid #daa520;
@@ -63,24 +183,24 @@
 .input-form {
   width: 100%;
 }
-.input-form input,
-.input-form textarea,
-.input-form select {
+input,
+textarea,
+select {
   border: 1px solid #daa520;
   background-color: #fff;
 }
-.input-form input:focus,
-.input-form textarea:focus,
-.input-form select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   background-color: #fff5f0;
   outline: none;
 }
-.input-form input:disabled,
-.input-form textarea:disabled,
-.input-form select:disabled {
+input:disabled,
+textarea:disabled,
+select:disabled {
   background-color: rgba(136,136,136,0.7);
 }
-.input-form .input-text {
+.input-text {
   min-width: 20rem;
   height: 1.4rem;
   padding: 0.5rem;
@@ -88,4 +208,12 @@
   border-left: 0.3rem solid #daa520;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+.resource-link {
+  text-decoration: none;
+  color: #143a5e;
+  padding-top: 0.5rem;
+}
+.resource-link:hover {
+  text-decoration: underline;
 }

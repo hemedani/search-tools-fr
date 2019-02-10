@@ -1,101 +1,104 @@
 import React, { PureComponent } from "react";
 // import MyRoute from "./components/MyRoute";
 import Menu from "./components/menu/Menu";
-import SearchPage from "./components/search-page/SearchPage";
+import Pages from "./components/pages/Pages";
 import ResourcePage from "./components/resource-page/ResourcePage";
-import Welcome from "./components/Welcome";
+import Welcome from "./components/pages/Welcome";
 // import './App.css';
 
-export interface state {
-  pageType: PageType;
-  searchItem: SearchPage;
+export interface IState {
+  PageItem: ISubItem;
 }
 
-export interface subItem {
+export interface ISubItem {
   id: string;
   title: string;
-  pageType: PageType;
+  pageType: TPageType;
   section: {
     id: string;
     title: string;
-    items: {}[];
+    hasPapulate: boolean;
+    items: { id: string; itemType: TItemType }[];
   }[];
 }
 
-export interface SearchPage extends subItem {
+export interface ISearchPage extends ISubItem {
   section: {
     id: string;
     title: string;
-    items: {
-      id: string;
-      inputItems: { id: string; name: string; type: string }[];
-      submitUrl: { [key: string]: string };
-      urlSecondItem: string;
-      submitValue: string;
-    }[];
+    hasPapulate: boolean;
+    items: ISearchItem[];
   }[];
 }
 
-export interface ResourcePage extends subItem {
+export interface ISearchItem {
+  id: string;
+  inputItems: { id: string; name: string; type: string }[];
+  submitUrl: { [key: string]: string };
+  urlSecondItem: string;
+  submitValue: string;
+  itemType: TItemType;
+}
+
+export interface IResourcePage extends ISubItem {
   section: {
     id: string;
     title: string;
-    items: {}[];
-    inputItems: { id: string; name: string; type: string }[];
-    submitUrl: string;
+    hasPapulate: boolean;
+    items: IResourceItem[];
   }[];
 }
 
-export type PageType = "Welcome" | "SearchPage" | "ResourcePage";
+export interface IResourceItem {
+  id: string;
+  name: string;
+  url: string;
+  target: string;
+  itemType: TItemType;
+}
 
-export const defaultSearchItem: SearchPage = {
+export type TItem = ISearchItem | IResourceItem;
+
+export type TPageItem = ISearchPage | IResourcePage;
+
+export type TPageType = "Welcome" | "SearchPage" | "ResourcePage";
+export type TItemType = "link" | "input" | "welcome";
+
+export const defaultSearchItem: ISubItem = {
   id: "",
-  title: "",
+  title: "Welcome To Search Engine Tools",
   pageType: "Welcome",
   section: [
     {
       id: "",
-      title: "",
-      items: [{ id: "", inputItems: [{ id: "", name: "", type: "" }], submitUrl: {}, urlSecondItem: "", submitValue: "" }]
+      title: "Welcome To Search Engine Tools",
+      hasPapulate: false,
+      items: [{ id: "", itemType: "welcome" }]
     }
   ]
 };
 
-class App extends PureComponent<{}, state> {
+class App extends PureComponent<{}, IState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      pageType: "Welcome",
-      searchItem: defaultSearchItem
+      PageItem: defaultSearchItem
     };
 
-    this.onPageTypeChange = this.onPageTypeChange.bind(this);
-    this.renderPages = this.renderPages.bind(this);
-    this.onChangeSearchItem = this.onChangeSearchItem.bind(this);
+    // this.renderPages = this.renderPages.bind(this);
+    this.onChangeItem = this.onChangeItem.bind(this);
   }
 
-  onPageTypeChange(pageType: PageType) {
-    this.setState({ pageType });
+  onChangeItem(PageItem: TPageItem) {
+    this.setState({ PageItem });
   }
 
-  onChangeSearchItem(searchItem: SearchPage) {
-    this.setState({ searchItem });
-  }
-
-  renderPages() {
-    if (this.state.pageType === "SearchPage") {
-      return <SearchPage searchItem={this.state.searchItem} />;
-    } else if (this.state.pageType === "ResourcePage") {
-      return <ResourcePage />;
-    } else {
-      return <Welcome />;
-    }
-  }
   render() {
     return (
       <div className="wrapper-app">
-        <Menu onPageTypeChange={this.onPageTypeChange} onChangeSearchItem={this.onChangeSearchItem} />
-        {this.renderPages()}
+        <Menu onChangeItem={this.onChangeItem} pageId={this.state.PageItem.id} />
+        {/* {this.renderPages()} */}
+        <Pages PageItem={this.state.PageItem} />
       </div>
     );
   }

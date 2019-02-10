@@ -1,11 +1,17 @@
 import React from "react";
-import { SearchPage, subItem, PageType } from "../../App";
+import cn from "classnames";
+import { TPageItem } from "../../App";
 
 import JsonData from "../../data/db.json";
 
 export interface MenuProps {
-  onPageTypeChange: (pageType: PageType) => void;
-  onChangeSearchItem: (searchItem: SearchPage) => void;
+  onChangeItem: (searchItem: TPageItem) => void;
+  pageId: string;
+}
+
+export interface MenuState {
+  showCollaps: string;
+  pageId: string;
 }
 // export interface db {
 //   icon: string;
@@ -19,34 +25,58 @@ export interface MenuProps {
 
 // const myDb: db = JsonData;
 
-const Menu: React.SFC<MenuProps> = ({ onPageTypeChange, onChangeSearchItem }) => {
-  return (
-    <div className="menu-side">
-      <p>menu</p>
-      <div className="title-menu">{JsonData.title}</div>
-      {JsonData.items.map(item => (
-        <div className="section-menu" key={item.id}>
-          <span>{item.title}</span>
-          {item.subItem.map(sub => (
-            <div
-              className="subitem-menu"
-              key={sub.id}
-              onClick={() => {
-                if (sub.pageType === "SearchPage") {
-                  onChangeSearchItem(sub as SearchPage);
-                }
-                onPageTypeChange(sub.pageType as PageType);
-              }}
-            >
-              {sub.title} {sub.pageType}
-            </div>
-          ))}
-        </div>
-      ))}
-      <br />
-      <br />
-    </div>
-  );
-};
+class Menu extends React.PureComponent<MenuProps, MenuState> {
+  constructor(props: MenuProps) {
+    super(props);
+    this.state = {
+      showCollaps: "",
+      pageId: ""
+    };
+    this.toggleCollaps = this.toggleCollaps.bind(this);
+  }
+  toggleCollaps(id: string) {
+    this.state.showCollaps === id ? this.setState({ showCollaps: "" }) : this.setState({ showCollaps: id });
+  }
+  setPage(id: string) {
+    this.state.showCollaps === id ? this.setState({ showCollaps: "" }) : this.setState({ showCollaps: id });
+  }
+  render() {
+    return (
+      <div className="menu-side-wrapper">
+        {JsonData.map(dbs => (
+          <div key={dbs.id} className="menu-side">
+            <div className="title-menu">{dbs.title} : </div>
+            {dbs.items.map(item => (
+              <div className="section-menu" key={item.id}>
+                <div className="menu-title" onClick={() => this.toggleCollaps(item.id)}>
+                  <span>
+                    <i className={`ion ion-${item.icon}`} />
+                    {item.title} :
+                  </span>
+                  <i
+                    className={this.state.showCollaps === item.id ? "ion ion-ios-arrow-down" : "ion ion-ios-arrow-forward"}
+                  />
+                </div>
+                <div className="subitems-menu">
+                  {item.subItem.map(sub => (
+                    <div
+                      className={cn("subitem-menu", { "is-show": this.state.showCollaps === item.id })}
+                      key={sub.id}
+                      onClick={() => {
+                        this.props.onChangeItem(sub as TPageItem);
+                      }}
+                    >
+                      <span className={cn({ "active-page": this.props.pageId === sub.id })}>{sub.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  }
+}
 
 export default Menu;

@@ -1,0 +1,73 @@
+.menu-side
+  min-height: 10rem
+  margin-bottom: 1.5rem
+  padding-bottom: 1rem
+  background-color: darken(darkSkyBlue(), 25%)
+  braduis()
+  bshadow()
+  color: brightText(1)
+  border: 1px solid lighten(darkSkyBlue(), 30%)
+  display: flex
+  flex-direction: column
+  .title-menu
+    padding: 0.7rem
+    background-color: darken(darkSkyBlue(), 60%)
+    border-top-left-radius: 0.6rem
+    border-top-right-radius: 0.6rem
+    border-bottom: 1px solid lighten(darkSkyBlue(), 30%)
+.section-menu
+  .menu-title
+    border-top: 1px solid lighten(darkSkyBlue(), 30%)
+    cursor pointer
+    padding 1rem
+    background-color: darken(darkSkyBlue(), 25%)
+    position relative
+    z-index: 2
+    display: flex
+    justify-content: space-between
+    &:before
+      content: ""
+      position: absolute
+      width: 1rem
+      height 1rem
+      left: 1.3rem
+      bottom: -0.5rem
+      transform: rotate(45deg)
+      background-color: darken(darkSkyBlue(), 25%)
+      z-index: 1
+    span
+      i
+        margin-right: 1rem
+  // .subitems-me-nu
+  .subitem-menu
+    overflow: hidden
+    transition: max-height 0.25s ease-out
+    max-height: 0
+    cursor pointer
+    display: flex
+    background-color: darken(darkSkyBlue(1), 60%)
+    &.is-show
+      max-height: 4rem
+    span
+      padding: 1rem 1.3rem 1rem
+      position relative
+      width: 100%
+      z-index: 0
+      &:before
+        content: ''
+        position: absolute
+        height 70%
+        border-top: 1px solid white
+        border-bottom: 1px solid white
+        width: 3px
+        left: 0.5rem
+        top: calc(15% - 1px)
+        background-color: lighten(darkSkyBlue(), 10%)
+        opacity 0
+      &:hover,
+      &.active-page
+        background-color: darken(darkSkyBlue(), 50%)
+        &:before
+          opacity: 1
+
+      
