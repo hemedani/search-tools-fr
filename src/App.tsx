@@ -1,10 +1,6 @@
 import React, { PureComponent } from "react";
-// import MyRoute from "./components/MyRoute";
 import Menu from "./components/menu/Menu";
 import Pages from "./components/pages/Pages";
-import ResourcePage from "./components/resource-page/ResourcePage";
-import Welcome from "./components/pages/Welcome";
-// import './App.css';
 
 export interface IState {
   PageItem: ISubItem;
@@ -38,6 +34,7 @@ export interface ISearchItem {
   urlSecondItem: string;
   submitValue: string;
   itemType: TItemType;
+  onSubmit: string;
 }
 
 export interface IResourcePage extends ISubItem {

@@ -3,6 +3,7 @@ import cn from "classnames";
 import { TPageItem } from "../../App";
 
 import JsonData from "../../data/db.json";
+import { DB } from "../../data/dbType";
 
 export interface MenuProps {
   onChangeItem: (searchItem: TPageItem) => void;
@@ -23,8 +24,6 @@ export interface MenuState {
 //   }[];
 // }
 
-// const myDb: db = JsonData;
-
 class Menu extends React.PureComponent<MenuProps, MenuState> {
   constructor(props: MenuProps) {
     super(props);
@@ -43,7 +42,7 @@ class Menu extends React.PureComponent<MenuProps, MenuState> {
   render() {
     return (
       <div className="menu-side-wrapper">
-        {JsonData.map(dbs => (
+        {JsonData.map((dbs: DB) => (
           <div key={dbs.id} className="menu-side">
             <div className="title-menu">{dbs.title} : </div>
             {dbs.items.map(item => (

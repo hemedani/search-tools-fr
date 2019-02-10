@@ -5,9 +5,10 @@ import InputForm from "../utils-components/InputForm";
 
 export interface IRenderItemProps {
   item: TItem;
+  setValue?: string;
 }
 
-const RenderItem = (item: TItem) => {
+const RenderItem = (item: TItem, setValue: string | undefined) => {
   if (item.itemType === "input") {
     item = item as ISearchItem;
     return (
@@ -17,6 +18,7 @@ const RenderItem = (item: TItem) => {
         inputItems={item.inputItems}
         urlSecondItem={item.urlSecondItem}
         submitValue={item.submitValue}
+        setValue={setValue}
       />
     );
   } else if (item.itemType === "link") {
@@ -38,4 +40,4 @@ const RenderItem = (item: TItem) => {
   }
 };
 
-export default ({ item }: IRenderItemProps) => <div>{RenderItem(item)}</div>;
+export default ({ item, setValue }: IRenderItemProps) => <div>{RenderItem(item, setValue)}</div>;
