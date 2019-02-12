@@ -34,6 +34,9 @@ export interface Item {
   submitValue?: string;
   itemType: string;
   onSubmit?: string;
+  inSection?: string;
+  description?: string;
+  break?: boolean;
   name?: string;
   url?: string;
   target?: string;
@@ -53,7 +56,10 @@ export interface SubmitUrl {
   StartPage?: string;
   Newsgroups?: string;
   Blogs?: string;
+  "Google Newspaper"?: string;
   "Not Evil"?: string;
+  Visitor?: string;
+  Torch?: string;
   BreachesLeaks?: string;
   Pastes?: string;
   PSBDMP?: string;
@@ -78,4 +84,68 @@ export interface InputItem {
   id: string;
   name: string;
   type: string;
+  isPapulate: boolean;
+  size?: string;
 }
+
+// MY OWN TYPE
+
+export interface ISubItem {
+  id: string;
+  title: string;
+  pageType: TPageType;
+  section: {
+    id: string;
+    title: string;
+    hasPapulate: boolean;
+    items: { id: string; itemType: TItemType }[];
+  }[];
+}
+
+export interface ISearchPage extends ISubItem {
+  section: {
+    id: string;
+    title: string;
+    hasPapulate: boolean;
+    items: ISearchItem[];
+  }[];
+}
+
+export interface ISearchItem {
+  id: string;
+  inputItems: InputItem[];
+  submitUrl: { [key: string]: string };
+  urlSecondItem: string;
+  submitValue: string;
+  itemType: TItemType;
+  onSubmit: string;
+  inSection: string;
+  isSubmitAll: boolean;
+  description?: string;
+  breaking?: boolean;
+}
+
+export interface IResourcePage extends ISubItem {
+  section: {
+    id: string;
+    title: string;
+    hasPapulate: boolean;
+    items: IResourceItem[];
+  }[];
+}
+
+export interface IResourceItem {
+  id: string;
+  name: string;
+  url: string;
+  target: string;
+  itemType: TItemType;
+}
+
+export type TItem = ISearchItem | IResourceItem;
+
+export type TPageItem = ISearchPage | IResourcePage;
+
+export type TPageType = "Welcome" | "SearchPage" | "ResourcePage";
+
+export type TItemType = "link" | "input" | "welcome";

@@ -1,65 +1,10 @@
 import React, { PureComponent } from "react";
 import Menu from "./components/menu/Menu";
 import Pages from "./components/pages/Pages";
-
+import { ISearchItem, TItemType, ISubItem, TPageItem } from "./data/dbType";
 export interface IState {
   PageItem: ISubItem;
 }
-
-export interface ISubItem {
-  id: string;
-  title: string;
-  pageType: TPageType;
-  section: {
-    id: string;
-    title: string;
-    hasPapulate: boolean;
-    items: { id: string; itemType: TItemType }[];
-  }[];
-}
-
-export interface ISearchPage extends ISubItem {
-  section: {
-    id: string;
-    title: string;
-    hasPapulate: boolean;
-    items: ISearchItem[];
-  }[];
-}
-
-export interface ISearchItem {
-  id: string;
-  inputItems: { id: string; name: string; type: string }[];
-  submitUrl: { [key: string]: string };
-  urlSecondItem: string;
-  submitValue: string;
-  itemType: TItemType;
-  onSubmit: string;
-}
-
-export interface IResourcePage extends ISubItem {
-  section: {
-    id: string;
-    title: string;
-    hasPapulate: boolean;
-    items: IResourceItem[];
-  }[];
-}
-
-export interface IResourceItem {
-  id: string;
-  name: string;
-  url: string;
-  target: string;
-  itemType: TItemType;
-}
-
-export type TItem = ISearchItem | IResourceItem;
-
-export type TPageItem = ISearchPage | IResourcePage;
-
-export type TPageType = "Welcome" | "SearchPage" | "ResourcePage";
-export type TItemType = "link" | "input" | "welcome";
 
 export const defaultSearchItem: ISubItem = {
   id: "",

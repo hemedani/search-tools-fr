@@ -1,26 +1,19 @@
 import React from "react";
 
-import { TItem, ISearchItem, IResourceItem } from "../../App";
+import { TItem, ISearchItem, IResourceItem } from "../../data/dbType";
 import InputForm from "../utils-components/InputForm";
 
 export interface IRenderItemProps {
   item: TItem;
   setValue?: string;
+  sectionTitle: string;
+  submitAll: boolean;
 }
 
-const RenderItem = (item: TItem, setValue: string | undefined) => {
+const RenderItem = (item: TItem, setValue: string | undefined, sectionTitle: string, submitAll: boolean) => {
   if (item.itemType === "input") {
     item = item as ISearchItem;
-    return (
-      <InputForm
-        key={item.id}
-        submitUrl={item.submitUrl}
-        inputItems={item.inputItems}
-        urlSecondItem={item.urlSecondItem}
-        submitValue={item.submitValue}
-        setValue={setValue}
-      />
-    );
+    return <InputForm {...item} submitAll={submitAll} setValue={setValue} sectionTitle={sectionTitle} />;
   } else if (item.itemType === "link") {
     item = item as IResourceItem;
     return (
@@ -40,4 +33,6 @@ const RenderItem = (item: TItem, setValue: string | undefined) => {
   }
 };
 
-export default ({ item, setValue }: IRenderItemProps) => <div>{RenderItem(item, setValue)}</div>;
+export default ({ item, setValue, sectionTitle, submitAll }: IRenderItemProps) => (
+  <div>{RenderItem(item, setValue, sectionTitle, submitAll)}</div>
+);

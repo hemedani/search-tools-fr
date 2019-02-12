@@ -1,6 +1,6 @@
 import React from "react";
 import cn from "classnames";
-import { TPageItem } from "../../App";
+import { TPageItem } from "../../data/dbType";
 
 import JsonData from "../../data/db.json";
 import { DB } from "../../data/dbType";
@@ -14,15 +14,6 @@ export interface MenuState {
   showCollaps: string;
   pageId: string;
 }
-// export interface db {
-//   icon: string;
-//   title: string;
-//   items: {
-//     id: string;
-//     title: string;
-//     subItem: subItem[];
-//   }[];
-// }
 
 class Menu extends React.PureComponent<MenuProps, MenuState> {
   constructor(props: MenuProps) {

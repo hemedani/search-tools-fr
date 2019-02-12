@@ -1,70 +1,37 @@
 import React from "react";
 import { InjectedFormikProps, withFormik } from "formik";
+import cn from "classnames";
+import { ISearchItem } from "../../data/dbType";
+import Axios from "axios";
 
-export interface Props {
-  submitUrl: { [key: string]: string };
-  inputItems: { id: string; type: string; name: string }[];
-  urlSecondItem: string;
-  submitValue: string;
+export interface Props extends ISearchItem {
   setValue?: string;
+  sectionTitle: string;
+  submitAll: boolean;
 }
 
 export interface initialValues {
   [key: string]: string;
 }
-
-// const InputForm = ({ submitUrl, inputItems, urlSecondItem, submitValue }: Props) => {
-//   const initialValues: initialValues = inputItems.reduce((a: initialValues, c) => {
-//     a[c.name] = "";
-//     return a;
-//   }, {});
-//   return (
-//     <Formik
-//       initialValues={initialValues}
-//       onSubmit={values => {
-//         let url = "";
-//         const arrVal = Object.keys(values);
-//         arrVal.map((key, i) => {
-//           url = url + submitUrl[key] + values[key];
-//           if (arrVal.length - 1 === i) {
-//             url = url + submitUrl.EndPoint;
-//           }
-//         });
-//         window.open(url, urlSecondItem);
-//       }}
-//     >
-//       {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
-//         <form className="input-form" onSubmit={handleSubmit}>
-//           {inputItems.map(inp => (
-//             <input
-//               className="input-text"
-//               key={inp.id}
-//               type={inp.type}
-//               name={inp.name}
-//               placeholder={inp.name}
-//               onChange={handleChange}
-//               onBlur={handleBlur}
-//               value={values[inp.name]}
-//             />
-//             // {errors.inp.email && touched.email && errors.email}
-//           ))}
-//           <button type="submit" className="sbmt-btn inp-btn i-rod">
-//             {submitValue}
-//           </button>
-//         </form>
-//       )}
-//     </Formik>
-//   );
-// };
-
 class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialValues>> {
   constructor(props: InjectedFormikProps<Props, initialValues>) {
     super(props);
   }
   componentDidUpdate(prevProps: InjectedFormikProps<Props, initialValues>) {
     if (this.props.setValue !== prevProps.setValue) {
-      const arrVal = Object.keys(this.props.values);
-      this.props.setFieldValue(arrVal[0], this.props.setValue);
+      if (this.props.inSection === this.props.sectionTitle) {
+        this.props.inputItems.map(inp => {
+          if (inp.isPapulate) {
+            this.props.setFieldValue(inp.name, this.props.setValue);
+          }
+        });
+      }
+    }
+    if (this.props.submitAll !== prevProps.submitAll) {
+      if (this.props.inSection === this.props.sectionTitle && this.props.submitAll && this.props.isSubmitAll) {
+        console.log(this.props.inSection, this.props.sectionTitle, this.props.submitAll);
+        this.props.handleSubmit();
+      }
     }
   }
   render() {
@@ -79,10 +46,11 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
       handleBlur,
       inputItems,
       submitValue,
-      setValue
+      description,
+      breaking
     } = this.props;
     return (
-      <form className="input-form" onSubmit={handleSubmit}>
+      <form className={cn("input-form", { "break-inp": breaking })} onSubmit={handleSubmit}>
         {inputItems.map(inp => (
           <input
             className="input-text"
@@ -93,60 +61,20 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
             onChange={handleChange}
             onBlur={handleBlur}
             value={values[inp.name]}
+            style={inp.size ? { width: inp.size + "rem" } : { width: "20rem" }}
           />
           // {errors.inp.email && touched.email && errors.email}
         ))}
-        <button type="submit" className="sbmt-btn inp-btn i-rod">
-          {submitValue}
-        </button>
+        <div className="btn-all-center">
+          <button type="submit" className="sbmt-btn inp-btn i-rod last-child">
+            {submitValue}
+          </button>
+          {description && <p>{description}</p>}
+        </div>
       </form>
     );
   }
 }
-
-// const InputForm: React.SFC<InjectedFormikProps<Props, initialValues>> = props => {
-//   const {
-//     values,
-//     touched,
-//     errors,
-//     isSubmitting,
-//     setFieldValue,
-//     handleSubmit,
-//     handleChange,
-//     handleBlur,
-//     inputItems,
-//     submitValue,
-//     setValue
-//   } = props;
-//   const _handleSelect = () => {
-//     try {
-//       setFieldValue(values[0], setValue);
-//     } catch (error) {
-//       // tslint:disable-next-line:no-console
-//       console.error(error);
-//     }
-//   };
-//   return (
-//     <form className="input-form" onSubmit={handleSubmit}>
-//       {inputItems.map(inp => (
-//         <input
-//           className="input-text"
-//           key={inp.id}
-//           type={inp.type}
-//           name={inp.name}
-//           placeholder={inp.name}
-//           onChange={handleChange}
-//           onBlur={handleBlur}
-//           value={values[inp.name]}
-//         />
-//         // {errors.inp.email && touched.email && errors.email}
-//       ))}
-//       <button type="submit" className="sbmt-btn inp-btn i-rod">
-//         {submitValue}
-//       </button>
-//     </form>
-//   );
-// };
 
 export default withFormik({
   enableReinitialize: true,
@@ -167,6 +95,12 @@ export default withFormik({
         url = url + Props.submitUrl.EndPoint;
       }
     });
-    window.open(url, Props.urlSecondItem);
+    if (Props.onSubmit === "submitUrl") {
+      window.open(url, Props.urlSecondItem);
+    }
+    if (Props.onSubmit === "setSomeState") {
+      Axios.get(url).then(resp => console.log(resp.data));
+    }
+    return;
   }
 })(InputForm);

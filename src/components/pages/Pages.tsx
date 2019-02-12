@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ISubItem, TItem } from "../../App";
+import { ISubItem, TItem } from "../../data/dbType";
 import RenderItems from "../utils-components/RenderItems";
 import PwdHashing from "../utils-components/PwdHashing";
 import PapullateForm from "../utils-components/PapullateForm";
@@ -11,18 +11,29 @@ export interface PagesProps {
 
 export interface IPState {
   papullate: string;
+  sectionTitle: string;
+  submitAll: boolean;
 }
 
 class Pages extends React.PureComponent<PagesProps, IPState> {
   constructor(props: PagesProps) {
     super(props);
     this.state = {
-      papullate: ""
+      papullate: "",
+      sectionTitle: "",
+      submitAll: false
     };
     this.setFormsValue = this.setFormsValue.bind(this);
+    this.setSubmitAll = this.setSubmitAll.bind(this);
   }
-  setFormsValue(papullate: string) {
-    this.setState({ papullate });
+  setFormsValue(papullate: string, sectionTitle: string) {
+    this.setState({ papullate, sectionTitle });
+  }
+  setSubmitAll() {
+    this.setState({ submitAll: true });
+    setTimeout(() => {
+      this.setState({ submitAll: false });
+    }, 700);
   }
 
   render() {
@@ -34,14 +45,25 @@ class Pages extends React.PureComponent<PagesProps, IPState> {
             <section>
               {section.hasPapulate && (
                 <div className="papullate-section">
-                  <PapullateForm setFormsValue={this.setFormsValue} />
-                  <br />
-                  <hr />
-                  <br />
+                  <PapullateForm setFormsValue={this.setFormsValue} forSection={section.title} />
+                  {this.state.papullate && this.state.sectionTitle === section.title && (
+                    <div className="btn-all-center">
+                      <button className="sbmt-btn inp-btn i-rod last-child" onClick={this.setSubmitAll}>
+                        Submit All
+                      </button>
+                      <p>(Allow Pop-ups)</p>
+                    </div>
+                  )}
                 </div>
               )}
               {section.items.map(item => (
-                <RenderItems setValue={this.state.papullate} key={item.id} item={item as TItem} />
+                <RenderItems
+                  sectionTitle={this.state.sectionTitle}
+                  setValue={this.state.papullate}
+                  key={item.id}
+                  submitAll={this.state.submitAll}
+                  item={item as TItem}
+                />
               ))}
             </section>
           </div>

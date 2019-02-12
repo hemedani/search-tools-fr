@@ -2,15 +2,16 @@ import React from "react";
 import { Formik } from "formik";
 
 export interface props {
-  setFormsValue: (value: string) => void;
+  setFormsValue: (value: string, forSection: string) => void;
+  forSection: string;
 }
 
-const PapullateForm = ({ setFormsValue }: props) => {
+const PapullateForm = ({ setFormsValue, forSection }: props) => {
   return (
     <Formik
       initialValues={{ papullate: "" }}
       onSubmit={values => {
-        setFormsValue(values.papullate);
+        setFormsValue(values.papullate, forSection);
       }}
     >
       {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
@@ -25,7 +26,7 @@ const PapullateForm = ({ setFormsValue }: props) => {
             value={values.papullate}
           />
           {/* {errors.inp.email && touched.email && errors.email} */}
-          <button type="submit" className="sbmt-btn inp-btn i-rod">
+          <button type="submit" className="sbmt-btn inp-btn i-rod no-margin-left">
             papullate
           </button>
         </form>
