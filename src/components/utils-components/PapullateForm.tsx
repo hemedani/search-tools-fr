@@ -1,30 +1,40 @@
 import React from "react";
 import { Formik } from "formik";
 
+import { PapulateItem } from "../../data/dbType";
+
 export interface props {
-  setFormsValue: (value: string, forSection: string) => void;
+  setFormsValue: (value: TPapulate, forSection: string) => void;
   forSection: string;
+  papulateItem: TPapulate;
 }
 
-const PapullateForm = ({ setFormsValue, forSection }: props) => {
+type TPapulate = PapulateItem;
+
+const PapullateForm = ({ setFormsValue, forSection, papulateItem }: props) => {
+  const papulateArr = Object.keys(papulateItem);
   return (
     <Formik
-      initialValues={{ papullate: "" }}
+      initialValues={papulateItem}
       onSubmit={values => {
-        setFormsValue(values.papullate, forSection);
+        setFormsValue(values, forSection);
       }}
     >
       {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
         <form className="input-form" onSubmit={handleSubmit}>
-          <input
-            className="input-text"
-            type="text"
-            name="papullate"
-            placeholder="papullate all"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.papullate}
-          />
+          {papulateArr.map(pap => (
+            <input
+              key={pap}
+              className="input-text"
+              type="text"
+              name={pap}
+              placeholder={pap}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={(values as any)[pap]}
+              style={{ width: 20 / papulateArr.length + "rem" }}
+            />
+          ))}
           {/* {errors.inp.email && touched.email && errors.email} */}
           <button type="submit" className="sbmt-btn inp-btn i-rod no-margin-left">
             papullate

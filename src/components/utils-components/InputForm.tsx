@@ -1,11 +1,11 @@
 import React from "react";
 import { InjectedFormikProps, withFormik } from "formik";
 import cn from "classnames";
-import { ISearchItem } from "../../data/dbType";
+import { ISearchItem, PapulateItem } from "../../data/dbType";
 import Axios from "axios";
 
 export interface Props extends ISearchItem {
-  setValue?: string;
+  setValue: PapulateItem;
   sectionTitle: string;
   submitAll: boolean;
 }
@@ -21,15 +21,21 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
     if (this.props.setValue !== prevProps.setValue) {
       if (this.props.inSection === this.props.sectionTitle) {
         this.props.inputItems.map(inp => {
-          if (inp.isPapulate) {
-            this.props.setFieldValue(inp.name, this.props.setValue);
+          if (this.props.setValue.papulate) {
+            if (inp.isPapulate) {
+              this.props.setFieldValue(inp.name, this.props.setValue.papulate);
+            }
+          } else {
+            if (inp.isPapulate) {
+              this.props.setFieldValue(inp.name, (this.props.setValue as any)[inp.name]);
+            }
           }
         });
       }
     }
     if (this.props.submitAll !== prevProps.submitAll) {
       if (this.props.inSection === this.props.sectionTitle && this.props.submitAll && this.props.isSubmitAll) {
-        console.log(this.props.inSection, this.props.sectionTitle, this.props.submitAll);
+        // console.log(this.props.inSection, this.props.sectionTitle, this.props.submitAll);
         this.props.handleSubmit();
       }
     }

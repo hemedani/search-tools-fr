@@ -1,32 +1,34 @@
 import React from "react";
 
-import { ISubItem, TItem } from "../../data/dbType";
+import { SubItem, TItem, PapulateItem } from "../../data/dbType";
 import RenderItems from "../utils-components/RenderItems";
 import PwdHashing from "../utils-components/PwdHashing";
 import PapullateForm from "../utils-components/PapullateForm";
 
 export interface PagesProps {
-  PageItem: ISubItem;
+  PageItem: SubItem;
 }
 
 export interface IPState {
-  papullate: string;
+  papullate: TPapulate;
   sectionTitle: string;
   submitAll: boolean;
 }
+
+type TPapulate = PapulateItem;
 
 class Pages extends React.PureComponent<PagesProps, IPState> {
   constructor(props: PagesProps) {
     super(props);
     this.state = {
-      papullate: "",
+      papullate: { papulate: "" },
       sectionTitle: "",
       submitAll: false
     };
     this.setFormsValue = this.setFormsValue.bind(this);
     this.setSubmitAll = this.setSubmitAll.bind(this);
   }
-  setFormsValue(papullate: string, sectionTitle: string) {
+  setFormsValue(papullate: TPapulate, sectionTitle: string) {
     this.setState({ papullate, sectionTitle });
   }
   setSubmitAll() {
@@ -45,7 +47,11 @@ class Pages extends React.PureComponent<PagesProps, IPState> {
             <section>
               {section.hasPapulate && (
                 <div className="papullate-section">
-                  <PapullateForm setFormsValue={this.setFormsValue} forSection={section.title} />
+                  <PapullateForm
+                    setFormsValue={this.setFormsValue}
+                    forSection={section.title}
+                    papulateItem={section.papulateItem as TPapulate}
+                  />
                   {this.state.papullate && this.state.sectionTitle === section.title && (
                     <div className="btn-all-center">
                       <button className="sbmt-btn inp-btn i-rod last-child" onClick={this.setSubmitAll}>

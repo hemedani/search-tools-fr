@@ -18,6 +18,7 @@
                 "id": "1c878021-479d-4b0c-ac7e-d12e8fe92f53",
                 "title": "Search Engines Tool",
                 "hasPapulate": true,
+                "papulateItem": { "papulate": "" },
                 "items": [
                   {
                     "id": "9ec8d292-0458-425e-a559-b245825cbf0d",
@@ -344,6 +345,8 @@
                 "id": "02223a5a-59a1-4d58-b643-c3c6be0faf20",
                 "title": "TOR Search Tool (Must be on TOR)",
                 "hasPapulate": true,
+
+                "papulateItem": { "papulate": "" },
                 "items": [
                   {
                     "id": "ad5bf405-138c-4840-b1c5-6df602c48b3d",
@@ -498,6 +501,8 @@
                 "id": "349e6c6d-b5e1-4636-9c7b-97db75a85623",
                 "title": "Email Search Tool",
                 "hasPapulate": true,
+
+                "papulateItem": { "papulate": "" },
                 "items": [
                   {
                     "id": "55ffbf6f-8be0-4fd0-a4f3-c5303abe1ad8",
@@ -981,6 +986,8 @@
                 "id": "c261fe3d-4fcc-474c-9f70-8a046491ebac",
                 "title": "Facebook Profile Search (Must be logged in)",
                 "hasPapulate": true,
+
+                "papulateItem": { "papulate": "" },
                 "items": [
                   {
                     "id": "b446f8e1-36e9-4f2b-9091-10516f51dece",
@@ -1394,6 +1401,7 @@
                 "id": "114ee7eb-4f4e-4ec0-aa98-d5e331f28da8",
                 "title": "Mapping Search Tool By Address",
                 "hasPapulate": true,
+                "papulateItem": { "number": "", "Street": "", "City": "", "State": "", "Zip": "" },
                 "items": [
                   {
                     "id": "a00df5ce-deb5-49c3-9168-a7e9955c8486",
@@ -1403,35 +1411,35 @@
                         "name": "number",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "238b2eb2-4888-4eb4-b8d8-b943afd231af",
                         "name": "Street",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "97b941fc-9bd6-42b3-be7a-98517ac55c6b",
                         "name": "City",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "99095792-d960-4b1f-a6d7-b8f489a81895",
                         "name": "State",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "6a813001-10d7-4c78-9296-7a4dda8212ea",
                         "name": "Zip",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       }
                     ],
                     "submitUrl": {
@@ -1447,7 +1455,7 @@
                     "itemType": "input",
                     "onSubmit": "submitUrl",
                     "inSection": "Mapping Search Tool By Address",
-                    "isSubmitAll": false
+                    "isSubmitAll": true
                   },
                   {
                     "id": "32f6a59a-e9a4-49a5-9a9d-0891e5949e9a",
@@ -1457,35 +1465,35 @@
                         "name": "number",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "76138579-6cad-48ce-927b-6cb85b48036d",
                         "name": "Street",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "8d4ff98d-21b6-466d-8186-0f1b017670f0",
                         "name": "City",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "9d077264-42b8-47b7-978a-422fd513a578",
                         "name": "State",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "6be1fc8a-91c0-4d3c-872c-e7d76cf37e10",
                         "name": "Zip",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       }
                     ],
                     "submitUrl": {
@@ -1501,7 +1509,7 @@
                     "itemType": "input",
                     "onSubmit": "submitUrl",
                     "inSection": "Mapping Search Tool By Address",
-                    "isSubmitAll": false
+                    "isSubmitAll": true
                   },
                   {
                     "id": "fe06e910-7525-45f7-8ada-e73fe5d0044c",
@@ -1511,35 +1519,35 @@
                         "name": "number",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "f25949cb-9100-47e4-a802-9f53081091a7",
                         "name": "Street",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "dc526585-dbcb-4546-bf59-a08b58a38c17",
                         "name": "City",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "a60b3c17-6660-47d7-8939-04e985520ce5",
                         "name": "State",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "ab098387-a07d-4c39-b540-3dfb9ca49a8f",
                         "name": "Zip",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       }
                     ],
                     "submitUrl": {
@@ -1555,7 +1563,7 @@
                     "itemType": "input",
                     "onSubmit": "submitUrl",
                     "inSection": "Mapping Search Tool By Address",
-                    "isSubmitAll": false
+                    "isSubmitAll": true
                   },
                   {
                     "id": "72208fbb-cafc-4b26-8ff4-7f7557be9582",
@@ -1565,35 +1573,35 @@
                         "name": "number",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "ffbffe6e-816e-446b-91cd-a9315eed148c",
                         "name": "Street",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "a12c02e4-a1d8-4aba-8ca8-c6e8afed4279",
                         "name": "City",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "1d488a96-13bd-4b02-b7ed-51fa9a28bf3f",
                         "name": "State",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       },
                       {
                         "id": "4b4259d5-87f5-4d75-ae61-42d1b6f430ff",
                         "name": "Zip",
                         "type": "text",
                         "size": "4",
-                        "isPapulate": false
+                        "isPapulate": true
                       }
                     ],
                     "submitUrl": {
@@ -1609,7 +1617,45 @@
                     "itemType": "input",
                     "onSubmit": "submitUrl",
                     "inSection": "Mapping Search Tool By Address",
-                    "isSubmitAll": false
+                    "isSubmitAll": true
+                  }
+                ]
+              },
+              {
+                "id": "c004b43a-8990-4642-b01c-6a3beb72b14b",
+                "title": "Mapping Search Tool By LatLng",
+                "hasPapulate": true,
+                "papulateItem": { "Latitude": "", "Longitude": "" },
+                "items": [
+                  {
+                    "id": "4a0e862a-1b71-4baa-974a-5930756f9c09",
+                    "inputItems": [
+                      {
+                        "id": "73b52134-9a4d-46f9-ba67-57aa9037ba46",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "4b9b84f7-5eb6-4ca8-98f2-eb4d6293cad6",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://maps.google.com/maps?q=loc:",
+                      "Longitude": "+",
+                      "EndPoint": "&z=20&t=k&output=embed"
+                    },
+                    "urlSecondItem": "window1",
+                    "submitValue": "Google Sat",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
                   }
                 ]
               }

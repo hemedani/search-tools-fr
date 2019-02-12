@@ -1,16 +1,16 @@
 import React from "react";
 
-import { TItem, ISearchItem, IResourceItem } from "../../data/dbType";
+import { TItem, ISearchItem, IResourceItem, PapulateItem } from "../../data/dbType";
 import InputForm from "../utils-components/InputForm";
 
 export interface IRenderItemProps {
   item: TItem;
-  setValue?: string;
+  setValue: PapulateItem;
   sectionTitle: string;
   submitAll: boolean;
 }
 
-const RenderItem = (item: TItem, setValue: string | undefined, sectionTitle: string, submitAll: boolean) => {
+const RenderItem = (item: TItem, setValue: PapulateItem, sectionTitle: string, submitAll: boolean) => {
   if (item.itemType === "input") {
     item = item as ISearchItem;
     return <InputForm {...item} submitAll={submitAll} setValue={setValue} sectionTitle={sectionTitle} />;

@@ -23,6 +23,7 @@ export interface Section {
   id: string;
   title: string;
   hasPapulate: boolean;
+  papulateItem?: PapulateItem;
   items: Item[];
 }
 
@@ -35,8 +36,9 @@ export interface Item {
   itemType: string;
   onSubmit?: string;
   inSection?: string;
+  isSubmitAll?: boolean;
   description?: string;
-  break?: boolean;
+  breaking?: boolean;
   name?: string;
   url?: string;
   target?: string;
@@ -56,7 +58,9 @@ export interface SubmitUrl {
   StartPage?: string;
   Newsgroups?: string;
   Blogs?: string;
-  "Google Newspaper"?: string;
+  "Search Newspaper"?: string;
+  "Newspaper Archive"?: string;
+  "Newspaper Collection"?: string;
   "Not Evil"?: string;
   Visitor?: string;
   Torch?: string;
@@ -78,6 +82,14 @@ export interface SubmitUrl {
   AnalyzeID?: string;
   Gravatar?: string;
   GoogleCal?: string;
+  "Find User Number"?: string;
+  number?: string;
+  Street?: string;
+  City?: string;
+  State?: string;
+  Zip?: string;
+  Latitude?: string;
+  Longitude?: string;
 }
 
 export interface InputItem {
@@ -86,6 +98,17 @@ export interface InputItem {
   type: string;
   isPapulate: boolean;
   size?: string;
+}
+
+export interface PapulateItem {
+  papulate?: string;
+  number?: string;
+  Street?: string;
+  City?: string;
+  State?: string;
+  Zip?: string;
+  Latitude?: string;
+  Longitude?: string;
 }
 
 // MY OWN TYPE
@@ -108,6 +131,7 @@ export interface ISearchPage extends ISubItem {
     title: string;
     hasPapulate: boolean;
     items: ISearchItem[];
+    papulateItem?: PapulateItem;
   }[];
 }
 
