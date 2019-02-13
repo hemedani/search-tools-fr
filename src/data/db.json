@@ -1656,6 +1656,735 @@
                     "onSubmit": "submitUrl",
                     "inSection": "Mapping Search Tool By LatLng",
                     "isSubmitAll": true
+                  },
+                  {
+                    "id": "f3c6848a-2f40-4e1b-a4e6-2efa7d5d872f",
+                    "inputItems": [
+                      {
+                        "id": "51094d71-6d72-4a49-bd9b-24369e262af4",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "cd09a064-2bd7-4313-87de-a7565ceb4dc5",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.google.com/maps/place//@",
+                      "Longitude": ",",
+                      "EndPoint": "380a,35y,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
+                    },
+                    "urlSecondItem": "windowg1",
+                    "submitValue": "Google 3D (N)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "ec70e0e0-96a0-461d-8deb-743e7fab5686",
+                    "inputItems": [
+                      {
+                        "id": "d2a0352e-e9e2-42c1-adec-c956ac1cc173",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "28e3cddc-f971-4d04-bf5f-6f5a70aaba9e",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.google.com/maps/place//@",
+                      "Longitude": ",",
+                      "EndPoint": ",380a,35y,270h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
+                    },
+                    "urlSecondItem": "windowg2",
+                    "submitValue": "Google 3D (W)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "d6a8e6df-d6f3-41fc-911f-466d53a02c26",
+                    "inputItems": [
+                      {
+                        "id": "1a10ce33-be4f-403e-8689-f3181b00fa7f",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "f344b431-200b-427a-9944-c9aeec29eac9",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.google.com/maps/place//@",
+                      "Longitude": ",",
+                      "EndPoint": ",380a,35y,180h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
+                    },
+                    "urlSecondItem": "windowg3",
+                    "submitValue": "Google 3D (E)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "e5ab40c4-3eb3-4175-8950-766b942a8ef3",
+                    "inputItems": [
+                      {
+                        "id": "3511c9d8-0295-4e99-8bae-74498454a504",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "be2c6d5a-f189-4cae-882b-eb53d0ef7089",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.google.com/maps/place//@",
+                      "Longitude": ",",
+                      "EndPoint": ",380a,35y,90h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
+                    },
+                    "urlSecondItem": "windowg4",
+                    "submitValue": "Google 3D (S)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "99a799d3-e546-41fd-a5ba-462eb5bd0f68",
+                    "inputItems": [
+                      {
+                        "id": "e020ddf8-d36a-4dfa-b177-c8fa339f1adf",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "43472589-557e-4df6-89fa-bea4e954de99",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
+                      "Longitude": "~",
+                      "EndPoint": "&lvl=20&sty=a&w=100%"
+                    },
+                    "urlSecondItem": "window2",
+                    "submitValue": "Bing Sat",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "147f892d-242e-44f7-8ef1-ac3f22d9cfb9",
+                    "inputItems": [
+                      {
+                        "id": "a099cd94-9828-44f2-ad0a-56a4eca94349",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "37c4b3f0-6ab3-4db1-8f31-af1e41ea1188",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
+                      "Longitude": "~",
+                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=0"
+                    },
+                    "urlSecondItem": "window3",
+                    "submitValue": "Bing 3D (N)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "783eb20d-5995-4e96-9ca1-4301334dfb17",
+                    "inputItems": [
+                      {
+                        "id": "71ecd348-9b4d-4cda-a199-f4d0879c990e",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "70532417-ea3e-460d-9090-21f6b2649d8b",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
+                      "Longitude": "~",
+                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=90"
+                    },
+                    "urlSecondItem": "window9",
+                    "submitValue": "Bing 3D (E)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "10556276-e614-4055-8b2b-3a69806ce767",
+                    "inputItems": [
+                      {
+                        "id": "d8b1af7c-2401-4a92-8bb6-67adadcdd7bd",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "85a8becb-5584-451c-95bb-9a82212ebcc4",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
+                      "Longitude": "~",
+                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=270"
+                    },
+                    "urlSecondItem": "window11",
+                    "submitValue": "Bing 3D (W)",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "33d6e604-26f9-477a-b408-944ad0628d61",
+                    "inputItems": [
+                      {
+                        "id": "18ace466-60d9-4174-88e5-05fb0a3a5809",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "71d6786d-6230-4f70-9e14-5dc1080bd80c",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://data.mapchannels.com/dualmaps5/map.htm?lat=",
+                      "Longitude": "&lng=",
+                      "Latitude2": "&z=18&slat=",
+                      "Longitude2": "&slng=",
+                      "EndPoint": "&sh=85.18&sp=-8.77&sz=0.34&panel=s&gm=0&bm=1&mw=1&be=1&mv=0&md=0&mi=1"
+                    },
+                    "dual": true,
+                    "urlSecondItem": "window4",
+                    "submitValue": "Google Street",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "a3aa2500-8c7d-476f-8e23-4a52582eb5c2",
+                    "inputItems": [
+                      {
+                        "id": "86402972-f8b7-48dc-9415-77e630fa7c19",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "44a3ab64-3284-4e2a-be42-8c500a82ee55",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.bing.com/maps/?v=2&cp=",
+                      "Longitude": "~",
+                      "Latitude2": "&lvl=20&sty=x~lat~",
+                      "Longitude2": "~",
+                      "EndPoint": "alt~137.797~z~30~h~162.4~p~-26.7~pid~5082&app=5082"
+                    },
+                    "dual": true,
+                    "urlSecondItem": "window5",
+                    "submitValue": "Bing Street",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "376d4d37-a382-424e-81af-b70261a758e1",
+                    "inputItems": [
+                      {
+                        "id": "f0097673-355b-445c-ba57-acbaf14c74ae",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "3a1eb942-a9f4-402e-89aa-ffbeb30f4c42",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.terraserver.com/view?utf8=%E2%9C%93&searchLat=",
+                      "Longitude": "&searchLng=",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "window6",
+                    "submitValue": "TerraServer",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "bebc3928-03ad-4a1c-9d13-9ad4b4de4a31",
+                    "inputItems": [
+                      {
+                        "id": "9392f6a8-a422-4dbd-bf75-0ce2659e5ad9",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "67d365d8-4d47-4f5e-97eb-9748d59937b7",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://lv.eosda.com/?lat=",
+                      "Longitude": "&lng=",
+                      "EndPoint": "&z=16"
+                    },
+                    "urlSecondItem": "windowu",
+                    "submitValue": "LandViewer",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "72bdafb7-a87d-4c59-b70c-f0385ca77fb3",
+                    "inputItems": [
+                      {
+                        "id": "d7fee04e-8454-4247-9ef4-d43a15a51e7c",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "dbedee03-7ba6-427a-a15a-d9ebb94e929c",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.here.com/?map=",
+                      "Longitude": ",",
+                      "EndPoint": ",20,satellite"
+                    },
+                    "urlSecondItem": "window7",
+                    "submitValue": "Here Sat",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "737e9482-a6cb-47bf-91fd-bee1c0f7e948",
+                    "inputItems": [
+                      {
+                        "id": "867d0e71-0bae-4f44-aeef-0cfb23bb67d7",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "0dddb849-413d-4559-b3dc-a09fd0281819",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://wikimapia.org/#lang=en&lat=",
+                      "Longitude": "&lon=",
+                      "EndPoint": "&z=20"
+                    },
+                    "urlSecondItem": "window8",
+                    "submitValue": "Wikimapia",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "595fbe8d-db47-4675-9f22-547d5f29ceb8",
+                    "inputItems": [
+                      {
+                        "id": "eb7ace6b-85c3-4c9f-9be6-17e7a210202d",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "d6d3c547-a5a6-4e3c-b7a9-92f04bdcbcef",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://zoom.earth/#",
+                      "Longitude": ",",
+                      "EndPoint": ",16z,sat"
+                    },
+                    "urlSecondItem": "window20",
+                    "submitValue": "Zoom Earth",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "a63e5415-9edb-40dc-a5b2-9d33612a5ddf",
+                    "inputItems": [
+                      {
+                        "id": "f20c92de-9944-4d7e-8952-64d08e5524a0",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "2df8d083-b74d-4e68-a250-4c8b52c7326b",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://maps.yandex.com/?ll=",
+                      "Longitude": "%2C",
+                      "EndPoint": "&z=19&l=sat"
+                    },
+                    "urlSecondItem": "window13",
+                    "submitValue": "Yandex Sat",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "997133cb-ac3b-4325-a55d-38f04521b056",
+                    "inputItems": [
+                      {
+                        "id": "1eb10cc3-bdea-4a6b-8e09-45d937b06a39",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "278fc6ce-3430-41e4-b579-5a2f9889e7f8",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.mapbox.com/bites/00145/#12/",
+                      "Longitude": "/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "window15",
+                    "submitValue": "Map Box",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "879ab820-9b0a-45af-9925-86d8b2d21dfb",
+                    "inputItems": [
+                      {
+                        "id": "96054674-bb88-4b3c-9324-f7e11c3cae95",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "2e76061c-a6eb-4e72-af7c-f64537cdc529",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.geosearchtool.com/?q=&la=",
+                      "Longitude": "&lo=",
+                      "Latitude2": "&lr=1km&tw=any&cl=&sl=",
+                      "Longitude2": ",%20",
+                      "EndPoint": "&lr=1km&tw=any&cl=&eo=false&loo=false&cco=false&zl=20"
+                    },
+                    "dual": true,
+                    "urlSecondItem": "window16",
+                    "submitValue": "YouTube",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "92054a12-1e01-407a-83a0-2df2da2ff636",
+                    "inputItems": [
+                      {
+                        "id": "a763d0a7-1dc5-4578-9f30-c43d1abfa73b",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "35d75699-f889-4475-a98b-39ec8551a5a9",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.facebook.com/livemap/#@",
+                      "Longitude": ",",
+                      "EndPoint": ",10z"
+                    },
+                    "urlSecondItem": "windowt",
+                    "submitValue": "Facebook Live",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "f1bac0fe-9d75-44ff-8d7f-272047e3bea6",
+                    "inputItems": [
+                      {
+                        "id": "f230ebac-f06e-4f48-9c91-dae32fadc286",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "283b18ee-7deb-4ab3-aacf-e4cce732ed13",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://www.periscopemap.live/?ll=",
+                      "Longitude": ",",
+                      "EndPoint": "&zoom=15"
+                    },
+                    "urlSecondItem": "window17",
+                    "submitValue": "Periscope",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "0601fa8f-6758-42ff-ad94-18586901a7d6",
+                    "inputItems": [
+                      {
+                        "id": "72057824-8161-415a-b7c2-e2e1fdbdad63",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "abe7955a-cdae-4645-bf55-08721a5cf58b",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://search.descarteslabs.com/?layer=naip_v2_rgb_2014-2015#lat=",
+                      "Longitude": "&lng=",
+                      "EndPoint": "&skipTut=true&zoom=17"
+                    },
+                    "urlSecondItem": "window18",
+                    "submitValue": "Descartes",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "5c08bc1c-95ed-4e18-a400-8cd52241b8f7",
+                    "inputItems": [
+                      {
+                        "id": "b023a908-c3ba-4f8f-acdf-5444b80e4f95",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "0680cc9f-4297-444c-ae79-cd599b24dfa5",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://www.mapillary.com/app/?lat=",
+                      "Longitude": "&lng=",
+                      "EndPoint": "&z=20&p=&mapStyle=mapbox_satellite"
+                    },
+                    "urlSecondItem": "window19",
+                    "submitValue": "Mapillary",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "f3c5e09a-8b70-4dae-a1a9-d362946c7fe5",
+                    "inputItems": [
+                      {
+                        "id": "2881d86b-dbf2-4890-9e40-5bb3b0fdef61",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "6aac813c-92f9-4242-a893-ecb2be263be1",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "http://openstreetcam.org/map/@",
+                      "Longitude": ",",
+                      "EndPoint": ",18z"
+                    },
+                    "urlSecondItem": "window21",
+                    "submitValue": "OpenStreetCams",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "f3c67483-9f27-4765-977c-a9b6eb9b7ffe",
+                    "inputItems": [
+                      {
+                        "id": "098f0a7b-30ef-4e45-9aec-08bab4e9a5e7",
+                        "name": "Latitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "f2e969dd-245e-4872-8163-2160a7dfd764",
+                        "name": "Longitude",
+                        "type": "text",
+                        "size": "8",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": {
+                      "Latitude": "https://map.snapchat.com/@",
+                      "Longitude": ",",
+                      "EndPoint": ",18z"
+                    },
+                    "urlSecondItem": "windowv",
+                    "submitValue": "SnapMap",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Mapping Search Tool By LatLng",
+                    "isSubmitAll": true
                   }
                 ]
               }

@@ -97,10 +97,18 @@ export default withFormik({
     const arrVal = Object.keys(values);
     arrVal.map((key, i) => {
       url = url + Props.submitUrl[key] + values[key];
-      if (arrVal.length - 1 === i) {
+      if (!Props.dual && arrVal.length - 1 === i) {
         url = url + Props.submitUrl.EndPoint;
       }
     });
+    if (Props.dual) {
+      arrVal.map((key, i) => {
+        url = url + Props.submitUrl[key + "2"] + values[key];
+        if (Props.dual && arrVal.length - 1 === i) {
+          url = url + Props.submitUrl.EndPoint;
+        }
+      });
+    }
     if (Props.onSubmit === "submitUrl") {
       window.open(url, Props.urlSecondItem);
     }

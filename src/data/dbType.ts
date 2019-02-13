@@ -42,6 +42,7 @@ export interface Item {
   name?: string;
   url?: string;
   target?: string;
+  dual?: boolean;
 }
 
 export interface SubmitUrl {
@@ -147,6 +148,7 @@ export interface ISearchItem {
   isSubmitAll: boolean;
   description?: string;
   breaking?: boolean;
+  dual?: boolean;
 }
 
 export interface IResourcePage extends ISubItem {
