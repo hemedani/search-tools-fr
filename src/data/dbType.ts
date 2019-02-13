@@ -42,6 +42,7 @@ export interface Item {
   name?: string;
   url?: string;
   target?: string;
+  lead?: string;
   dual?: boolean;
 }
 
@@ -84,6 +85,11 @@ export interface SubmitUrl {
   Gravatar?: string;
   GoogleCal?: string;
   "Find User Number"?: string;
+  "Text Search"?: string;
+  "Title Search"?: string;
+  "User Search"?: string;
+  "User Archive I"?: string;
+  "User Archive II"?: string;
   number?: string;
   Street?: string;
   City?: string;
@@ -91,13 +97,15 @@ export interface SubmitUrl {
   Zip?: string;
   Latitude?: string;
   Longitude?: string;
+  Latitude2?: string;
+  Longitude2?: string;
 }
 
 export interface InputItem {
   id: string;
   name: string;
   type: string;
-  isPapulate: boolean;
+  isPapulate?: boolean;
   size?: string;
 }
 
@@ -149,6 +157,7 @@ export interface ISearchItem {
   description?: string;
   breaking?: boolean;
   dual?: boolean;
+  lead?: string;
 }
 
 export interface IResourcePage extends ISubItem {

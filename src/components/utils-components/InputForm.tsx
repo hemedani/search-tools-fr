@@ -53,31 +53,35 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
       inputItems,
       submitValue,
       description,
-      breaking
+      breaking,
+      lead
     } = this.props;
     return (
-      <form className={cn("input-form", { "break-inp": breaking })} onSubmit={handleSubmit}>
-        {inputItems.map(inp => (
-          <input
-            className="input-text"
-            key={inp.id}
-            type={inp.type}
-            name={inp.name}
-            placeholder={inp.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values[inp.name]}
-            style={inp.size ? { width: inp.size + "rem" } : { width: "20rem" }}
-          />
-          // {errors.inp.email && touched.email && errors.email}
-        ))}
-        <div className="btn-all-center">
-          <button type="submit" className="sbmt-btn inp-btn i-rod last-child">
-            {submitValue}
-          </button>
-          {description && <p>{description}</p>}
-        </div>
-      </form>
+      <div className="inp-section-wrapper">
+        {lead && <div className="inp-lead">{lead}</div>}
+        <form className={cn("input-form", { "break-inp": breaking })} onSubmit={handleSubmit}>
+          {inputItems.map(inp => (
+            <input
+              className="input-text"
+              key={inp.id}
+              type={inp.type}
+              name={inp.name}
+              placeholder={inp.name}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values[inp.name]}
+              style={inp.size ? { width: inp.size + "rem" } : { width: "20rem" }}
+            />
+            // {errors.inp.email && touched.email && errors.email}
+          ))}
+          <div className="btn-all-center">
+            <button type="submit" className="sbmt-btn inp-btn i-rod last-child">
+              {submitValue}
+            </button>
+            {description && <p>{description}</p>}
+          </div>
+        </form>
+      </div>
     );
   }
 }

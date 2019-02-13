@@ -18,7 +18,9 @@
                 "id": "1c878021-479d-4b0c-ac7e-d12e8fe92f53",
                 "title": "Search Engines Tool",
                 "hasPapulate": true,
-                "papulateItem": { "papulate": "" },
+                "papulateItem": {
+                  "papulate": ""
+                },
                 "items": [
                   {
                     "id": "9ec8d292-0458-425e-a559-b245825cbf0d",
@@ -345,8 +347,9 @@
                 "id": "02223a5a-59a1-4d58-b643-c3c6be0faf20",
                 "title": "TOR Search Tool (Must be on TOR)",
                 "hasPapulate": true,
-
-                "papulateItem": { "papulate": "" },
+                "papulateItem": {
+                  "papulate": ""
+                },
                 "items": [
                   {
                     "id": "ad5bf405-138c-4840-b1c5-6df602c48b3d",
@@ -501,8 +504,9 @@
                 "id": "349e6c6d-b5e1-4636-9c7b-97db75a85623",
                 "title": "Email Search Tool",
                 "hasPapulate": true,
-
-                "papulateItem": { "papulate": "" },
+                "papulateItem": {
+                  "papulate": ""
+                },
                 "items": [
                   {
                     "id": "55ffbf6f-8be0-4fd0-a4f3-c5303abe1ad8",
@@ -986,8 +990,9 @@
                 "id": "c261fe3d-4fcc-474c-9f70-8a046491ebac",
                 "title": "Facebook Profile Search (Must be logged in)",
                 "hasPapulate": true,
-
-                "papulateItem": { "papulate": "" },
+                "papulateItem": {
+                  "papulate": ""
+                },
                 "items": [
                   {
                     "id": "b446f8e1-36e9-4f2b-9091-10516f51dece",
@@ -1365,7 +1370,327 @@
         "icon": "ios-chatbubbles",
         "subItem": [
           {
-            "id": "4fc728fa-71a7-4e59-897c-2f587e079f7d",
+            "id": "4c632940-3928-460b-b673-f5695fd9043c",
+            "title": "Online Communities Tool",
+            "pageType": "SearchPage",
+            "section": [
+              {
+                "id": "7183708b-eb45-4227-a0e2-ef3051ceefed",
+                "title": "Online Communities Search Tool",
+                "hasPapulate": false,
+                "items": [
+                  {
+                    "id": "7f79bb2a-3838-4231-913a-fcfb262a6df0",
+                    "lead": "Reddit:",
+                    "submitUrl": {
+                      "Text Search": "https://www.reddit.com/search?q=",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip2window",
+                    "submitValue": "Text Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "dc1eeacb-ee47-43ec-8010-dd32d4bfa60e",
+                        "name": "Text Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "d2444fd1-b747-412b-82fb-faf08e107577",
+                    "submitUrl": {
+                      "Title Search": "https://www.reddit.com/search?q=title:",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip6window",
+                    "submitValue": "Title Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "a5c2f714-ce37-431e-b5c5-e4da04f7a96b",
+                        "name": "Title Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "2ba9947e-8fbc-42a7-8aba-3971330bfd71",
+                    "submitUrl": {
+                      "User Search": "https://www.reddit.com/user/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip3window",
+                    "submitValue": "User Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "105da27d-db38-458a-92c3-99d7788afcb0",
+                        "name": "User Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c88a3f8c-0b43-4da8-b327-36f9b1291a84",
+                    "submitUrl": {
+                      "User Archive I": "https://web.archive.org/web/*/https://www.reddit.com/user/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip20window",
+                    "submitValue": "User Archive I",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "e626ed87-5278-45de-a921-ff758e6f9fb1",
+                        "name": "User Archive I",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "bf5a10e7-3381-40c7-8870-f866fb2d3227",
+                    "submitUrl": {
+                      "User Archive II": "http://archive.is/https://www.reddit.com/user/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip31window",
+                    "submitValue": "User Archive II",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "80d08652-cac8-402e-95eb-28f91150558c",
+                        "name": "User Archive II",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "42dec76b-cc91-4abb-ac6e-80bdf6e5306d",
+                    "submitUrl": {
+                      "User Analytics": "https://snoopsnoo.com/u/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip40window",
+                    "submitValue": "User Analytics",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "ebcad0f3-3f08-493d-9846-daba0c02d131",
+                        "name": "User Analytics",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1a9f3bed-6af0-48e4-97e7-a7dafa3e0f60",
+                    "submitUrl": {
+                      "User Cache": "https://webcache.googleusercontent.com/search?q=cache:https://www.reddit.com/user/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip28window",
+                    "submitValue": "User Cache",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "076ffa69-66d0-49e1-85a1-d2ff04b869c0",
+                        "name": "User Cache",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "358fae7b-6854-4075-bbaf-db29ad85eb8e",
+                    "submitUrl": {
+                      "Pushshift Cache": "https://api.pushshift.io/reddit/search/comment/?author=",
+                      "EndPoint": "&sort=asc&size=1000"
+                    },
+                    "urlSecondItem": "ip41window",
+                    "submitValue": "Pushshift Cache",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "9ae9e75b-c2c0-4d73-b07d-4a33863bf358",
+                        "name": "Pushshift Cache",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "6f6dd759-663d-49f7-bb8a-a1734d8935fc",
+                    "submitUrl": {
+                      "Pushshift Cache": "https://api.pushshift.io/reddit/search/comment/?q=",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip42window",
+                    "submitValue": "Pushshift Cache",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "a2b08037-7390-4e1d-b446-f63535832905",
+                        "name": "Pushshift Cache",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5958561b-f20d-4cdf-a82c-cfa600fef3c3",
+                    "submitUrl": {
+                      "Domain Search": "https://www.reddit.com/search?q=site:",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip4window",
+                    "submitValue": "Domain Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "875598b0-5e55-40a6-ac10-f919e5962d2c",
+                        "name": "Domain Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "36062115-5a96-44ea-8398-d5f378d284d3",
+                    "submitUrl": {
+                      "Subreddit Search": "https://www.reddit.com/subreddits/search?q=",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip7window",
+                    "submitValue": "Subreddit Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "8ba2a5fa-5052-442e-a0e5-c86b8e3867c7",
+                        "name": "Subreddit Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "70b64b36-1613-4f72-a7b7-5aca2d02f36d",
+                    "submitUrl": {
+                      "Imgur Search": "https://imgur.com/r/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip15window",
+                    "submitValue": "Imgur Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "84514055-d5f2-4ff9-8bec-45fc265d19b3",
+                        "name": "Imgur Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "a3057271-d77f-4535-b6d1-879acc124c4f",
+                    "submitUrl": {
+                      "Karma Image": "http://www.karmadecay.com/",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip34window",
+                    "submitValue": "Karma Image",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "f8ea0de5-bde0-43f2-b09f-f5a2c823fcac",
+                        "name": "Karma Image",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c9b5cd5e-7d0a-437f-aed4-2a16c2964002",
+                    "submitUrl": {
+                      "NSFW Image": "http://i.rarchives.com/?url=",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip19window",
+                    "submitValue": "NSFW Image",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "f3c9965c-ffdd-4ff4-8965-97e19fc3c503",
+                        "name": "NSFW Image",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5b94390b-4126-4918-b2b4-c17f55b41548",
+                    "submitUrl": {
+                      "Google Search": "https://www.google.com/search?q=site:reddit.com ",
+                      "EndPoint": ""
+                    },
+                    "urlSecondItem": "ip5window",
+                    "submitValue": "Google Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "f21f9e84-e304-416c-894f-44cab89900fe",
+                        "name": "Google Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "07c104c8-01aa-4d74-b0cc-521250ba4f25",
+                    "lead": "Hacker News (YCombinator):",
+                    "submitUrl": {
+                      "Text Search": "https://hn.algolia.com/?query=",
+                      "EndPoint": "&sort=byDate&prefix&page=0&dateRange=all&type=all"
+                    },
+                    "urlSecondItem": "ip8window",
+                    "submitValue": "Text Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "66fa0c14-e87a-4938-bed3-f1fede2ef5ac",
+                        "name": "Text Search",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8b7b81e7-c8c9-4ee3-9398-7ccdcb90ad7c",
             "title": "Online Communities Resources",
             "pageType": "ResourcePage",
             "section": [
@@ -1401,7 +1726,13 @@
                 "id": "114ee7eb-4f4e-4ec0-aa98-d5e331f28da8",
                 "title": "Mapping Search Tool By Address",
                 "hasPapulate": true,
-                "papulateItem": { "number": "", "Street": "", "City": "", "State": "", "Zip": "" },
+                "papulateItem": {
+                  "number": "",
+                  "Street": "",
+                  "City": "",
+                  "State": "",
+                  "Zip": ""
+                },
                 "items": [
                   {
                     "id": "a00df5ce-deb5-49c3-9168-a7e9955c8486",
@@ -1625,7 +1956,10 @@
                 "id": "c004b43a-8990-4642-b01c-6a3beb72b14b",
                 "title": "Mapping Search Tool By LatLng",
                 "hasPapulate": true,
-                "papulateItem": { "Latitude": "", "Longitude": "" },
+                "papulateItem": {
+                  "Latitude": "",
+                  "Longitude": ""
+                },
                 "items": [
                   {
                     "id": "4a0e862a-1b71-4baa-974a-5930756f9c09",
@@ -2401,9 +2735,296 @@
                 "hasPapulate": false,
                 "items": [
                   {
-                    "id": "40f4b482-a0a1-4cff-962b-c029f51b307e",
-                    "name": "Google",
-                    "url": "http://google.com",
+                    "id": "241f511f-e382-47dd-a1aa-8db02cd0ce90",
+                    "name": "IntelTechniques Maps Tool",
+                    "url": "http://inteltechniques.com/osint/maps.html",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "be325c2e-f991-4b54-bb61-41635fadc1cc",
+                    "name": "Google Maps",
+                    "url": "http://maps.google.com/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "7a66fbb4-a0e5-4c92-ab28-2edf92297ca4",
+                    "name": "Google Classic Maps",
+                    "url": "http://gokml.net/maps#ll=33.467074,-99.528235&z=10&t=h",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "02bcf167-d512-4e68-a1f1-23b097b7ea87",
+                    "name": "Google Street View",
+                    "url": "https://www.blackbookonline.info/google-street-view.aspx",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "a2a138f2-109a-4935-a1ca-0ca64f506240",
+                    "name": "Instant Street View",
+                    "url": "http://qsview.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "942235ca-d769-4175-986d-5660a9dc42bf",
+                    "name": "Street View Player",
+                    "url": "http://brianfolts.com/driver",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "e059ddde-e754-4033-9f1b-c089ee62c5ea",
+                    "name": "Google Map Alerts",
+                    "url": "http://followyourworld.appspot.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "e5c9e01e-2114-4026-b019-b59f6ae36986",
+                    "name": "LandSat Viewer",
+                    "url": "http://landsatlook.usgs.gov/viewer.html",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "75ca515e-1867-46fd-a0e9-83f5afba4ecf",
+                    "name": "ArcGIS Viewer",
+                    "url": "https://livingatlas.arcgis.com/wayback/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "a280def9-dc7c-46c5-8951-0ab0fac461c1",
+                    "name": "GPSVisualizer",
+                    "url": "http://gpsvisualizer.com/geocode",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "8ff10893-9e23-4b63-ae31-f99e9b2a8598",
+                    "name": "Bing Maps",
+                    "url": "http://bing.com/maps",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "cc1a82ca-c248-4959-94ca-630405813311",
+                    "name": "Zoom Maps",
+                    "url": "http://zoom.earth",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "ec250268-0920-4832-9e22-88fc077d513f",
+                    "name": "Mapillary Maps",
+                    "url": "http://mapillary.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "4cd59114-e535-40a3-a8de-459b9f8d167b",
+                    "name": "OpenStreeCam Maps",
+                    "url": "https://www.openstreetcam.org/map/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "6ef59309-7752-4913-96f4-9b0f3e25117c",
+                    "name": "Yandex Maps",
+                    "url": "http://maps.yandex.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "953fecc4-0984-4c07-8720-21b2328eb5e9",
+                    "name": "Descartes Labs",
+                    "url": "http://search.descarteslabs.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "5eea2add-627b-43e1-af2a-5ff7590baabe",
+                    "name": "World Wayback",
+                    "url": "https://livingatlas.arcgis.com/wayback/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "2b3f4a8f-6a82-4f37-9e64-d34fb4ed25f7",
+                    "name": "Dual Maps",
+                    "url": "http://data.mashedworld.com/dualmaps/map.htm",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "ba89e761-78e6-47c9-9e9c-881ca51680b2",
+                    "name": "Here Maps",
+                    "url": "http://wego.here.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "d7c26cac-7283-41db-96a1-021a33cff167",
+                    "name": "TerraPattern Maps",
+                    "url": "http://terrapattern.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "529c290f-7818-4e36-b77e-3dc13235a76b",
+                    "name": "TerraServer Maps",
+                    "url": "http://terraserver.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "fb745800-e083-4d10-83d0-7d3ce8d3fca2",
+                    "name": "Historic Aerials",
+                    "url": "http://historicaerials.com/mobile/index.php#",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "0074288a-a525-4389-a747-a9c27a7efaf9",
+                    "name": "Land Viewer Aerials",
+                    "url": "https://eos.com/landviewer/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "f5159bcb-309d-486b-876c-6aa4cda67ede",
+                    "name": "Land Viewer Aerials",
+                    "url": "https://eos.com/landviewer/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "ba3f5781-b459-4b36-94c6-51b077e20a62",
+                    "name": "Military Grid System",
+                    "url": "http://dominoc925-pages.appspot.com/mapplets/cs_mgrs.html",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "56e3f336-f4b1-4462-8ed0-25d5e251e8cd",
+                    "name": "Google Earth Overlays",
+                    "url": "http://mgmaps.com/kml/#view",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "a17a6202-4189-43db-a772-9c28458250b0",
+                    "name": "BatchGeo",
+                    "url": "http://batchgeo.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "17a6fd05-4eb8-4e55-922b-e592378a225b",
+                    "name": "My GEO Position",
+                    "url": "http://mygeoposition.com/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "d2665647-9a16-4c6d-8d15-1c8ef0e06435",
+                    "name": "FreeMapTools",
+                    "url": "http://freemaptools.com/radius-around-point.htm",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "d245bf29-1bdb-4877-a413-693fafd7f7ac",
+                    "name": "Google Address",
+                    "url": "http://ctrlq.org/maps/address",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "2f262510-8ff8-414d-ab91-d178648815a1",
+                    "name": "Zillow",
+                    "url": "http://zillow.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "80121dae-2312-4e12-aa70-ef6d38c9dafd",
+                    "name": "Rehold",
+                    "url": "http://rehold.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "c9eee5c6-fd41-4e8a-a163-160231212857",
+                    "name": "Hometry",
+                    "url": "https://homemetry.com/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "e8a1bafb-3864-4673-9a31-d6f6fd1a226a",
+                    "name": "Livestream",
+                    "url": "https://livestream.com/watch/search",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "b5488d05-7f48-4853-94f8-13f76e3993db",
+                    "name": "Snap Map",
+                    "url": "https://map.snapchat.com/@37.328527,-121.889597,17.00z",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "d05da9d2-4886-488e-8fd7-f4e2cf5b3578",
+                    "name": "Facebook Live Map",
+                    "url": "https://www.facebook.com/live/discover/map/#@37.300901771,-122.022035465,10z",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "85b9f9ba-0930-4818-b3b5-4a8028470d44",
+                    "name": "Periscope Map",
+                    "url": "http://www.periscopemap.live/?ll=37.3287529,-121.8904396&zoom=15",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "f220323d-2603-482d-922b-8393a089d676",
+                    "name": "TRAVIC",
+                    "url": "https://tracker.geops.ch/",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "f4bbb8b9-cc47-4c75-addc-e1c073e56780",
+                    "name": "Newspaper Map",
+                    "url": "https://newspapermap.com/#@37.38287,-121.9060,13z",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "8db49d33-a600-4976-acea-04393083f8e7",
+                    "name": "Ventusky",
+                    "url": "https://www.ventusky.com/?p=33.21;-78.93;6&l=wind-10m&t=20180916/03",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "a5771e9a-bb1b-45a5-869b-66a097565bf2",
+                    "name": "Onemilliontweetmap",
+                    "url": "https://onemilliontweetmap.com/?center=40.44694705960048,-103.4912109375&zoom=5&search=%23twitchcon2018&timeStep=0&timeSelector=0&hashtag1=&hashtag2=&hashtagBattle=0&timeRange=0&timeRange=25&heatmap=0&sun=0&cluster=NaN",
+                    "target": "_blank",
+                    "itemType": "link"
+                  },
+                  {
+                    "id": "da184227-9bc0-47fa-a806-8bbee2f87f91",
+                    "name": "OmniSci Tweetmap",
+                    "url": "https://www.omnisci.com/demos/tweetmap/",
                     "target": "_blank",
                     "itemType": "link"
                   }
