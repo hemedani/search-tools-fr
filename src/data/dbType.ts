@@ -151,6 +151,8 @@ export interface InputItem {
 
 export interface PapulateItem {
   papulate?: string;
+  "First Name"?: string;
+  "Last Name"?: string;
   number?: string;
   Street?: string;
   City?: string;

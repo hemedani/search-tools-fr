@@ -21,11 +21,12 @@
               "isPapulate": true
             }
           ],
-          "submitUrl": {
-            "Google": "http://google.com/search?q=",
-            "EndPoint": ""
-          },
-          "urlSecondItem": "googlewindow",
+          "submitUrl": [
+            {
+              "url": "http://google.com/search?q=`{Google}`",
+              "urlSecondItem": "googlewindow"
+            }
+          ],
           "submitValue": "Google",
           "itemType": "input",
           "onSubmit": "submitUrl",
