@@ -1,0 +1,38 @@
+{
+  "id": "a2514188-2c24-43df-bc9a-b578e513ee08",
+  "title": "Search Engines Tool",
+  "pageType": "SearchPage",
+  "section": [
+    {
+      "id": "1c878021-479d-4b0c-ac7e-d12e8fe92f53",
+      "title": "Search Engines Tool",
+      "hasPapulate": true,
+      "papulateItem": {
+        "papulate": ""
+      },
+      "items": [
+        {
+          "id": "9ec8d292-0458-425e-a559-b245825cbf0d",
+          "inputItems": [
+            {
+              "id": "f0634ff6-6b2b-40d4-9251-ab181ed1759e",
+              "name": "Google",
+              "type": "text",
+              "isPapulate": true
+            }
+          ],
+          "submitUrl": {
+            "Google": "http://google.com/search?q=",
+            "EndPoint": ""
+          },
+          "urlSecondItem": "googlewindow",
+          "submitValue": "Google",
+          "itemType": "input",
+          "onSubmit": "submitUrl",
+          "inSection": "Search Engines Tool",
+          "isSubmitAll": true
+        }
+      ]
+    }
+  ]
+}

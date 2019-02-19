@@ -32,11 +32,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Google": "http://google.com/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "googlewindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://google.com/search?q=`{Google}`",
+                        "urlSecondItem": "googlewindow"
+                      }
+                    ],
                     "submitValue": "Google",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -53,11 +54,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Google Date": "http://google.com/search?q=",
-                      "EndPoint": "&tbs=cdr:1,cd_min:1/1/0,sbd:1"
-                    },
-                    "urlSecondItem": "google2window",
+                    "submitUrl": [
+                      {
+                        "url": "http://google.com/search?q=`{Google Date}`&tbs=cdr:1,cd_min:1/1/0,sbd:1",
+                        "urlSecondItem": "google2window"
+                      }
+                    ],
                     "submitValue": "Google Date",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -74,11 +76,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Bing": "http://bing.com/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "bingwindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://bing.com/search?q=`{Bing}`",
+                        "urlSecondItem": "bingwindow"
+                      }
+                    ],
                     "submitValue": "Bing",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -95,11 +98,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Yahoo": "http://search.yahoo.com/search?p=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "yahoowindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://search.yahoo.com/search?p=`{Yahoo}`",
+                        "urlSecondItem": "yahoowindow"
+                      }
+                    ],
                     "submitValue": "Yahoo",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -116,11 +120,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Searx": "https://searx.me/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "searxwindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://searx.me/?q=`{Searx}`",
+                        "urlSecondItem": "searxwindow"
+                      }
+                    ],
                     "submitValue": "Searx",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -137,11 +142,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Yandex": "http://www.yandex.com/yandsearch?text=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "yandexwindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.yandex.com/yandsearch?text=`{Yandex}`",
+                        "urlSecondItem": "yandexwindow"
+                      }
+                    ],
                     "submitValue": "Yandex",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -158,11 +164,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Baidu": "http://baidu.com/s?wd=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "bdwindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://baidu.com/s?wd=`{Baidu}`",
+                        "urlSecondItem": "bdwindow"
+                      }
+                    ],
                     "submitValue": "Baidu",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -179,11 +186,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Exalead": "http://www.exalead.com/search/web/results/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "exawindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.exalead.com/search/web/results/?q=`{Exalead}`",
+                        "urlSecondItem": "exawindow"
+                      }
+                    ],
                     "submitValue": "Exalead",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -200,11 +208,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Duck Go": "https://duckduckgo.com/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ddgwindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://duckduckgo.com/?q=`{Duck Go}`",
+                        "urlSecondItem": "ddgwindow"
+                      }
+                    ],
                     "submitValue": "Duck Go",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -221,11 +230,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "StartPage": "https://startpage.com/do/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "spwindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://startpage.com/do/search?q=`{StartPage}`",
+                        "urlSecondItem": "spwindow"
+                      }
+                    ],
                     "submitValue": "StartPage",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -242,11 +252,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Newsgroups": "https://groups.google.com/forum/?fromgroups#!search/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "gnwswindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://groups.google.com/forum/?fromgroups#!search/`{Newsgroups}`",
+                        "urlSecondItem": "gnwswindow"
+                      }
+                    ],
                     "submitValue": "Newsgroups",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -263,12 +274,304 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Blogs": "https://www.google.com/search?q=",
-                      "EndPoint": "&tbm=nws&tbs=nrt:b"
-                    },
-                    "urlSecondItem": "gblgwindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=`{Blogs}`&tbm=nws&tbs=nrt:b",
+                        "urlSecondItem": "gblgwindow"
+                      }
+                    ],
                     "submitValue": "Blogs",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "ac20bb03-724c-41ad-93ac-30c13e76d1c5",
+                    "inputItems": [
+                      {
+                        "id": "ad592393-2f44-4ec6-a64a-dbf05fe13b29",
+                        "name": "FTP Servers",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/?gws_rd=ssl#q=inurl:ftp+-inurl:(http%7Chttps)+`{FTP Servers}`",
+                        "urlSecondItem": "ftpwindow"
+                      }
+                    ],
+                    "submitValue": "FTP Servers",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "0f45bd22-6bfd-4031-97b9-b465d96b71f2",
+                    "inputItems": [
+                      {
+                        "id": "a208a7d5-8d93-446f-b72f-62afa707b4e1",
+                        "name": "Index Of",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=intitle%3Aindex.of+`{Index Of}`",
+                        "urlSecondItem": "7bwindow"
+                      }
+                    ],
+                    "submitValue": "Index Of",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "b0ded259-c7d1-41a8-86b5-ab2644e66905",
+                    "inputItems": [
+                      {
+                        "id": "e5b4dc66-838d-4345-a0c9-1ac70af50309",
+                        "name": "Scholar",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://scholar.google.com/scholar?&q=`{Scholar}`",
+                        "urlSecondItem": "gschwindow"
+                      }
+                    ],
+                    "submitValue": "Scholar",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "dabb395e-76d7-4123-8bf1-35030e0f9862",
+                    "inputItems": [
+                      {
+                        "id": "5ef3f056-0a15-4583-8789-00681943f6de",
+                        "name": "Patents",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://patents.google.com/?q=`{Patents}`",
+                        "urlSecondItem": "gpatwindow"
+                      }
+                    ],
+                    "submitValue": "Patents",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "be0a9e11-68a4-476c-9a8a-a250711899a2",
+                    "inputItems": [
+                      {
+                        "id": "9f750773-29f9-4d6b-94d7-836f658497a6",
+                        "name": "News",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://www.google.com/search?tbm=nws&q=`{News}`",
+                        "urlSecondItem": "gnewswindow"
+                      }
+                    ],
+                    "submitValue": "News",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "f7f09a34-234f-4e97-9356-f9abba39f581",
+                    "inputItems": [
+                      {
+                        "id": "6bd8c627-7edd-4c18-86ee-6979f0bcef62",
+                        "name": "Disqus",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://www.google.com/search?q=`{Disqus}`+%22disqus%22+%221..999+comments%22",
+                        "urlSecondItem": "gdiscuswindow"
+                      }
+                    ],
+                    "submitValue": "Disqus",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "dff45495-62be-4d48-b71c-fdd90f0541e7",
+                    "inputItems": [
+                      {
+                        "id": "9a1723da-e15c-4227-ba92-50bc491ca977",
+                        "name": "Newspapers",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=`{Newspapers}`%20site:news.google.com/newspapers",
+                        "urlSecondItem": "gnewspaperswindow"
+                      }
+                    ],
+                    "submitValue": "Newspapers",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "6d1c8205-e901-4a3c-8a80-3cd87b01a78c",
+                    "inputItems": [
+                      {
+                        "id": "ce5b2281-8ad2-4431-9bbe-65ffec6f3be6",
+                        "name": "Wayback",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://web-beta.archive.org/#/search/`{Wayback}`",
+                        "urlSecondItem": "waybackwindow"
+                      }
+                    ],
+                    "submitValue": "Wayback",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "312713c5-0ab4-4123-9b85-cdf1a02b848a",
+                    "inputItems": [
+                      {
+                        "id": "ee131624-3907-4871-a01b-87f12709dcfb",
+                        "name": "Qwant",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.qwant.com/?q=`{Qwant}`",
+                        "urlSecondItem": "qwwindow"
+                      }
+                    ],
+                    "submitValue": "Qwant",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "a29424e4-ee8f-45e6-9c0e-bb1d4ce6d2a2",
+                    "inputItems": [
+                      {
+                        "id": "fdda59ef-4c86-4dd1-a4b4-044a225be598",
+                        "name": "Ahmia",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Tor Search"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://ahmia.fi/search/?q=`{Ahmia}`",
+                        "urlSecondItem": "qwwindow"
+                      }
+                    ],
+                    "submitValue": "Ahmia",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true,
+                    "breaking": true
+                  },
+                  {
+                    "id": "9cbf9ea9-da91-416c-bd44-734f958f83fe",
+                    "inputItems": [
+                      {
+                        "id": "7d480a07-9a9a-4922-82db-8a73ffca55b7",
+                        "name": "Onion Cab",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Tor Search"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://onion.cab/?a=search&q=`{Onion Cab}`",
+                        "urlSecondItem": "q22window"
+                      }
+                    ],
+                    "submitValue": "Onion Cab",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "b159c698-aee7-4d0f-b016-c85cd1601fb2",
+                    "inputItems": [
+                      {
+                        "id": "9a96588d-9dcc-4a9a-b285-1c905f94081e",
+                        "name": "Not Evil",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Tor Search"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://hss3uro2hsxfogfq.onion.to/index.php?q=`{Not Evil}`",
+                        "urlSecondItem": "q23window"
+                      }
+                    ],
+                    "submitValue": "Not Evil",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "6baf019c-cb8f-478c-8d9f-533e7f0426ed",
+                    "inputItems": [
+                      {
+                        "id": "4b9b51f2-cef5-4dea-bf8e-91119a5721e0",
+                        "name": "Torch",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Tor Search"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://xmh57jrzrnw6insl.onion.to/4a1f6b371c/search.cgi?q=`{Torch}`",
+                        "urlSecondItem": "q24window"
+                      }
+                    ],
+                    "submitValue": "Torch",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
                     "inSection": "Search Engines Tool",
@@ -284,11 +587,12 @@
                         "isPapulate": false
                       }
                     ],
-                    "submitUrl": {
-                      "Search Newspaper": "https://www.google.com/search?q=site%3Anewspaperarchive.com+",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "np1window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site%3Anewspaperarchive.com+`{Search Newspaper}`",
+                        "urlSecondItem": "np1window"
+                      }
+                    ],
                     "submitValue": "Search Newspaper",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -307,11 +611,12 @@
                         "isPapulate": false
                       }
                     ],
-                    "submitUrl": {
-                      "Newspaper Archive": "http://newspaperarchive.com/tags/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "np1awindow",
+                    "submitUrl": [
+                      {
+                        "url": "http://newspaperarchive.com/tags/`{Newspaper Archive}`",
+                        "urlSecondItem": "np1awindow"
+                      }
+                    ],
                     "submitValue": "Newspaper Archive",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -329,11 +634,12 @@
                         "isPapulate": false
                       }
                     ],
-                    "submitUrl": {
-                      "Newspaper Collection": "https://www.google.com/search?q=site%3Anewspaperarchive.com+%22",
-                      "EndPoint": "%22+%22Every+newspaper+in+the+database+is+fully+searchable+by+keyword%22"
-                    },
-                    "urlSecondItem": "np1awindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site%3Anewspaperarchive.com+%22`{Newspaper Collection}`%22+%22Every+newspaper+in+the+database+is+fully+searchable+by+keyword%22",
+                        "urlSecondItem": "np1awindow"
+                      }
+                    ],
                     "submitValue": "Newspaper Collection",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -361,11 +667,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Not Evil": "http://hss3uro2hsxfogfq.onion/index.php?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "q23window",
+                    "submitUrl": [
+                      {
+                        "url": "http://hss3uro2hsxfogfq.onion/index.php?q=`{Not Evil}`",
+                        "urlSecondItem": "q23window"
+                      }
+                    ],
                     "submitValue": "Not Evil",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -382,11 +689,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Visitor": "http://visitorfi5kl7q7i.onion/search/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Visitor",
+                    "submitUrl": [
+                      {
+                        "url": "http://visitorfi5kl7q7i.onion/search/?q=`{Visitor}`",
+                        "urlSecondItem": "Visitor"
+                      }
+                    ],
                     "submitValue": "Visitor",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -403,11 +711,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Torch": "http://xmh57jrzrnw6insl.onion/4a1f6b371c/search.cgi?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Torch",
+                    "submitUrl": [
+                      {
+                        "url": "http://xmh57jrzrnw6insl.onion/4a1f6b371c/search.cgi?q=`{Torch}`",
+                        "urlSecondItem": "Torch"
+                      }
+                    ],
                     "submitValue": "Torch",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -518,11 +827,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "BreachesLeaks": "https://inteltechniques.com/osint/iframe/leaks.hibp.php?username=",
-                      "EndPoint": "?truncateResponse=true"
-                    },
-                    "urlSecondItem": "breachesLeakswindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.hibp.php?username=`{BreachesLeaks}`?truncateResponse=true",
+                        "urlSecondItem": "breachesLeakswindow"
+                      }
+                    ],
                     "submitValue": "BreachesLeaks",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -539,11 +849,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Pastes": "https://inteltechniques.com/osint/iframe/leaks.hibp2.php?username=",
-                      "EndPoint": "?truncateResponse=true"
-                    },
-                    "urlSecondItem": "Pasteswindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.hibp2.php?username=`{Pastes}`?truncateResponse=true",
+                        "urlSecondItem": "Pasteswindow"
+                      }
+                    ],
                     "submitValue": "Pastes",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -560,11 +871,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "PSBDMP": "https://psbdmp.ws/api/search/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "PSBDMPwindows",
+                    "submitUrl": [
+                      {
+                        "url": "https://psbdmp.ws/api/search/`{PSBDMP}`",
+                        "urlSecondItem": "PSBDMPwindows"
+                      }
+                    ],
                     "submitValue": "PSBDMP",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -581,11 +893,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Verifier": "https://api.trumail.io/v2/lookups/json?email=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Verifierwindows",
+                    "submitUrl": [
+                      {
+                        "url": "https://api.trumail.io/v2/lookups/json?email=`{Verifier}`",
+                        "urlSecondItem": "Verifierwindows"
+                      }
+                    ],
                     "submitValue": "Verifier",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -602,11 +915,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Dehashed": "https://dehashed.com/search?query=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Dehashed",
+                    "submitUrl": [
+                      {
+                        "url": "https://dehashed.com/search?query=`{Dehashed}`",
+                        "urlSecondItem": "Dehashed"
+                      }
+                    ],
                     "submitValue": "Dehashed",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -623,11 +937,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "IntelX": "https://intelx.io/?s=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "IntelX",
+                    "submitUrl": [
+                      {
+                        "url": "https://intelx.io/?s=`{IntelX}`",
+                        "urlSecondItem": "IntelX"
+                      }
+                    ],
                     "submitValue": "IntelX",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -644,11 +959,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "HunterVerify": "https://hunter.io/email-verifier/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "HunterVerify",
+                    "submitUrl": [
+                      {
+                        "url": "https://hunter.io/email-verifier/`{HunterVerify}`",
+                        "urlSecondItem": "HunterVerify"
+                      }
+                    ],
                     "submitValue": "HunterVerify",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -665,11 +981,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Google": "http://google.com/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Google",
+                    "submitUrl": [
+                      {
+                        "url": "http://google.com/search?q=`{Google}`",
+                        "urlSecondItem": "Google"
+                      }
+                    ],
                     "submitValue": "Google",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -686,11 +1003,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Bing": "http://bing.com/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Bing",
+                    "submitUrl": [
+                      {
+                        "url": "http://bing.com/search?q=`{Bing}`",
+                        "urlSecondItem": "Bing"
+                      }
+                    ],
                     "submitValue": "Bing",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -707,11 +1025,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "LinkedIn": "https://www.linkedin.com/sales/gmail/profile/viewByEmail/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "LinkedIn",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.linkedin.com/sales/gmail/profile/viewByEmail/`{LinkedIn}`",
+                        "urlSecondItem": "LinkedIn"
+                      }
+                    ],
                     "submitValue": "LinkedIn",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -728,11 +1047,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Pipl": "https://pipl.com/search/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Pipl",
+                    "submitUrl": [
+                      {
+                        "url": "https://pipl.com/search/?q=`{Pipl}`",
+                        "urlSecondItem": "Pipl"
+                      }
+                    ],
                     "submitValue": "Pipl",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -749,11 +1069,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "ThatsThem": "https://thatsthem.com/email/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ThatsThem",
+                    "submitUrl": [
+                      {
+                        "url": "https://thatsthem.com/email/`{ThatsThem}`",
+                        "urlSecondItem": "ThatsThem"
+                      }
+                    ],
                     "submitValue": "ThatsThem",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -770,11 +1091,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "SpyTox": "https://www.spytox.com/email-search/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "SpyTox",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.spytox.com/email-search/`{SpyTox}`",
+                        "urlSecondItem": "SpyTox"
+                      }
+                    ],
                     "submitValue": "SpyTox",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -791,11 +1113,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "OCCRP": "https://data.occrp.org/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "OCCRP",
+                    "submitUrl": [
+                      {
+                        "url": "https://data.occrp.org/search?q=`{OCCRP}`",
+                        "urlSecondItem": "OCCRP"
+                      }
+                    ],
                     "submitValue": "OCCRP",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -812,11 +1135,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Newsgroups": "https://groups.google.com/forum/?fromgroups#!search/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Newsgroups",
+                    "submitUrl": [
+                      {
+                        "url": "https://groups.google.com/forum/?fromgroups#!search/`{Newsgroups}`",
+                        "urlSecondItem": "Newsgroups"
+                      }
+                    ],
                     "submitValue": "Newsgroups",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -833,11 +1157,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "FTP Servers": "https://www.google.com/?gws_rd=ssl#q=inurl:ftp+-inurl:(http%7Chttps)+",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "FTP Servers",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/?gws_rd=ssl#q=inurl:ftp+-inurl:(http%7Chttps)+`{FTP Servers}`",
+                        "urlSecondItem": "FTP Servers"
+                      }
+                    ],
                     "submitValue": "FTP Servers",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -854,11 +1179,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "DomainData": "http://domainbigdata.com/email/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "DomainData",
+                    "submitUrl": [
+                      {
+                        "url": "http://domainbigdata.com/email/`{DomainData}`",
+                        "urlSecondItem": "DomainData"
+                      }
+                    ],
                     "submitValue": "DomainData",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -875,11 +1201,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "SecurityTrails": "https://securitytrails.com/list/by-email/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "SecurityTrails",
+                    "submitUrl": [
+                      {
+                        "url": "https://securitytrails.com/list/by-email/`{SecurityTrails}`",
+                        "urlSecondItem": "SecurityTrails"
+                      }
+                    ],
                     "submitValue": "SecurityTrails",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -896,11 +1223,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "AnalyzeID": "http://analyzeid.com/?email=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "AnalyzeID",
+                    "submitUrl": [
+                      {
+                        "url": "http://analyzeid.com/?email=`{AnalyzeID}`",
+                        "urlSecondItem": "AnalyzeID"
+                      }
+                    ],
                     "submitValue": "AnalyzeID",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -917,11 +1245,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Gravatar": "https://en.gravatar.com/site/check/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "Gravatar",
+                    "submitUrl": [
+                      {
+                        "url": "https://en.gravatar.com/site/check/`{Gravatar}`",
+                        "urlSecondItem": "Gravatar"
+                      }
+                    ],
                     "submitValue": "Gravatar",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -938,11 +1267,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "GoogleCal": "https://calendar.google.com/calendar/embed?src=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "GoogleCal",
+                    "submitUrl": [
+                      {
+                        "url": "https://calendar.google.com/calendar/embed?src=`{GoogleCal}`",
+                        "urlSecondItem": "GoogleCal"
+                      }
+                    ],
                     "submitValue": "GoogleCal",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1004,11 +1334,12 @@
                         "isPapulate": false
                       }
                     ],
-                    "submitUrl": {
-                      "Find User Number": "https://inteltechniques.com/osint/iframe/fb.graph.ID.php?username=",
-                      "EndPoint": "&token=please.stop.abusing.this"
-                    },
-                    "urlSecondItem": "Find User Numberwindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/fb.graph.ID.php?username=`{Find User Number}`&token=please.stop.abusing.this",
+                        "urlSecondItem": "Find User Numberwindow"
+                      }
+                    ],
                     "submitValue": "Find User Number",
                     "itemType": "input",
                     "onSubmit": "setSomeState",
@@ -1075,6 +1406,162 @@
         "title": "Instagram Profile",
         "icon": "logo-instagram",
         "subItem": [
+          {
+            "id": "635678ac-c39d-497c-bf6e-3f1a1c5e5712",
+            "title": "Instagram Tool",
+            "pageType": "SearchPage",
+            "section": [
+              {
+                "id": "b49cdf4b-975f-4337-9b0e-1068d6460401",
+                "title": "Instagram Tool",
+                "hasPapulate": true,
+                "papulateItem": {
+                  "papulate": ""
+                },
+                "items": [
+                  {
+                    "id": "e9a8f1d5-ddfe-49f4-986c-f626be75540b",
+                    "inputItems": [
+                      {
+                        "id": "66f0acc3-6b70-45de-8799-38c2f4f51525",
+                        "name": "Live Profile",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Instagram User Name"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://instagram.com/`{Live Profile}`",
+                        "urlSecondItem": "ig1window"
+                      }
+                    ],
+                    "submitValue": "Live Profile",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "651506d5-e4eb-4766-8439-34c96c9bd035",
+                    "inputItems": [
+                      {
+                        "id": "d1a70ed5-1e4c-43c6-ac95-7ef92b02a931",
+                        "name": "Historic Views",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Instagram User Name"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:instagram.com/`{Historic Views}`+inurl:max_id%3D&filter=0",
+                        "urlSecondItem": "twitter2window"
+                      }
+                    ],
+                    "submitValue": "Historic Views",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "e0b4c240-ae73-4d63-a1e6-4c971d2d364c",
+                    "inputItems": [
+                      {
+                        "id": "516ac7a7-782d-4a64-9cd2-32c099b3e099",
+                        "name": "IG Tweets",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Instagram User Name"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:twitter.com+%22`{IG Tweets}`%22+%22instagram.com%2Fp%22",
+                        "urlSecondItem": "ig3window"
+                      }
+                    ],
+                    "submitValue": "IG Tweets",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "c13b5624-66b3-468c-8799-11cad213a03a",
+                    "inputItems": [
+                      {
+                        "id": "a95b3537-6594-458b-8496-06af49f8ead7",
+                        "name": "IG Mentions",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Instagram User Name"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:instagram.com+%22@`{IG Mentions}`%22+-site:instagram.com/",
+                        "urlSecondItem": "ig8window"
+                      }
+                    ],
+                    "submitValue": "IG Mentions",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "3f903506-3536-4095-8602-181a70ba27a3",
+                    "inputItems": [
+                      {
+                        "id": "7378ca59-093c-4fea-8a42-217360afad4a",
+                        "name": "Other Networks",
+                        "type": "text",
+                        "isPapulate": true,
+                        "placeholder": "Instagram User Name"
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://facebook.com/`{Other Networks}`",
+                        "urlSecondItem": "fbwindow"
+                      },
+                      {
+                        "url": "http://youtube.com/`{Other Networks}`",
+                        "urlSecondItem": "ytwindow"
+                      },
+                      {
+                        "url": "http://`{Other Networks}`.tumblr.com",
+                        "urlSecondItem": "tumbwindow"
+                      },
+                      {
+                        "url": "http://twitter.com/`{Other Networks}`",
+                        "urlSecondItem": "igwindow"
+                      },
+                      {
+                        "url": "https://plus.google.com/+`{Other Networks}`",
+                        "urlSecondItem": "gpwindow"
+                      },
+                      {
+                        "url": "http://knowem.com/checksocialnames.php?u=`{Other Networks}`",
+                        "urlSecondItem": "knwindow"
+                      },
+                      {
+                        "url": "https://www.google.com/search?q=%22`{Other Networks}`@gmail.com%22 OR %22`{Other Networks}`@yahoo.com%22 OR %22`{Other Networks}`@hotmail.com%22 OR %22`{Other Networks}`@live.com%22 OR %22`{Other Networks}`@outlook.com%22 OR %22`{Other Networks}`@me.com%22",
+                        "urlSecondItem": "emailwindow"
+                      }
+                    ],
+                    "submitValue": "Other Networks",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "isSubmitAll": true
+                  }
+                ]
+              }
+            ]
+          },
           {
             "id": "784bdbec-fccf-4527-8b0f-3f77e6c004ca",
             "title": "Instagram Resources",
@@ -1286,6 +1773,45 @@
         "icon": "ios-image",
         "subItem": [
           {
+            "id": "2a4ca822-718f-4858-863f-f30e85c9d303",
+            "title": "Reverse Image Search Tool",
+            "pageType": "SearchPage",
+            "section": [
+              {
+                "id": "ab2c4c53-247d-43f7-aa85-cc7fa22fada1",
+                "title": "Reverse Image Search Tool",
+                "hasPapulate": true,
+                "papulateItem": {
+                  "papulate": ""
+                },
+                "items": [
+                  {
+                    "id": "7fdfeb77-8e0f-42e3-a5eb-2da2f0bb4c49",
+                    "inputItems": [
+                      {
+                        "id": "b0e0d810-8f96-4ec7-8d41-2c228eb82bfb",
+                        "name": "Google",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/searchbyimage?site=search&sa=X&image_url=`{Google}`",
+                        "urlSecondItem": "image1window"
+                      }
+                    ],
+                    "submitValue": "Google",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Reverse Image Search Tool",
+                    "isSubmitAll": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "c39e1f18-58c2-465c-8519-7fe1ef893907",
             "title": "Image Resources",
             "pageType": "ResourcePage",
@@ -1382,11 +1908,12 @@
                   {
                     "id": "7f79bb2a-3838-4231-913a-fcfb262a6df0",
                     "lead": "Reddit:",
-                    "submitUrl": {
-                      "Text Search": "https://www.reddit.com/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip2window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.reddit.com/search?q=`{Text Search}`",
+                        "urlSecondItem": "ip2window"
+                      }
+                    ],
                     "submitValue": "Text Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1401,11 +1928,12 @@
                   },
                   {
                     "id": "d2444fd1-b747-412b-82fb-faf08e107577",
-                    "submitUrl": {
-                      "Title Search": "https://www.reddit.com/search?q=title:",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip6window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.reddit.com/search?q=title:`{Title Search}`",
+                        "urlSecondItem": "ip6window"
+                      }
+                    ],
                     "submitValue": "Title Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1420,11 +1948,12 @@
                   },
                   {
                     "id": "2ba9947e-8fbc-42a7-8aba-3971330bfd71",
-                    "submitUrl": {
-                      "User Search": "https://www.reddit.com/user/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip3window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.reddit.com/user/`{User Search}`",
+                        "urlSecondItem": "ip3window"
+                      }
+                    ],
                     "submitValue": "User Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1439,11 +1968,12 @@
                   },
                   {
                     "id": "c88a3f8c-0b43-4da8-b327-36f9b1291a84",
-                    "submitUrl": {
-                      "User Archive I": "https://web.archive.org/web/*/https://www.reddit.com/user/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip20window",
+                    "submitUrl": [
+                      {
+                        "url": "https://web.archive.org/web/*/https://www.reddit.com/user/`{User Archive I}`",
+                        "urlSecondItem": "ip20window"
+                      }
+                    ],
                     "submitValue": "User Archive I",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1458,11 +1988,12 @@
                   },
                   {
                     "id": "bf5a10e7-3381-40c7-8870-f866fb2d3227",
-                    "submitUrl": {
-                      "User Archive II": "http://archive.is/https://www.reddit.com/user/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip31window",
+                    "submitUrl": [
+                      {
+                        "url": "http://archive.is/https://www.reddit.com/user/`{User Archive II}`",
+                        "urlSecondItem": "ip31window"
+                      }
+                    ],
                     "submitValue": "User Archive II",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1477,11 +2008,12 @@
                   },
                   {
                     "id": "42dec76b-cc91-4abb-ac6e-80bdf6e5306d",
-                    "submitUrl": {
-                      "User Analytics": "https://snoopsnoo.com/u/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip40window",
+                    "submitUrl": [
+                      {
+                        "url": "https://snoopsnoo.com/u/`{User Analytics}`",
+                        "urlSecondItem": "ip40window"
+                      }
+                    ],
                     "submitValue": "User Analytics",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1496,11 +2028,12 @@
                   },
                   {
                     "id": "1a9f3bed-6af0-48e4-97e7-a7dafa3e0f60",
-                    "submitUrl": {
-                      "User Cache": "https://webcache.googleusercontent.com/search?q=cache:https://www.reddit.com/user/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip28window",
+                    "submitUrl": [
+                      {
+                        "url": "https://webcache.googleusercontent.com/search?q=cache:https://www.reddit.com/user/`{User Cache}`",
+                        "urlSecondItem": "ip28window"
+                      }
+                    ],
                     "submitValue": "User Cache",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1515,11 +2048,12 @@
                   },
                   {
                     "id": "358fae7b-6854-4075-bbaf-db29ad85eb8e",
-                    "submitUrl": {
-                      "Pushshift Cache": "https://api.pushshift.io/reddit/search/comment/?author=",
-                      "EndPoint": "&sort=asc&size=1000"
-                    },
-                    "urlSecondItem": "ip41window",
+                    "submitUrl": [
+                      {
+                        "url": "https://api.pushshift.io/reddit/search/comment/?author=`{Pushshift Cache}`&sort=asc&size=1000",
+                        "urlSecondItem": "ip41window"
+                      }
+                    ],
                     "submitValue": "Pushshift Cache",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1534,11 +2068,12 @@
                   },
                   {
                     "id": "6f6dd759-663d-49f7-bb8a-a1734d8935fc",
-                    "submitUrl": {
-                      "Pushshift Cache": "https://api.pushshift.io/reddit/search/comment/?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip42window",
+                    "submitUrl": [
+                      {
+                        "url": "https://api.pushshift.io/reddit/search/comment/?q=`{Pushshift Cache}`",
+                        "urlSecondItem": "ip42window"
+                      }
+                    ],
                     "submitValue": "Pushshift Cache",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1553,11 +2088,12 @@
                   },
                   {
                     "id": "5958561b-f20d-4cdf-a82c-cfa600fef3c3",
-                    "submitUrl": {
-                      "Domain Search": "https://www.reddit.com/search?q=site:",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip4window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.reddit.com/search?q=site:`{Domain Search}`",
+                        "urlSecondItem": "ip4window"
+                      }
+                    ],
                     "submitValue": "Domain Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1572,11 +2108,12 @@
                   },
                   {
                     "id": "36062115-5a96-44ea-8398-d5f378d284d3",
-                    "submitUrl": {
-                      "Subreddit Search": "https://www.reddit.com/subreddits/search?q=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip7window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.reddit.com/subreddits/search?q=`{Subreddit Search}`",
+                        "urlSecondItem": "ip7window"
+                      }
+                    ],
                     "submitValue": "Subreddit Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1591,11 +2128,12 @@
                   },
                   {
                     "id": "70b64b36-1613-4f72-a7b7-5aca2d02f36d",
-                    "submitUrl": {
-                      "Imgur Search": "https://imgur.com/r/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip15window",
+                    "submitUrl": [
+                      {
+                        "url": "https://imgur.com/r/`{Imgur Search}`",
+                        "urlSecondItem": "ip15window"
+                      }
+                    ],
                     "submitValue": "Imgur Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1610,11 +2148,12 @@
                   },
                   {
                     "id": "a3057271-d77f-4535-b6d1-879acc124c4f",
-                    "submitUrl": {
-                      "Karma Image": "http://www.karmadecay.com/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip34window",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.karmadecay.com/`{Karma Image}`",
+                        "urlSecondItem": "ip34window"
+                      }
+                    ],
                     "submitValue": "Karma Image",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1629,11 +2168,12 @@
                   },
                   {
                     "id": "c9b5cd5e-7d0a-437f-aed4-2a16c2964002",
-                    "submitUrl": {
-                      "NSFW Image": "http://i.rarchives.com/?url=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip19window",
+                    "submitUrl": [
+                      {
+                        "url": "http://i.rarchives.com/?url=`{NSFW Image}`",
+                        "urlSecondItem": "ip19window"
+                      }
+                    ],
                     "submitValue": "NSFW Image",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1648,11 +2188,12 @@
                   },
                   {
                     "id": "5b94390b-4126-4918-b2b4-c17f55b41548",
-                    "submitUrl": {
-                      "Google Search": "https://www.google.com/search?q=site:reddit.com ",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "ip5window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:reddit.com `{Google Search}`",
+                        "urlSecondItem": "ip5window"
+                      }
+                    ],
                     "submitValue": "Google Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1668,11 +2209,12 @@
                   {
                     "id": "07c104c8-01aa-4d74-b0cc-521250ba4f25",
                     "lead": "Hacker News (YCombinator):",
-                    "submitUrl": {
-                      "Text Search": "https://hn.algolia.com/?query=",
-                      "EndPoint": "&sort=byDate&prefix&page=0&dateRange=all&type=all"
-                    },
-                    "urlSecondItem": "ip8window",
+                    "submitUrl": [
+                      {
+                        "url": "https://hn.algolia.com/?query=`{Text Search}`&sort=byDate&prefix&page=0&dateRange=all&type=all",
+                        "urlSecondItem": "ip8window"
+                      }
+                    ],
                     "submitValue": "Text Search",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1681,6 +2223,369 @@
                       {
                         "id": "66fa0c14-e87a-4938-bed3-f1fede2ef5ac",
                         "name": "Text Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "9ee0c27a-c38b-4f27-9c26-af241ea82c6e",
+                    "submitUrl": [
+                      {
+                        "url": "https://news.ycombinator.com/user?id=`{User Search}`",
+                        "urlSecondItem": "ip23window"
+                      }
+                    ],
+                    "submitValue": "User Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "fea44743-2a34-4e36-9c18-0bd245473a71",
+                        "name": "User Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "df1a08a4-3dac-4d9f-a90c-14ba0a21826d",
+                    "submitUrl": [
+                      {
+                        "url": "https://news.ycombinator.com/submitted?id=`{User Posts}`",
+                        "urlSecondItem": "ip36window"
+                      }
+                    ],
+                    "submitValue": "User Posts",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "da483502-baf4-4c97-9d08-4a74970ea139",
+                        "name": "User Posts",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c340c6b5-4c52-4288-987e-c26963f43f2d",
+                    "submitUrl": [
+                      {
+                        "url": "https://news.ycombinator.com/threads?id=`{User Comments}`",
+                        "urlSecondItem": "ip33window"
+                      }
+                    ],
+                    "submitValue": "User Comments",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "3c8aeaf4-b023-4a32-acda-39ca3f710516",
+                        "name": "User Comments",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c948c6be-32de-4838-bba3-07b54031a024",
+                    "submitUrl": [
+                      {
+                        "url": "https://news.ycombinator.com/favorites?id=`{User Favs}`",
+                        "urlSecondItem": "ip32window"
+                      }
+                    ],
+                    "submitValue": "User Favs",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "a8eef01a-8c14-4409-b7f5-19b824ef371a",
+                        "name": "User Favs",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "6c610200-59e3-460e-9f5b-59ea7d38c372",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:news.ycombinator.com `{Google Search}`",
+                        "urlSecondItem": "ip38window"
+                      }
+                    ],
+                    "submitValue": "Google Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "115d8407-190e-4db3-9421-134565b93077",
+                        "name": "Google Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "9beeb3de-d7eb-482f-ab99-f3154be4e460",
+                    "lead": "Voat:",
+                    "submitUrl": [
+                      {
+                        "url": "https://searchvoat.co/?t=`{Text Search}`&s=&u=&d=&b=on&nsfw=on",
+                        "urlSecondItem": "ip24window"
+                      }
+                    ],
+                    "submitValue": "Text Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "3b0959b2-f43e-4d85-9edc-4ea8ba5960e2",
+                        "name": "Text Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "30be5a97-13d7-4f90-9998-6e9d37cd4410",
+                    "submitUrl": [
+                      {
+                        "url": "https://searchvoat.co/?t=&s=&u=`{User Search}`&d=&b=on&nsfw=on",
+                        "urlSecondItem": "ip25window"
+                      }
+                    ],
+                    "submitValue": "User Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "03dc49cf-b61d-4085-877b-21149dc99d04",
+                        "name": "User Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "8c33be5f-2fec-4b73-8be7-f242503f1296",
+                    "submitUrl": [
+                      {
+                        "url": "https://searchvoat.co/?s=&u=&d=`{Domain Name}`&b=on&nsfw=on",
+                        "urlSecondItem": "ip26window"
+                      }
+                    ],
+                    "submitValue": "Domain Name",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "5767d8fc-a8b8-46f9-80ed-2d1449f4132a",
+                        "name": "Domain Name",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fcf3628f-bf94-4d9c-8bea-58f9001cde32",
+                    "submitUrl": [
+                      {
+                        "url": "https://searchvoat.co/?t=&s=`{Subverse Search}`&u=&d=&b=on&nsfw=on",
+                        "urlSecondItem": "ip9window"
+                      }
+                    ],
+                    "submitValue": "Subverse Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "7a466156-3eed-47e6-9770-9379d3df9141",
+                        "name": "Subverse Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "9ba40c0f-d658-4769-a3a7-158d5ef4e1fa",
+                    "submitUrl": [
+                      {
+                        "url": "https://voat.co/v/`{Subverse Match}`",
+                        "urlSecondItem": "ip29window"
+                      }
+                    ],
+                    "submitValue": "Subverse Match",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "d41153b9-f6fa-44aa-8c9f-437bded90c09",
+                        "name": "Subverse Match",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5746be32-395c-450e-8692-1bf2bc914fb5",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:voat.co `{Google Search}`",
+                        "urlSecondItem": "ip22window"
+                      }
+                    ],
+                    "submitValue": "Google Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "ab9c1872-4193-46ba-9702-af1adc71e5f7",
+                        "name": "Google Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b1ca0575-cb5e-4f10-9c0f-c61443eeebd2",
+                    "lead": "4Chan:",
+                    "submitUrl": [
+                      {
+                        "url": "http://4chansearch.com/?q=`{Text Search}`&s=4",
+                        "urlSecondItem": "ip10window"
+                      }
+                    ],
+                    "submitValue": "Text Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "9ec7ade0-37c7-4241-b4eb-d2dcad6afb7f",
+                        "name": "Text Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "d2f820c6-0c23-41c7-9a88-be37e3b27cd9",
+                    "submitUrl": [
+                      {
+                        "url": "http://4chansearch.com/?q=`{Archive Search}`&s=7",
+                        "urlSecondItem": "ip11window"
+                      }
+                    ],
+                    "submitValue": "Archive Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "1af4c52b-7981-4adc-b83f-a2037550a7b3",
+                        "name": "Archive Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "2c1ab37e-6370-4d8f-8951-385110f5b1f3",
+                    "submitUrl": [
+                      {
+                        "url": "https://archive.4plebs.org/_/search/text/`{Plebs Archive}`/order/asc/",
+                        "urlSecondItem": "ip11window"
+                      }
+                    ],
+                    "submitValue": "Plebs Archive",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "607d26bb-c179-4ee6-acab-84df38057838",
+                        "name": "Plebs Archive",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "642379a1-d940-4222-abcc-54ffb3321df9",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:4chan.org`{Google Search}`",
+                        "urlSecondItem": "ip13window"
+                      }
+                    ],
+                    "submitValue": "Google Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "2616be2a-c9e0-43a8-8182-c6a05b206b87",
+                        "name": "Google Search",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "f79f3216-3427-4f65-a7f4-bd91f231f523",
+                    "lead": "Misc.",
+                    "submitUrl": [
+                      {
+                        "url": "https://hubski.com/search?q=`{Hubski}`",
+                        "urlSecondItem": "ip14window"
+                      }
+                    ],
+                    "submitValue": "Hubski",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "a00780d6-7d0a-4e8a-a1c6-c4f344cac530",
+                        "name": "Hubski",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "4f1b6cbc-707a-478a-b595-a111b47af6a1",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:steemit.com `{Steemit}`",
+                        "urlSecondItem": "ip16window"
+                      }
+                    ],
+                    "submitValue": "Steemit",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "82265b0f-ffad-4bbe-9d1e-7dc0fa372a24",
+                        "name": "Steemit",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "89902cc1-f3dd-456b-b632-ab155d2b68df",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:raddle.me `{Raddle}`",
+                        "urlSecondItem": "ip17window"
+                      }
+                    ],
+                    "submitValue": "Raddle",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Online Communities Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "f2622f0b-d4f5-4743-b95b-b895a5a442db",
+                        "name": "Raddle",
                         "type": "text"
                       }
                     ]
@@ -1773,15 +2678,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "number": "https://services.gisgraphy.com/geocoding/geocode?address=",
-                      "Street": "+",
-                      "City": "+",
-                      "State": "+",
-                      "Zip": "+",
-                      "EndPoint": "&format=json"
-                    },
-                    "urlSecondItem": "gpswindow",
+                    "submitUrl": [
+                      {
+                        "url": "https://services.gisgraphy.com/geocoding/geocode?address=`{number}`+`{Street}`+`{City}`+`{State}`+`{Zip}`&format=json",
+                        "urlSecondItem": "gpswindow"
+                      }
+                    ],
                     "submitValue": "Convert GPS",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1827,15 +2729,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "number": "https://www.zillow.com/homes/for_sale/",
-                      "Street": "-",
-                      "City": ",-",
-                      "State": ",-",
-                      "Zip": "-",
-                      "EndPoint": "_rb/"
-                    },
-                    "urlSecondItem": "gps2window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.zillow.com/homes/for_sale/`{number}`-`{Street}`,-`{City}`,-`{State}`-`{Zip}`_rb/",
+                        "urlSecondItem": "gps2window"
+                      }
+                    ],
                     "submitValue": "Zillow Homes",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1881,15 +2780,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "number": "https://rehold.com/",
-                      "Street": "/",
-                      "City": "/",
-                      "State": "/",
-                      "Zip": "/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "gps4window",
+                    "submitUrl": [
+                      {
+                        "url": "https://rehold.com/`{number}`/`{Street}`/`{City}`/`{State}`/`{Zip}`",
+                        "urlSecondItem": "gps4window"
+                      }
+                    ],
                     "submitValue": "Rehold Homes",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1935,15 +2831,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "number": "https://www.google.com/search?q=",
-                      "Street": "+",
-                      "City": "+",
-                      "State": "+",
-                      "Zip": "+",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "gps3window",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=`{number}`+`{Street}`+`{City}`+`{State}`+`{Zip}`",
+                        "urlSecondItem": "gps3window"
+                      }
+                    ],
                     "submitValue": "Google Homes",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -1979,12 +2872,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://maps.google.com/maps?q=loc:",
-                      "Longitude": "+",
-                      "EndPoint": "&z=20&t=k&output=embed"
-                    },
-                    "urlSecondItem": "window1",
+                    "submitUrl": [
+                      {
+                        "url": "http://maps.google.com/maps?q=loc:`{Latitude}`+`{Longitude}`&z=20&t=k&output=embed",
+                        "urlSecondItem": "window1"
+                      }
+                    ],
                     "submitValue": "Google Sat",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2009,12 +2902,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.google.com/maps/place//@",
-                      "Longitude": ",",
-                      "EndPoint": "380a,35y,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
-                    },
-                    "urlSecondItem": "windowg1",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/maps/place//@`{Latitude}`,`{Longitude}`380a,35y,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US",
+                        "urlSecondItem": "windowg1"
+                      }
+                    ],
                     "submitValue": "Google 3D (N)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2039,12 +2932,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.google.com/maps/place//@",
-                      "Longitude": ",",
-                      "EndPoint": ",380a,35y,270h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
-                    },
-                    "urlSecondItem": "windowg2",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/maps/place//@`{Latitude}`,`{Longitude}`,380a,35y,270h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US",
+                        "urlSecondItem": "windowg2"
+                      }
+                    ],
                     "submitValue": "Google 3D (W)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2069,12 +2962,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.google.com/maps/place//@",
-                      "Longitude": ",",
-                      "EndPoint": ",380a,35y,180h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
-                    },
-                    "urlSecondItem": "windowg3",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/maps/place//@`{Latitude}`,`{Longitude}`,380a,35y,180h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US",
+                        "urlSecondItem": "windowg3"
+                      }
+                    ],
                     "submitValue": "Google 3D (E)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2099,12 +2992,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.google.com/maps/place//@",
-                      "Longitude": ",",
-                      "EndPoint": ",380a,35y,90h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US"
-                    },
-                    "urlSecondItem": "windowg4",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/maps/place//@`{Latitude}`,`{Longitude}`,380a,35y,90h,39.39t/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d38.5!4d-90.2?hl=en-US",
+                        "urlSecondItem": "windowg4"
+                      }
+                    ],
                     "submitValue": "Google 3D (S)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2129,12 +3022,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
-                      "Longitude": "~",
-                      "EndPoint": "&lvl=20&sty=a&w=100%"
-                    },
-                    "urlSecondItem": "window2",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/maps/default.aspx?&cp=`{Latitude}`~`{Longitude}`&lvl=20&sty=a&w=100%",
+                        "urlSecondItem": "window2"
+                      }
+                    ],
                     "submitValue": "Bing Sat",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2159,12 +3052,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
-                      "Longitude": "~",
-                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=0"
-                    },
-                    "urlSecondItem": "window3",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/maps/default.aspx?&cp=`{Latitude}`~`{Longitude}`&lvl=20&sty=o&w=100%&dir=0",
+                        "urlSecondItem": "window3"
+                      }
+                    ],
                     "submitValue": "Bing 3D (N)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2189,12 +3082,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
-                      "Longitude": "~",
-                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=90"
-                    },
-                    "urlSecondItem": "window9",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/maps/default.aspx?&cp=`{Latitude}`~`{Longitude}`&lvl=20&sty=o&w=100%&dir=90",
+                        "urlSecondItem": "window9"
+                      }
+                    ],
                     "submitValue": "Bing 3D (E)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2219,12 +3112,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.bing.com/maps/default.aspx?&cp=",
-                      "Longitude": "~",
-                      "EndPoint": "&lvl=20&sty=o&w=100%&dir=270"
-                    },
-                    "urlSecondItem": "window11",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/maps/default.aspx?&cp=`{Latitude}`~`{Longitude}`&lvl=20&sty=o&w=100%&dir=270",
+                        "urlSecondItem": "window11"
+                      }
+                    ],
                     "submitValue": "Bing 3D (W)",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2249,15 +3142,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://data.mapchannels.com/dualmaps5/map.htm?lat=",
-                      "Longitude": "&lng=",
-                      "Latitude2": "&z=18&slat=",
-                      "Longitude2": "&slng=",
-                      "EndPoint": "&sh=85.18&sp=-8.77&sz=0.34&panel=s&gm=0&bm=1&mw=1&be=1&mv=0&md=0&mi=1"
-                    },
-                    "dual": true,
-                    "urlSecondItem": "window4",
+                    "submitUrl": [
+                      {
+                        "url": "http://data.mapchannels.com/dualmaps5/map.htm?lat=`{Latitude}`&lng=`{Longitude}`&z=18&slat=`{Latitude}`&slng=`{Longitude}`&sh=85.18&sp=-8.77&sz=0.34&panel=s&gm=0&bm=1&mw=1&be=1&mv=0&md=0&mi=1",
+                        "urlSecondItem": "window4"
+                      }
+                    ],
                     "submitValue": "Google Street",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2282,15 +3172,13 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.bing.com/maps/?v=2&cp=",
-                      "Longitude": "~",
-                      "Latitude2": "&lvl=20&sty=x~lat~",
-                      "Longitude2": "~",
-                      "EndPoint": "alt~137.797~z~30~h~162.4~p~-26.7~pid~5082&app=5082"
-                    },
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/maps/?v=2&cp=`{Latitude}`~`{Longitude}`&lvl=20&sty=x~lat~`{Latitude}`~`{Longitude}`alt~137.797~z~30~h~162.4~p~-26.7~pid~5082&app=5082",
+                        "urlSecondItem": "window5"
+                      }
+                    ],
                     "dual": true,
-                    "urlSecondItem": "window5",
                     "submitValue": "Bing Street",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2315,12 +3203,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.terraserver.com/view?utf8=%E2%9C%93&searchLat=",
-                      "Longitude": "&searchLng=",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "window6",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.terraserver.com/view?utf8=%E2%9C%93&searchLat=`{Latitude}`&searchLng=`{Longitude}`",
+                        "urlSecondItem": "window6"
+                      }
+                    ],
                     "submitValue": "TerraServer",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2345,12 +3233,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://lv.eosda.com/?lat=",
-                      "Longitude": "&lng=",
-                      "EndPoint": "&z=16"
-                    },
-                    "urlSecondItem": "windowu",
+                    "submitUrl": [
+                      {
+                        "url": "https://lv.eosda.com/?lat=`{Latitude}`&lng=`{Longitude}`&z=16",
+                        "urlSecondItem": "windowu"
+                      }
+                    ],
                     "submitValue": "LandViewer",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2375,12 +3263,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.here.com/?map=",
-                      "Longitude": ",",
-                      "EndPoint": ",20,satellite"
-                    },
-                    "urlSecondItem": "window7",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.here.com/?map=`{Latitude}`,`{Longitude}`,20,satellite",
+                        "urlSecondItem": "window7"
+                      }
+                    ],
                     "submitValue": "Here Sat",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2405,12 +3293,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://wikimapia.org/#lang=en&lat=",
-                      "Longitude": "&lon=",
-                      "EndPoint": "&z=20"
-                    },
-                    "urlSecondItem": "window8",
+                    "submitUrl": [
+                      {
+                        "url": "http://wikimapia.org/#lang=en&lat=`{Latitude}`&lon=`{Longitude}`&z=20",
+                        "urlSecondItem": "window8"
+                      }
+                    ],
                     "submitValue": "Wikimapia",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2435,12 +3323,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://zoom.earth/#",
-                      "Longitude": ",",
-                      "EndPoint": ",16z,sat"
-                    },
-                    "urlSecondItem": "window20",
+                    "submitUrl": [
+                      {
+                        "url": "https://zoom.earth/#`{Latitude}`,`{Longitude}`,16z,sat",
+                        "urlSecondItem": "window20"
+                      }
+                    ],
                     "submitValue": "Zoom Earth",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2465,12 +3353,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://maps.yandex.com/?ll=",
-                      "Longitude": "%2C",
-                      "EndPoint": "&z=19&l=sat"
-                    },
-                    "urlSecondItem": "window13",
+                    "submitUrl": [
+                      {
+                        "url": "https://maps.yandex.com/?ll=`{Latitude}`%2C`{Longitude}`&z=19&l=sat",
+                        "urlSecondItem": "window13"
+                      }
+                    ],
                     "submitValue": "Yandex Sat",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2495,12 +3383,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.mapbox.com/bites/00145/#12/",
-                      "Longitude": "/",
-                      "EndPoint": ""
-                    },
-                    "urlSecondItem": "window15",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.mapbox.com/bites/00145/#12/`{Latitude}`/`{Longitude}`",
+                        "urlSecondItem": "window15"
+                      }
+                    ],
                     "submitValue": "Map Box",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2525,15 +3413,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.geosearchtool.com/?q=&la=",
-                      "Longitude": "&lo=",
-                      "Latitude2": "&lr=1km&tw=any&cl=&sl=",
-                      "Longitude2": ",%20",
-                      "EndPoint": "&lr=1km&tw=any&cl=&eo=false&loo=false&cco=false&zl=20"
-                    },
-                    "dual": true,
-                    "urlSecondItem": "window16",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.geosearchtool.com/?q=&la=`{Latitude}`&lo=`{Longitude}`&lr=1km&tw=any&cl=&sl=`{Latitude}`,%20`{Longitude}`&lr=1km&tw=any&cl=&eo=false&loo=false&cco=false&zl=20",
+                        "urlSecondItem": "window16"
+                      }
+                    ],
                     "submitValue": "YouTube",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2558,12 +3443,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.facebook.com/livemap/#@",
-                      "Longitude": ",",
-                      "EndPoint": ",10z"
-                    },
-                    "urlSecondItem": "windowt",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.facebook.com/livemap/#@`{Latitude}`,`{Longitude}`,10z",
+                        "urlSecondItem": "windowt"
+                      }
+                    ],
                     "submitValue": "Facebook Live",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2588,12 +3473,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://www.periscopemap.live/?ll=",
-                      "Longitude": ",",
-                      "EndPoint": "&zoom=15"
-                    },
-                    "urlSecondItem": "window17",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.periscopemap.live/?ll=`{Latitude}`,`{Longitude}`&zoom=15",
+                        "urlSecondItem": "window17"
+                      }
+                    ],
                     "submitValue": "Periscope",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2618,12 +3503,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://search.descarteslabs.com/?layer=naip_v2_rgb_2014-2015#lat=",
-                      "Longitude": "&lng=",
-                      "EndPoint": "&skipTut=true&zoom=17"
-                    },
-                    "urlSecondItem": "window18",
+                    "submitUrl": [
+                      {
+                        "url": "https://search.descarteslabs.com/?layer=naip_v2_rgb_2014-2015#lat=`{Latitude}`&lng=`{Longitude}`&skipTut=true&zoom=17",
+                        "urlSecondItem": "window18"
+                      }
+                    ],
                     "submitValue": "Descartes",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2648,12 +3533,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://www.mapillary.com/app/?lat=",
-                      "Longitude": "&lng=",
-                      "EndPoint": "&z=20&p=&mapStyle=mapbox_satellite"
-                    },
-                    "urlSecondItem": "window19",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.mapillary.com/app/?lat=`{Latitude}`&lng=`{Longitude}`&z=20&p=&mapStyle=mapbox_satellite",
+                        "urlSecondItem": "window19"
+                      }
+                    ],
                     "submitValue": "Mapillary",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2678,12 +3563,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "http://openstreetcam.org/map/@",
-                      "Longitude": ",",
-                      "EndPoint": ",18z"
-                    },
-                    "urlSecondItem": "window21",
+                    "submitUrl": [
+                      {
+                        "url": "http://openstreetcam.org/map/@`{Latitude}`,`{Longitude}`,18z",
+                        "urlSecondItem": "window21"
+                      }
+                    ],
                     "submitValue": "OpenStreetCams",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -2708,12 +3593,12 @@
                         "isPapulate": true
                       }
                     ],
-                    "submitUrl": {
-                      "Latitude": "https://map.snapchat.com/@",
-                      "Longitude": ",",
-                      "EndPoint": ",18z"
-                    },
-                    "urlSecondItem": "windowv",
+                    "submitUrl": [
+                      {
+                        "url": "https://map.snapchat.com/@`{Latitude}`,`{Longitude}`,18z",
+                        "urlSecondItem": "windowv"
+                      }
+                    ],
                     "submitValue": "SnapMap",
                     "itemType": "input",
                     "onSubmit": "submitUrl",
@@ -3116,6 +4001,178 @@
                     "id": "45c27cd2-c3f2-4b2a-bcf7-591bc86aea3c",
                     "name": "Google",
                     "url": "http://google.com",
+                    "target": "_blank",
+                    "itemType": "link"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a6096d39-d7e3-41f5-b320-4ec966cdeb9b",
+    "icon": "nothing-for-now",
+    "title": "Persian Recourse",
+    "items": [
+      {
+        "id": "2b4d8da4-c9a3-482f-8f91-9b3e0f58bbd6",
+        "title": "Persian General Search",
+        "icon": "ios-radio-button-on",
+        "subItem": [
+          {
+            "id": "082d7abb-6e95-4f62-8050-7efae4adf3bc",
+            "title": "Persian Search Engines Tool",
+            "pageType": "SearchPage",
+            "section": [
+              {
+                "id": "ab2bd394-2ab3-4247-bba8-eae9601c28b7",
+                "title": "Persian Search Engines Tool",
+                "hasPapulate": true,
+                "papulateItem": {
+                  "papulate": ""
+                },
+                "items": [
+                  {
+                    "id": "2ff0ee3f-5305-4da0-b15e-4cd8ed207515",
+                    "inputItems": [
+                      {
+                        "id": "cabac6af-402a-4f56-b092-6d3861b5da05",
+                        "name": "Jasjoo",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://www.jasjoo.com/search/web/?ask=`{Jasjoo}`&webface=0&moretext=0",
+                        "urlSecondItem": "Jasjoowindow"
+                      }
+                    ],
+                    "submitValue": "Jasjoo",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Persian Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "343bff58-7c9a-4bbb-bdfc-da0114154a60",
+                    "inputItems": [
+                      {
+                        "id": "919b7f53-7c45-40bb-a0f4-73a0ba7fc92e",
+                        "name": "parseek",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://www.parseek.com/search/?b=%D8%AC%D8%B3%D8%AA%D8%AC%D9%88+%D8%AF%D8%B1+%D9%88%D8%A8&kq=`{parseek}`",
+                        "urlSecondItem": "parseekwindow"
+                      }
+                    ],
+                    "submitValue": "Parseek",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Persian Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "b550e415-0a4c-42c7-8ccb-e31551c93244",
+                    "inputItems": [
+                      {
+                        "id": "712426bb-8511-47b6-8f7a-b9230a203ea5",
+                        "name": "rismoon",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "http://www.rismoon.com/search-fa.html?q=`{rismoon}`&tab=web",
+                        "urlSecondItem": "rismoonkwindow"
+                      }
+                    ],
+                    "submitValue": "Rismoon",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Persian Search Engines Tool",
+                    "isSubmitAll": true
+                  },
+                  {
+                    "id": "d6040833-55d4-421e-92a0-977779c61011",
+                    "inputItems": [
+                      {
+                        "id": "21dd88d3-daf2-45d9-9755-605099dface3",
+                        "name": "parsijoo",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://parsijoo.ir/web?q=`{parsijoo}`&period=all&filetype=any&site=",
+                        "urlSecondItem": "parsijookwindow"
+                      }
+                    ],
+                    "submitValue": "Parsijoo",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Persian Search Engines Tool",
+                    "isSubmitAll": true
+                  }
+                ]
+              },
+              {
+                "id": "ba0cacd1-6831-447b-9ce2-f5283c11312a",
+                "hasPapulate": true,
+                "title": "From forgin tools",
+                "papulateItem": {
+                  "papulate": ""
+                },
+                "items": [
+                  {
+                    "id": "e7f3bba8-7e88-4d8d-912f-1e76a6ca76eb",
+                    "inputItems": [
+                      {
+                        "id": "fc44dfee-7055-4948-b679-6d4bb9ad60da",
+                        "name": "Google Persian",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?hl=en&as_q=`{Google Persian}`&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_fa&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&as_rights=",
+                        "urlSecondItem": "googlepersianwindow"
+                      }
+                    ],
+                    "submitValue": "Google Persian",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "From forgin tools",
+                    "isSubmitAll": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6e785b56-3ad8-49d2-bc0a-388ca84d07f2",
+            "title": "Persian Search Resoucse",
+            "pageType": "ResourcePage",
+            "section": [
+              {
+                "id": "db509598-9c8f-4619-9c4c-b4c90edda183",
+                "title": "Persian Search Resoucse",
+                "hasPapulate": false,
+                "items": [
+                  {
+                    "id": "76977845-6af8-40be-a751-148f169f0151",
+                    "name": "Jasjoo",
+                    "url": "http://www.jasjoo.com/",
                     "target": "_blank",
                     "itemType": "link"
                   }

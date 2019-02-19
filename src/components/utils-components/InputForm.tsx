@@ -2,6 +2,7 @@ import React from "react";
 import { InjectedFormikProps, withFormik } from "formik";
 import cn from "classnames";
 import { ISearchItem, PapulateItem } from "../../data/dbType";
+import _ from "lodash";
 import Axios from "axios";
 
 export interface Props extends ISearchItem {
@@ -66,7 +67,7 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
               key={inp.id}
               type={inp.type}
               name={inp.name}
-              placeholder={inp.name}
+              placeholder={inp.placeholder ? inp.placeholder : inp.name}
               onChange={handleChange}
               onBlur={handleBlur}
               value={values[inp.name]}
@@ -96,29 +97,23 @@ export default withFormik({
     return initialValues;
   },
   handleSubmit: (values, { props: Props, setSubmitting }) => {
-    // Props.submitHandler(values);
-    let url = "";
-    const arrVal = Object.keys(values);
-    arrVal.map((key, i) => {
-      url = url + Props.submitUrl[key] + values[key];
-      if (!Props.dual && arrVal.length - 1 === i) {
-        url = url + Props.submitUrl.EndPoint;
-      }
-    });
-    if (Props.dual) {
-      arrVal.map((key, i) => {
-        url = url + Props.submitUrl[key + "2"] + values[key];
-        if (Props.dual && arrVal.length - 1 === i) {
-          url = url + Props.submitUrl.EndPoint;
+    const { submitUrl } = Props;
+    submitUrl.map(sub => {
+      const splitedUrl = sub.url.split("`{");
+      let url = splitedUrl[0];
+      splitedUrl.map(urls => {
+        const key = urls.split("}`");
+        if (values[key[0]]) {
+          url = url + values[key[0]] + key[1];
         }
       });
-    }
-    if (Props.onSubmit === "submitUrl") {
-      window.open(url, Props.urlSecondItem);
-    }
-    if (Props.onSubmit === "setSomeState") {
-      Axios.get(url).then(resp => console.log(resp.data));
-    }
+      if (Props.onSubmit === "submitUrl") {
+        window.open(url, sub.urlSecondItem);
+      }
+    });
+    // if (Props.onSubmit === "setSomeState") {
+    //   Axios.get(url).then(resp => console.log(resp.data));
+    // }
     return;
   }
 })(InputForm);

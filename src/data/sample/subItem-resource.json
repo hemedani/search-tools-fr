@@ -1,0 +1,21 @@
+{
+  "id": "784bdbec-fccf-4527-8b0f-3f77e6c004ca",
+  "title": "Instagram Resources",
+  "pageType": "ResourcePage",
+  "section": [
+    {
+      "id": "76c76072-bc32-4977-915b-030a4bcc0806",
+      "title": "Instagram Resources ",
+      "hasPapulate": false,
+      "items": [
+        {
+          "id": "5e2a93d4-19f9-42a4-93fc-c41a61de69c5",
+          "name": "Google",
+          "url": "http://google.com",
+          "target": "_blank",
+          "itemType": "link"
+        }
+      ]
+    }
+  ]
+}

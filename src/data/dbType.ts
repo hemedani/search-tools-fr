@@ -30,15 +30,15 @@ export interface Section {
 export interface Item {
   id: string;
   inputItems?: InputItem[];
-  submitUrl?: SubmitUrl;
+  submitUrl?: SubmitUrl[];
   urlSecondItem?: string;
   submitValue?: string;
   itemType: string;
   onSubmit?: string;
   inSection?: string;
   isSubmitAll?: boolean;
-  description?: string;
   breaking?: boolean;
+  description?: string;
   name?: string;
   url?: string;
   target?: string;
@@ -60,12 +60,23 @@ export interface SubmitUrl {
   StartPage?: string;
   Newsgroups?: string;
   Blogs?: string;
+  "FTP Servers"?: string;
+  "Index Of"?: string;
+  Scholar?: string;
+  Patents?: string;
+  News?: string;
+  Disqus?: string;
+  Newspapers?: string;
+  Wayback?: string;
+  Qwant?: string;
+  Ahmia?: string;
+  "Onion Cab"?: string;
+  "Not Evil"?: string;
+  Torch?: string;
   "Search Newspaper"?: string;
   "Newspaper Archive"?: string;
   "Newspaper Collection"?: string;
-  "Not Evil"?: string;
   Visitor?: string;
-  Torch?: string;
   BreachesLeaks?: string;
   Pastes?: string;
   PSBDMP?: string;
@@ -78,18 +89,41 @@ export interface SubmitUrl {
   ThatsThem?: string;
   SpyTox?: string;
   OCCRP?: string;
-  "FTP Servers"?: string;
   DomainData?: string;
   SecurityTrails?: string;
   AnalyzeID?: string;
   Gravatar?: string;
   GoogleCal?: string;
   "Find User Number"?: string;
+  "Live Profile"?: string;
+  "Historic Views"?: string;
+  "IG Tweets"?: string;
+  "IG Mentions"?: string;
   "Text Search"?: string;
   "Title Search"?: string;
   "User Search"?: string;
   "User Archive I"?: string;
   "User Archive II"?: string;
+  "User Analytics"?: string;
+  "User Cache"?: string;
+  "Pushshift Cache"?: string;
+  "Domain Search"?: string;
+  "Subreddit Search"?: string;
+  "Imgur Search"?: string;
+  "Karma Image"?: string;
+  "NSFW Image"?: string;
+  "Google Search"?: string;
+  "User Posts"?: string;
+  "User Comments"?: string;
+  "User Favs"?: string;
+  "Domain Name"?: string;
+  "Subverse Search"?: string;
+  "Subverse Match"?: string;
+  "Archive Search"?: string;
+  "Plebs Archive"?: string;
+  Hubski?: string;
+  Steemit?: string;
+  Raddle?: string;
   number?: string;
   Street?: string;
   City?: string;
@@ -99,6 +133,11 @@ export interface SubmitUrl {
   Longitude?: string;
   Latitude2?: string;
   Longitude2?: string;
+  Jasjoo?: string;
+  parseek?: string;
+  rismoon?: string;
+  parsijoo?: string;
+  "Google Persian"?: string;
 }
 
 export interface InputItem {
@@ -106,6 +145,7 @@ export interface InputItem {
   name: string;
   type: string;
   isPapulate?: boolean;
+  placeholder?: string;
   size?: string;
 }
 
@@ -147,8 +187,7 @@ export interface ISearchPage extends ISubItem {
 export interface ISearchItem {
   id: string;
   inputItems: InputItem[];
-  submitUrl: { [key: string]: string };
-  urlSecondItem: string;
+  submitUrl: { [key: string]: string }[];
   submitValue: string;
   itemType: TItemType;
   onSubmit: string;
