@@ -1,9 +1,12 @@
 import React from "react";
 
-import { SubItem, TItem, PapulateItem } from "../../data/dbType";
+import { SubItem, TItem, PapulateItem, Item } from "../../data/dbType";
 import RenderItems from "../utils-components/RenderItems";
 import PwdHashing from "../utils-components/PwdHashing";
 import PapullateForm from "../utils-components/PapullateForm";
+import YoutubeSearchTxt from "./YoutubeSearchTxt";
+import ReverseVideoTxt from "./ReverseVideoTxt";
+import PasteSiteSearch from "./PasteSiteSearch";
 
 export interface PagesProps {
   PageItem: SubItem;
@@ -27,6 +30,15 @@ class Pages extends React.PureComponent<PagesProps, IPState> {
     };
     this.setFormsValue = this.setFormsValue.bind(this);
     this.setSubmitAll = this.setSubmitAll.bind(this);
+  }
+  componentDidUpdate(prevProps: PagesProps) {
+    if (prevProps.PageItem !== this.props.PageItem) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
   }
   setFormsValue(papullate: TPapulate, sectionTitle: string) {
     this.setState({ papullate, sectionTitle });
@@ -62,6 +74,9 @@ class Pages extends React.PureComponent<PagesProps, IPState> {
                   )}
                 </div>
               )}
+              {section.title === "YouTube Search Tool" && <YoutubeSearchTxt />}
+              {section.title === "Reverse Video Search Tool" && <ReverseVideoTxt />}
+              {section.title === "Paste Site Search Tool" && <PasteSiteSearch />}
               {section.items.map(item => (
                 <RenderItems
                   sectionTitle={this.state.sectionTitle}

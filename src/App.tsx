@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Menu from "./components/menu/Menu";
 import Pages from "./components/pages/Pages";
-import { ISearchItem, TItemType, ISubItem, TPageItem } from "./data/dbType";
+import { ISubItem, TPageItem } from "./data/dbType";
 export interface IState {
   PageItem: ISubItem;
 }

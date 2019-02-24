@@ -44,6 +44,8 @@ export interface Item {
   target?: string;
   lead?: string;
   dual?: boolean;
+  src?: string;
+  alt?: string;
 }
 
 export interface SubmitUrl {
@@ -160,6 +162,9 @@ export interface PapulateItem {
   Zip?: string;
   Latitude?: string;
   Longitude?: string;
+  "618"?: string;
+  "555"?: string;
+  "1212"?: string;
 }
 
 // MY OWN TYPE
@@ -216,12 +221,13 @@ export interface IResourceItem {
   url: string;
   target: string;
   itemType: TItemType;
+  lead?: string;
 }
 
-export type TItem = ISearchItem | IResourceItem;
+export type TItem = Item | ISearchItem | IResourceItem;
 
 export type TPageItem = ISearchPage | IResourcePage;
 
-export type TPageType = "Welcome" | "SearchPage" | "ResourcePage";
+export type TPageType = "Welcome" | "SearchPage" | "ResourcePage" | "ImagePage";
 
-export type TItemType = "link" | "input" | "welcome";
+export type TItemType = "Image" | "link" | "input" | "welcome";

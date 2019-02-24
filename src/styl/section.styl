@@ -12,9 +12,16 @@
     border-top-right-radius: 0.6rem
   section
     padding: 1rem
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    align-items: center
+    .each-item
+      flex: 1 1 100%
 
 
 .papullate-section
+  width: 100%
   display: flex
   min-height: 5rem
   margin-bottom: 1rem
@@ -30,7 +37,10 @@
     margin-left: 0.4rem
 
 
-.inp-section-wrapper
-  .inp-lead
-    margin-top: 1.5rem
-    font-size: 1.2rem
+.inp-lead
+  margin-top: 1.5rem
+  font-size: 1.2rem
+
+
+.red-text
+  color: red

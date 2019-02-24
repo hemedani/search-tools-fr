@@ -1,7 +1,7 @@
 import React from "react";
 import { InjectedFormikProps, withFormik } from "formik";
 import cn from "classnames";
-import { ISearchItem, PapulateItem } from "../../data/dbType";
+import { ISearchItem, PapulateItem, Item } from "../../data/dbType";
 import _ from "lodash";
 import Axios from "axios";
 
@@ -79,7 +79,7 @@ class InputForm extends React.PureComponent<InjectedFormikProps<Props, initialVa
             <button type="submit" className="sbmt-btn inp-btn i-rod last-child">
               {submitValue}
             </button>
-            {description && <p>{description}</p>}
+            {description && <p dangerouslySetInnerHTML={{ __html: description }} />}
           </div>
         </form>
       </div>

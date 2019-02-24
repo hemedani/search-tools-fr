@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TItem, ISearchItem, IResourceItem, PapulateItem } from "../../data/dbType";
+import { TItem, ISearchItem, IResourceItem, PapulateItem, Item } from "../../data/dbType";
 import InputForm from "../utils-components/InputForm";
 
 export interface IRenderItemProps {
@@ -17,12 +17,21 @@ const RenderItem = (item: TItem, setValue: PapulateItem, sectionTitle: string, s
   } else if (item.itemType === "link") {
     item = item as IResourceItem;
     return (
-      <a href={item.url} target={item.target} className="resource-link">
-        {item.name}
-      </a>
+      <div>
+        {item.lead && <div className="inp-lead">{item.lead}</div>}
+        <a href={item.url} target={item.target} className="resource-link">
+          {item.name}
+        </a>
+      </div>
     );
-  }
-  if (item.itemType === "welcome") {
+  } else if (item.itemType === "Image") {
+    item = item as Item;
+    return (
+      <div className="item-image-wrapper" key={item.id}>
+        <img src={item.src} alt={item.alt} />
+      </div>
+    );
+  } else if (item.itemType === "welcome") {
     return (
       <div className="welcome-page-item">
         <h1>Please select one of the menu items to began investigate</h1>
@@ -34,5 +43,5 @@ const RenderItem = (item: TItem, setValue: PapulateItem, sectionTitle: string, s
 };
 
 export default ({ item, setValue, sectionTitle, submitAll }: IRenderItemProps) => (
-  <div>{RenderItem(item, setValue, sectionTitle, submitAll)}</div>
+  <div className="each-item">{RenderItem(item, setValue, sectionTitle, submitAll)}</div>
 );

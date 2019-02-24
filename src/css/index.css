@@ -127,8 +127,16 @@
 }
 .section-wrapper section {
   padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section-wrapper section .each-item {
+  flex: 1 1 100%;
 }
 .papullate-section {
+  width: 100%;
   display: flex;
   min-height: 5rem;
   margin-bottom: 1rem;
@@ -143,9 +151,12 @@
 .btn-all-center p {
   margin-left: 0.4rem;
 }
-.inp-section-wrapper .inp-lead {
+.inp-lead {
   margin-top: 1.5rem;
   font-size: 1.2rem;
+}
+.red-text {
+  color: #f00;
 }
 .sbmt-btn {
   font-family: 'Shabnam', Tahoma;
@@ -235,6 +246,12 @@ select:disabled {
   border-left: 0.3rem solid #daa520;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+.item-image-wrapper {
+  width: 100%;
+}
+.item-image-wrapper img {
+  width: 100%;
 }
 .resource-link {
   text-decoration: none;
