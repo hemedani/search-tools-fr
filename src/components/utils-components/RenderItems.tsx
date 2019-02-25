@@ -2,6 +2,7 @@ import React from "react";
 
 import { TItem, ISearchItem, IResourceItem, PapulateItem, Item } from "../../data/dbType";
 import InputForm from "../utils-components/InputForm";
+import PostFormAction from "./PostFormAction";
 
 export interface IRenderItemProps {
   item: TItem;
@@ -37,6 +38,9 @@ const RenderItem = (item: TItem, setValue: PapulateItem, sectionTitle: string, s
         <h1>Please select one of the menu items to began investigate</h1>
       </div>
     );
+  } else if (item.itemType === "httpAction") {
+    item = item as Item;
+    return <PostFormAction item={item} />;
   } else {
     return null;
   }

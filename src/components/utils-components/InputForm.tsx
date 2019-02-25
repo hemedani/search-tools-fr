@@ -1,7 +1,7 @@
 import React from "react";
 import { InjectedFormikProps, withFormik } from "formik";
 import cn from "classnames";
-import { ISearchItem, PapulateItem, Item } from "../../data/dbType";
+import { ISearchItem, PapulateItem, Item, SubmitUrl } from "../../data/dbType";
 import _ from "lodash";
 import Axios from "axios";
 
@@ -98,8 +98,8 @@ export default withFormik({
   },
   handleSubmit: (values, { props: Props, setSubmitting }) => {
     const { submitUrl } = Props;
-    submitUrl.map(sub => {
-      const splitedUrl = sub.url.split("`{");
+    const createUrl = (text: string) => {
+      const splitedUrl = text.split("`{");
       let url = splitedUrl[0];
       splitedUrl.map(urls => {
         const key = urls.split("}`");
@@ -107,13 +107,41 @@ export default withFormik({
           url = url + values[key[0]] + key[1];
         }
       });
-      if (Props.onSubmit === "submitUrl") {
-        window.open(url, sub.urlSecondItem);
-      }
-    });
-    // if (Props.onSubmit === "setSomeState") {
-    //   Axios.get(url).then(resp => console.log(resp.data));
-    // }
+      return url;
+    };
+    const hendleSubmitUrl = (subUrl: initialValues[]) =>
+      subUrl.map((sub, i) => {
+        const url = createUrl(sub.url);
+        if (sub.setTimeOutForSub) {
+          setTimeout(() => {
+            window.open(url, sub.urlSecondItem);
+          }, 1500 * i);
+        } else {
+          window.open(url, sub.urlSecondItem);
+        }
+      });
+
+    if (Props.onSubmit === "submitUrl") {
+      hendleSubmitUrl(submitUrl);
+    }
+    if (Props.onSubmit === "httpGet") {
+      const url = createUrl(Props.httpUrl as string);
+      Axios.get(url).then(resp => {
+        let respVal = "";
+        if (resp.data.thumbnail_url) {
+          respVal = resp.data.thumbnail_url;
+        } else if ((Props.description as string).search("Reverse Facebook") >= 0) {
+          respVal = encodeURIComponent(resp.data);
+        } else {
+          respVal = resp.data;
+        }
+        
+        values[Props.inputItems[0].name] = respVal;
+        if (Props.afterSubmit === "submitUrl") {
+          hendleSubmitUrl(submitUrl);
+        }
+      });
+    }
     return;
   }
 })(InputForm);

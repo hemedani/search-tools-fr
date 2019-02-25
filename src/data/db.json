@@ -2087,6 +2087,66 @@
                     "onSubmit": "submitUrl",
                     "inSection": "Email Search Tool",
                     "isSubmitAll": true
+                  },
+                  {
+                    "id": "d37db0a8-2d52-4ccd-bb14-ff02d3884a03",
+                    "submitUrl": [
+                      {
+                        "url": "http://api.fullcontact.com/v2/person.html?email=`{s1a}`&apiKey=`{s1aa}`",
+                        "urlSecondItem": "google2window"
+                      }
+                    ],
+                    "submitValue": "Full Contact",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Email Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "212984b1-1871-4021-9ae4-512ef9d74f21",
+                        "name": "s1a",
+                        "placeholder": "Email Address",
+                        "type": "text"
+                      },
+                      {
+                        "id": "63cd9187-8728-4824-a60a-0ccd30559f6e",
+                        "name": "s1aa",
+                        "placeholder": "API Key",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "<a href=\"https://portal.fullcontact.com/signup\" target=\"_blank\">Get Key</a>"
+                  },
+                  {
+                    "id": "1a9baf80-8114-4726-a8c6-d0c6922f511d",
+                    "submitUrl": [
+                      {
+                        "url": "https://api.pipl.com/search/v5/?email=`{s3a}`&key=`{s3b}`&pretty=true",
+                        "urlSecondItem": "piplapiwindow"
+                      }
+                    ],
+                    "submitValue": "Pipl API",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Email Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "bf5bd0e5-65a7-471e-8650-befd83fba5b8",
+                        "name": "s3a",
+                        "placeholder": "Email Address",
+                        "type": "text"
+                      },
+                      {
+                        "id": "50c2cd18-d302-4416-a425-9b910f424e60",
+                        "name": "s3b",
+                        "placeholder": "API Key",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "<a href=\"https://pipl.com/api/demo\" target=\"_blank\">Get Key</a>"
                   }
                 ]
               }
@@ -5896,6 +5956,1348 @@
         "icon": "logo-twitter",
         "subItem": [
           {
+            "id": "512002f7-f6e3-467a-b1b9-7343f3b2ec34",
+            "pageType": "SearchPage",
+            "title": "Twitter Tool",
+            "section": [
+              {
+                "id": "7bfdaf9e-76fa-4b6e-84a4-0a5f2013e9a8",
+                "title": "Twitter Profile Search",
+                "hasPapulate": true,
+                "papulateItem": {
+                  "papulate": ""
+                },
+                "items": [
+                  {
+                    "id": "fd0c36cf-82e1-49c4-83ab-79b6de7921cb",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/`{Go}`",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "2f9b472c-3109-4c78-afa7-990536f1673a",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Target's live Twitter page"
+                  },
+                  {
+                    "id": "c7e06615-7bf6-4f2e-b420-09136b8e2f18",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`&src=typd",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "d544c6a2-1224-457b-9f9a-1c155e1754fe",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Outgoing Tweets"
+                  },
+                  {
+                    "id": "5255cd23-94de-4fae-99ba-e9b9c685fce5",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`&src=typd",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "d6562ec8-4d75-4af4-87ae-08ed176ae4e6",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Incoming Tweets"
+                  },
+                  {
+                    "id": "e03f3eed-4ac0-4004-8f0f-cf2a254b2b1b",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/`{Go}`/media/",
+                        "urlSecondItem": "twitterimagewindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "1605ad79-3504-4fac-9719-db9103430949",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Media posts"
+                  },
+                  {
+                    "id": "68e28c54-a977-4da4-a8d8-bc0ec61310ef",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/`{Go}`/likes/",
+                        "urlSecondItem": "twitterimagewindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "53b91184-edc4-4a6c-abb0-77a871d2842f",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Favorite posts"
+                  },
+                  {
+                    "id": "6dbf42ad-f42c-433a-91ce-edbf19002f24",
+                    "submitUrl": [
+                      {
+                        "url": "https://discover.twitter.com/first-tweet#`{Go}`",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "0127bdeb-15a9-425f-a4d1-ada66ab8ab58",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "First Tweet"
+                  },
+                  {
+                    "id": "8cbbe6e2-64e4-4a91-b5f1-add3d092b4b2",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2017-01-01%20until%3A2017-12-31&src=typd",
+                        "urlSecondItem": "twhist0window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2016-01-01%20until%3A2016-12-31&src=typd",
+                        "urlSecondItem": "twhist1window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2015-01-01%20until%3A2015-12-31&src=typd",
+                        "urlSecondItem": "twhist2window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2014-01-01%20until%3A2014-12-31&src=typd",
+                        "urlSecondItem": "twhist3window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2013-01-01%20until%3A2013-12-31&src=typd",
+                        "urlSecondItem": "twhist4window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2012-01-01%20until%3A2012-12-31&src=typd",
+                        "urlSecondItem": "twhist5window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2011-01-01%20until%3A2011-12-31&src=typd",
+                        "urlSecondItem": "twhist6window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2010-01-01%20until%3A2010-12-31&src=typd",
+                        "urlSecondItem": "twhist7window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2009-01-01%20until%3A2009-12-31&src=typd",
+                        "urlSecondItem": "twhist8window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2008-01-01%20until%3A2008-12-31&src=typd",
+                        "urlSecondItem": "twhist9window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=from%3A`{Go}`%20since%3A2007-01-01%20until%3A2007-12-31&src=typd",
+                        "urlSecondItem": "twhist10window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "afe9c8ad-18a0-4e03-8b6c-316a94330cab",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Yearly Tweets From"
+                  },
+                  {
+                    "id": "c3be4b01-36d8-4367-9417-19fb789221f4",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2017-01-01%20until%3A2017-12-31&src=typd",
+                        "urlSecondItem": "twhist0window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2016-01-01%20until%3A2016-12-31&src=typd",
+                        "urlSecondItem": "twhist1window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2015-01-01%20until%3A2015-12-31&src=typd",
+                        "urlSecondItem": "twhist2window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2014-01-01%20until%3A2014-12-31&src=typd",
+                        "urlSecondItem": "twhist3window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2013-01-01%20until%3A2013-12-31&src=typd",
+                        "urlSecondItem": "twhist4window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2012-01-01%20until%3A2012-12-31&src=typd",
+                        "urlSecondItem": "twhist5window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2011-01-01%20until%3A2011-12-31&src=typd",
+                        "urlSecondItem": "twhist6window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2010-01-01%20until%3A2010-12-31&src=typd",
+                        "urlSecondItem": "twhist7window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2009-01-01%20until%3A2009-12-31&src=typd",
+                        "urlSecondItem": "twhist8window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2008-01-01%20until%3A2008-12-31&src=typd",
+                        "urlSecondItem": "twhist9window"
+                      },
+                      {
+                        "url": "https://twitter.com/search?q=to%3A`{Go}`%20since%3A2007-01-01%20until%3A2007-12-31&src=typd",
+                        "urlSecondItem": "twhist10window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "a9ffa1f3-b8fc-408d-b4e6-c64e9e1fb56a",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Yearly Tweets To"
+                  },
+                  {
+                    "id": "6bbd8248-9408-48a8-bbc1-9b333b3bc1ed",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getid.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "jpn",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "3bd40e53-9345-4920-9494-79d5fbcb58f3",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver User ID"
+                  },
+                  {
+                    "id": "636e1faa-11de-4c23-a5df-93fce82508b8",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getdata.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "d0e27615-47bc-46f2-85c0-6176ed89f032",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver User Data"
+                  },
+                  {
+                    "id": "099f356f-2eee-40fc-985f-af10250da47d",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getfollowers.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "6f45ffad-58ea-495c-8b3e-202acad6fef1",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver Follower"
+                  },
+                  {
+                    "id": "84edb83b-2d55-4abb-aabf-58f2e2fa80e6",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getfriends.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "80488dc6-7eac-4c03-a556-c22536c62e26",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver Friend Data"
+                  },
+                  {
+                    "id": "b657c9ea-60d1-4f78-9138-7ca6dc23c9b4",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/gettweets.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "081cbc14-6bd3-426a-9ab8-001a6247b2bd",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver Tweet Data"
+                  },
+                  {
+                    "id": "9945933a-d822-4685-a6c5-1840cb25e083",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getfavorites.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "509d3bf6-79b8-41ff-856a-6c5ff481809d",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "TweetBeaver Favorites"
+                  },
+                  {
+                    "id": "684c837e-438a-49fb-8949-f3e8dc8e2359",
+                    "submitUrl": [
+                      {
+                        "url": "https://socialbearing.com/search/user/`{Go}`",
+                        "urlSecondItem": "twittersb1window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "b0db24c5-f573-4251-9b02-96a3ac9049d0",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Twitter Analytics"
+                  },
+                  {
+                    "id": "f96d76bd-826f-4e61-9fd1-51d15766c88d",
+                    "submitUrl": [
+                      {
+                        "url": "https://socialbearing.com/search/followers/`{Go}`",
+                        "urlSecondItem": "twittersb2window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "010ebdda-7c66-4824-8b1c-e427ca9fd3f2",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Twitter Followers"
+                  },
+                  {
+                    "id": "65863501-3e22-4bf7-9c5b-652d49f7bc9b",
+                    "submitUrl": [
+                      {
+                        "url": "https://socialbearing.com/search/friends/`{Go}`",
+                        "urlSecondItem": "twittersb3window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "2d955b6c-b069-4bac-9002-335bea958308",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Twitter Friends"
+                  },
+                  {
+                    "id": "9385890f-bdd2-44b2-b815-83c9d4512fc1",
+                    "submitUrl": [
+                      {
+                        "url": "http://backtweets.com/search/?q=`{Go}`",
+                        "urlSecondItem": "twittersb4window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "55f7887d-1a38-47a5-8b04-85da02be8f22",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Outgoing Archive"
+                  },
+                  {
+                    "id": "35bd93db-a584-4e27-adc8-7b19be63968a",
+                    "submitUrl": [
+                      {
+                        "url": "http://backtweets.com/search/?q=%40`{Go}`",
+                        "urlSecondItem": "twittersb4bwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "f6289cc6-e3f5-4d27-a31a-9884b086b810",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Incoming Archive"
+                  },
+                  {
+                    "id": "b9dfee58-6446-42bd-91b9-7e8d9c3c6ac8",
+                    "submitUrl": [
+                      {
+                        "url": "https://twicopy.org/`{Go}`",
+                        "urlSecondItem": "twittersbcbwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "d46a2b2b-acc1-437b-a6a6-0cd1df18040c",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Twicopy Archive"
+                  },
+                  {
+                    "id": "e029ec67-2637-4ad2-bd5d-38529d46c9d5",
+                    "submitUrl": [
+                      {
+                        "url": "https://foller.me/`{Go}`",
+                        "urlSecondItem": "twittersb5window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "84283e96-69cf-4683-b394-646991149dd2",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Profile Details"
+                  },
+                  {
+                    "id": "bb7960e9-abfe-4340-8aca-4b7b04920cf8",
+                    "submitUrl": [
+                      {
+                        "url": "http://google.com/search?q=site%3Atwitter.com%2F`{Go}`",
+                        "urlSecondItem": "tw2awindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "743a3e9f-e0ee-4fc3-aee4-2fb52fbc345c",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Google Site Search"
+                  },
+                  {
+                    "id": "4d25af5f-b5f3-428a-a9af-aa36f445efb0",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site%3Atwitter.com%2F`{Go}`%2Fstatus%2F",
+                        "urlSecondItem": "tw2aawindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "f7acbcfc-0ffb-4dfb-ade3-8ab60386abb3",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Google Tweet Search"
+                  },
+                  {
+                    "id": "8847251a-814f-4400-b373-9bb00cdb887d",
+                    "submitUrl": [
+                      {
+                        "url": "http://www.bing.com/search?q=twitter.com/`{Go}`",
+                        "urlSecondItem": "bingwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "73d56178-92bb-4953-bad9-6a196af439cf",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Bing Site Search"
+                  },
+                  {
+                    "id": "54c330da-33a8-4c61-836c-5e569c5b91b1",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.yandex.com/search/?text=https%3A%2F%2Ftwitter.com%2F`{Go}`",
+                        "urlSecondItem": "yandwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "277c3cac-d8bc-48fe-90b7-1c1d151b440b",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Yandex Site Search"
+                  },
+                  {
+                    "id": "18275276-42ff-49ee-8c01-6811282280fb",
+                    "submitUrl": [
+                      {
+                        "url": "https://webcache.googleusercontent.com/search?q=cache:https://twitter.com/`{Go}`",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "28ee485e-0aa1-401b-8ae6-55473a333d3d",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Google Cache Tweets"
+                  },
+                  {
+                    "id": "3d0fea5c-23f6-4708-bfa4-277ea6ea1f4c",
+                    "submitUrl": [
+                      {
+                        "url": "https://webcache.googleusercontent.com/search?q=cache:https://twitter.com/`{Go}`&num=1&hl=en&gl=ca&strip=0&vwsrc=1",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "96eeb202-aa2f-4315-91aa-ac7739b88402",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Google Cache Text"
+                  },
+                  {
+                    "id": "039ae002-d5b3-42b1-9ade-6b66bfd26ca2",
+                    "submitUrl": [
+                      {
+                        "url": "http://web.archive.org/web/*/twitter.com/`{Go}`",
+                        "urlSecondItem": "waybackwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "9bcdc18c-9f4c-4058-b531-ae2632ad2b26",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Wayback Machine History"
+                  },
+                  {
+                    "id": "f93827aa-6cad-488c-8297-4c9e92bfcd8e",
+                    "submitUrl": [
+                      {
+                        "url": "http://twicsy.com/u/`{Go}`",
+                        "urlSecondItem": "picswindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "978fabc2-c5d3-4953-9017-6bd26c696649",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Twicsy Archive"
+                  },
+                  {
+                    "id": "54a46f68-d1c0-4927-9c92-9e639d9c6de0",
+                    "submitUrl": [
+                      {
+                        "url": "https://pipl.com/search/?fn=&mn=&ln=&em=&phn=&un=`{Go}`&savef=1&deepnc=Advanced&l_mobile=&in=7",
+                        "urlSecondItem": "piplwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "fb4cfd03-bbd8-4553-ac25-cbaed035697d",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Pipl profile"
+                  },
+                  {
+                    "id": "be5d5710-7493-4cd8-8ba2-8d744f3e72ac",
+                    "submitUrl": [
+                      {
+                        "url": "http://facebook.com/`{Go}`",
+                        "urlSecondItem": "fbwindow"
+                      },
+                      {
+                        "url": "http://youtube.com/`{Go}`",
+                        "urlSecondItem": "ytwindow"
+                      },
+                      {
+                        "url": "http://`{Go}`.tumblr.com",
+                        "urlSecondItem": "tumbwindow"
+                      },
+                      {
+                        "url": "http://instagram.com/`{Go}`",
+                        "urlSecondItem": "igwindow"
+                      },
+                      {
+                        "url": "https://plus.google.com/+`{Go}`",
+                        "urlSecondItem": "gpwindow"
+                      },
+                      {
+                        "url": "http://knowem.com/checksocialnames.php?u=`{Go}`",
+                        "urlSecondItem": "knwindow"
+                      },
+                      {
+                        "url": "https://www.google.com/search?q=%22`{Go}`@gmail.com%22OR%22",
+                        "urlSecondItem": "emailwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "c463df2c-5968-438e-b559-4606e4cde757",
+                        "name": "Go",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Additional networks"
+                  },
+                  {
+                    "id": "eaa1cd06-841d-477e-8842-d94c57b49f0b",
+                    "submitUrl": [
+                      {
+                        "url": "http://followerwonk.com/compare/`{Twitter Name 1}`/`{Twitter Name 2}`/`{Twitter Name 3}`?op=fl",
+                        "urlSecondItem": "domainwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "e4024c7c-1c5d-4c3c-a1f9-9f4568d657f0",
+                        "name": "Twitter Name 1",
+                        "placeholder": "Twitter Name 1",
+                        "type": "text",
+                        "isPapulate": true,
+                        "size": 7
+                      },
+                      {
+                        "id": "6641a83f-281a-4ec6-ab48-f827a7cfff46",
+                        "name": "Twitter Name 2",
+                        "placeholder": "Twitter Name 2",
+                        "type": "text",
+                        "isPapulate": false,
+                        "size": 7
+                      },
+                      {
+                        "id": "9ad684f5-726f-4d32-a683-51dee0221cc1",
+                        "name": "Twitter Name 3",
+                        "placeholder": "Twitter Name 3",
+                        "type": "text",
+                        "isPapulate": false,
+                        "size": 7
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Friends in common"
+                  },
+                  {
+                    "id": "81d5717f-6d30-4679-b770-ee239d68b34d",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/getscreenname.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "2e7d7e78-4fb5-4ebd-a209-6a9b7d1a1481",
+                        "name": "jpn",
+                        "placeholder": "Twitter Number",
+                        "type": "text",
+                        "isPapulate": true
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "TweetBeaver  Name"
+                  },
+                  {
+                    "id": "4de2b206-4f83-43be-875e-1184165d450e",
+                    "submitUrl": [
+                      {
+                        "url": "https://tweetbeaver.com/mutualfollow.php",
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "target": "_blank",
+                    "method": "POST",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "3a037eab-2c16-4a6d-92d5-9f5d1d138679",
+                        "name": "jpn",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "acaa7f37-3a71-4fe2-a724-eb70e0f4936a",
+                        "name": "jpq",
+                        "placeholder": "Twitter Name",
+                        "type": "text",
+                        "isPapulate": false
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Mutual Friends"
+                  },
+                  {
+                    "id": "6bfd97a8-4ff0-4dd0-8075-4bab7038ec9a",
+                    "submitUrl": [
+                      {
+                        "urlSecondItem": ""
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "httpAction",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Search",
+                    "inputItems": [
+                      {
+                        "id": "736e2c16-95f7-45b6-815e-cc8e405f8983",
+                        "name": "one",
+                        "placeholder": "From...",
+                        "type": "text",
+                        "isPapulate": true
+                      },
+                      {
+                        "id": "c555cbc3-ce05-4a09-93db-bc40cf5c3e9c",
+                        "name": "two",
+                        "placeholder": "To...",
+                        "type": "text",
+                        "isPapulate": false
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Isolated Tweets"
+                  }
+                ]
+              },
+              {
+                "id": "346f2ce8-a939-4513-8015-669be34f9411",
+                "hasPapulate": false,
+                "title": "Twitter Profile Locate",
+                "items": [
+                  {
+                    "id": "367ba949-6a68-415e-96bd-030f00080c44",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?mode=users&q=`{Go}`",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "d993dbc0-0200-40df-a357-66ab81270a9b",
+                        "name": "Go",
+                        "placeholder": "Real Name",
+                        "type": "text",
+                        "isPapulate": false
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "Profiles by Name I"
+                  },
+                  {
+                    "id": "0099131c-2152-4dcf-b003-dd521c97f465",
+                    "submitUrl": [
+                      {
+                        "url": "http://followerwonk.com/bio/?q_type=all&n=`{Go}`",
+                        "urlSecondItem": "k1window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "873f206b-303d-44ab-97c7-09f95b2fbaeb",
+                        "name": "Go",
+                        "placeholder": "Real Name",
+                        "type": "text",
+                        "isPapulate": false
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Profiles by Name II"
+                  },
+                  {
+                    "id": "9c54a2f0-f1b9-4ddc-b8d3-4299e37fb4c8",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=geocode%3A`{lat}`%2C`{long}`%2C`{distance}`km&src=typd",
+                        "urlSecondItem": "twitterwindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "9da6fab8-aff3-4ab4-8994-21824dd32ba3",
+                        "name": "lat",
+                        "placeholder": "GPS LAT",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "35931013-6c49-46a4-9311-8208e63c108d",
+                        "name": "long",
+                        "placeholder": "GPS LONG",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "31bbef64-32ea-47e8-b0ca-bda0d1b9b1f2",
+                        "name": "distance",
+                        "placeholder": "km",
+                        "type": "text",
+                        "size": "6.5"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Messages by location"
+                  },
+                  {
+                    "id": "7a81458a-bdcc-4c01-8930-d56efd77331b",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=\"`{man}`\"%20`{or1}`%20OR%20`{or2}`%20OR%20`{or3}`%20OR%20`{or4}`",
+                        "urlSecondItem": "twitterwindow10"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "46d7464c-eec8-4214-8255-f8c71b37998e",
+                        "name": "man",
+                        "placeholder": "Mandatory Term(s)",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "e1d06559-855c-4f19-9c04-62de76548e0d",
+                        "name": "or1",
+                        "placeholder": "Optional ",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "6348a924-dcdd-45b8-8a4a-550d49772e8f",
+                        "name": "or2",
+                        "placeholder": "Optional ",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "12f07522-7c75-4f10-b2e3-21c0c90ac496",
+                        "name": "or3",
+                        "placeholder": "Optional ",
+                        "type": "text",
+                        "size": "6.5"
+                      },
+                      {
+                        "id": "594576af-ff03-4071-8aff-12e396be570e",
+                        "name": "or4",
+                        "placeholder": "Optional ",
+                        "type": "text",
+                        "size": "6.5"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Locate messages with mandatory and optional keywords"
+                  },
+                  {
+                    "id": "dc229a4f-fec8-4544-9cf5-abc29f889e3e",
+                    "submitUrl": [
+                      {
+                        "url": "`{picbig}`:orig",
+                        "urlSecondItem": "twitterorgwindow32"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "f24384af-af87-44f7-bc58-7176ea0fa736",
+                        "name": "picbig",
+                        "placeholder": "Twitter Photo Link",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Displays largest image"
+                  },
+                  {
+                    "id": "d3e229bb-583a-470e-ae8c-c7f258740be9",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/searchbyimage?site=search&sa=X&image_url=`{image}`",
+                        "urlSecondItem": "image1window"
+                      },
+                      {
+                        "url": "http://www.tineye.com/search/?url=`{image}`",
+                        "urlSecondItem": "image2window"
+                      },
+                      {
+                        "url": "https://www.yandex.com/images/search?img_url=`{image}`&rpt=imageview",
+                        "urlSecondItem": "image3window"
+                      },
+                      {
+                        "url": "http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=`{image}`",
+                        "urlSecondItem": "image4window"
+                      },
+                      {
+                        "url": "https://image.baidu.com/pcdutu?queryImageUrl=`{image}`",
+                        "urlSecondItem": "image5window"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "1c901c9d-8831-470c-a2a8-e4937d17f7bd",
+                        "name": "image",
+                        "placeholder": "Twitter Photo Link",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Reverse Image Search"
+                  },
+                  {
+                    "id": "ddc8fe63-7b4b-4d8e-a319-b7da2263d475",
+                    "submitUrl": [
+                      {
+                        "url": "http://google.com/search?q=site%3Atwitter.com+-inurl%3Astatus+\"`{twbio}`\"",
+                        "urlSecondItem": "twbiowindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "cb32c0ca-12b4-4c2f-a634-40124697bd0d",
+                        "name": "twbio",
+                        "placeholder": "Twitter Bio from Profile",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Related Profiles"
+                  },
+                  {
+                    "id": "b1cd4b3a-97e4-4a63-9071-d50e670a657d",
+                    "submitUrl": [
+                      {
+                        "url": "https://api.periscope.tv/api/v2/getBroadcastPublic?token=`{twps}`",
+                        "urlSecondItem": "twpswindow"
+                      }
+                    ],
+                    "submitValue": "Go",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "9d27844b-3491-4fb7-a764-1f8c2432b879",
+                        "name": "twps",
+                        "placeholder": "Periscope Video ID",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Periscope Metadata"
+                  },
+                  {
+                    "id": "f983088f-ac2d-44ce-9ad6-4c91a44f5538",
+                    "submitUrl": [
+                      {
+                        "url": "https://twitter.com/search?q=`{keyword}` since:`{startdate}` until:`{stopdate}`",
+                        "urlSecondItem": "twitterwindow2"
+                      }
+                    ],
+                    "submitValue": "Submit",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Twitter Profile Locate",
+                    "inputItems": [
+                      {
+                        "id": "909b5eb1-eb5a-496b-9770-cdba5895a86f",
+                        "name": "startdate",
+                        "placeholder": "Start Date",
+                        "type": "date",
+                        "size": "10"
+                      },
+                      {
+                        "id": "909b5eb1-eb5a-496b-9770-cdba5895a86f",
+                        "name": "stopdate",
+                        "placeholder": "End Date",
+                        "type": "date",
+                        "size": "10"
+                      },
+                      {
+                        "id": "e44f4aca-c595-44f5-bd09-f41d964de97b",
+                        "name": "keyword",
+                        "placeholder": "Keyword",
+                        "type": "text",
+                        "size": "10"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true,
+                    "description": "Search specific dates by keyword"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "e4192368-f002-4270-9eda-fb113fc021e9",
             "title": "Twitter Resources",
             "pageType": "ResourcePage",
@@ -6291,6 +7693,208 @@
                     "onSubmit": "submitUrl",
                     "inSection": "Instagram Tool",
                     "isSubmitAll": true
+                  },
+                  {
+                    "id": "8b3fa82b-b965-4157-b5f6-f572fd7642fb",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/searchbyimage?site=search&sa=X&image_url=`{IGVideoID}`",
+                        "urlSecondItem": "ll1window"
+                      },
+                      {
+                        "url": "http://www.tineye.com/search/?url=`{IGVideoID}`",
+                        "urlSecondItem": "ll2window"
+                      },
+                      {
+                        "url": "https://www.yandex.com/images/search?img_url=`{IGVideoID}`&rpt=imageview",
+                        "urlSecondItem": "ll3window"
+                      },
+                      {
+                        "url": "http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=`{IGVideoID}`",
+                        "urlSecondItem": "ll4window"
+                      },
+                      {
+                        "url": "https://image.baidu.com/pcdutu?queryImageUrl=`{IGVideoID}`ll5window",
+                        "urlSecondItem": "XMLHttpRequest"
+                      }
+                    ],
+                    "submitValue": "Reverse Image",
+                    "itemType": "input",
+                    "onSubmit": "httpGet",
+                    "afterSubmit": "submitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.instagram.profile.php?videoid=`{IGVideoID}`",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "93e43f20-d88d-4b21-9957-4a37f2a91ab6",
+                        "name": "IGVideoID",
+                        "placeholder": "Instagram User Name",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "bc79a70d-af74-459b-aa95-ac9a8294f84c",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/instagram.php?username=`{username}`",
+                        "urlSecondItem": "frame1"
+                      }
+                    ],
+                    "submitValue": "User Number",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "a8dce83b-7fc7-4237-8038-177ec7e41696",
+                        "name": "username",
+                        "placeholder": "Instagram User Name",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "c7b9d16f-d03c-4c1c-9b5b-7beef1708917",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=\"`{igname}`\"+\"instagram\"",
+                        "urlSecondItem": "ignamewindow"
+                      }
+                    ],
+                    "submitValue": "User Name",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "ac98aa7d-91ef-4d4f-9a69-5b68c6c53d15",
+                        "name": "igname",
+                        "placeholder": "Instagram User Number",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "ca4e2148-b14c-4c7a-bcb5-33089f63fba1",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:twitter.com+%22`{ig6}`%22+%22instagram.com%2Fp%22",
+                        "urlSecondItem": "ig6window"
+                      }
+                    ],
+                    "submitValue": "IG Tweets",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "8de3fa27-780e-4c87-935e-cf6e5f2511a1",
+                        "name": "ig6",
+                        "placeholder": "Real Name",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "eca78c4c-bb6b-43ea-8af2-d31cf78c4981",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:instagram.com+%22`{ig4}`%22",
+                        "urlSecondItem": "ig4window"
+                      }
+                    ],
+                    "submitValue": "Related Posts",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "8d402a50-0ad9-49da-8b4d-781cf0bedc91",
+                        "name": "ig4",
+                        "placeholder": "Real Name",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "f50f2a4c-5153-4a2b-8bf7-53dec3acf1bb",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/search?q=site:instagram.com+%22`{ig5}`%22",
+                        "urlSecondItem": "ig5window"
+                      }
+                    ],
+                    "submitValue": "Related Posts",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "c9b80d71-740b-41ec-805c-7996da08547c",
+                        "name": "ig5",
+                        "placeholder": "Topic or Keyword",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "03547eb2-98b4-4293-967d-c693375ef2b6",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.instagram.com/explore/tags/`{ig7}`",
+                        "urlSecondItem": "ig7window"
+                      }
+                    ],
+                    "submitValue": "Tagged Posts",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "b6a9f937-42d9-476d-b903-f671fe812f84",
+                        "name": "ig7",
+                        "placeholder": "Topic or Keyword",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "f0c80451-942f-4e1d-8800-968ee13721f7",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/ig.time.php?username=`{ig9}`",
+                        "urlSecondItem": "frame2"
+                      }
+                    ],
+                    "submitValue": "Date/Time Post",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Instagram Tool",
+                    "inputItems": [
+                      {
+                        "id": "51148d7e-6071-4338-89fe-41a104540058",
+                        "name": "ig9",
+                        "placeholder": "IG Post ID",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
                   }
                 ]
               }
@@ -8249,6 +9853,164 @@
                     ],
                     "isSubmitAll": false,
                     "breaking": true
+                  },
+                  {
+                    "id": "2a087b1c-848e-4cf1-b754-3808a51eaef5",
+                    "submitUrl": [
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@gmail.com?truncateResponse=true",
+                        "urlSecondItem": "1leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@yahoo.com?truncateResponse=true",
+                        "urlSecondItem": "2leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@hotmail.com?truncateResponse=true",
+                        "urlSecondItem": "3leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@protonmail.com?truncateResponse=true",
+                        "urlSecondItem": "4leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@live.com?truncateResponse=true",
+                        "urlSecondItem": "5leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@outlook.com?truncateResponse=true",
+                        "urlSecondItem": "6leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@icloud.com?truncateResponse=true",
+                        "urlSecondItem": "7leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@yandex.com?truncateResponse=true",
+                        "urlSecondItem": "8leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@gmx.com?truncateResponse=true",
+                        "urlSecondItem": "9leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@mail.com?truncateResponse=true",
+                        "urlSecondItem": "10leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@mac.com?truncateResponse=true",
+                        "urlSecondItem": "11leakwindow",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://haveibeenpwned.com/api/v2/breachedaccount/`{all2}`@me.com?truncateResponse=true",
+                        "urlSecondItem": "12leakwindow",
+                        "setTimeOutForSub": true
+                      }
+                    ],
+                    "submitValue": "Leaks-HIBP",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "User Name Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "799a4219-a7fd-4a2e-b410-77f211409199",
+                        "name": "all2",
+                        "placeholder": "User Name-Web Based",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
+                  },
+                  {
+                    "id": "37780dbc-2ae8-4bdf-b2ab-8159aa064ddb",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.gmail.php?username=`{all4}`",
+                        "urlSecondItem": "gmailframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.yahoo.php?username=`{all4}`",
+                        "urlSecondItem": "yahooframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.hotmail.php?username=`{all4}`",
+                        "urlSecondItem": "hotmailframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.protonmail.php?username=`{all4}`",
+                        "urlSecondItem": "protonmailframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.live.php?username=`{all4}`",
+                        "urlSecondItem": "liveframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.outlook.php?username=`{all4}`",
+                        "urlSecondItem": "outlookframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.icloud.php?username=`{all4}`",
+                        "urlSecondItem": "icloudframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.yandex.php?username=`{all4}`",
+                        "urlSecondItem": "yandexframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.gmx.php?username=`{all4}`",
+                        "urlSecondItem": "gmxframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.mail.php?username=`{all4}`",
+                        "urlSecondItem": "mailframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.mac.php?username=`{all4}`",
+                        "urlSecondItem": "macframe",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/leaks.me.php?username=`{all4}`",
+                        "urlSecondItem": "meframe",
+                        "setTimeOutForSub": true
+                      }
+                    ],
+                    "submitValue": "Leaks-HIBP",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "User Name Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "21448cdb-4c7d-43fd-8027-38a6cf197792",
+                        "name": "all4",
+                        "placeholder": "User Name-API Based",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
                   }
                 ]
               }
@@ -9429,6 +11191,90 @@
                     "isSubmitAll": false,
                     "breaking": false,
                     "lead": "International Search Engine all-In-One:"
+                  },
+                  {
+                    "id": "594da04e-1ed3-405a-9595-fea6290e6019",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.1994.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame1",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.1995.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame2",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.1996.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame3",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.1997.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame4",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.1998.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame5",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2001.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame6",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2002.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame7",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2003.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame8",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2007.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame9",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2008.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame10",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2013.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame11",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.2014.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame12",
+                        "setTimeOutForSub": true
+                      },
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/telephone.america.php?pall3=`{pall3}`",
+                        "urlSecondItem": "frame13",
+                        "setTimeOutForSub": true
+                      }
+                    ],
+                    "submitValue": "Historical Phonebook",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "USA Telephone Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "841b5067-e2ef-45b0-9419-319f4f6d424e",
+                        "name": "pall3",
+                        "placeholder": "6185551212",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": true
                   }
                 ]
               }
@@ -11579,6 +13425,77 @@
                     "isSubmitAll": false,
                     "breaking": false,
                     "lead": "ElasticSearch:"
+                  },
+                  {
+                    "id": "7c18e205-bd28-42dd-a322-4c0d155205b5",
+                    "submitUrl": [
+                      {
+                        "url": "http://`{ip16a}`:9200/`{ip16b}`/_search?size=100",
+                        "urlSecondItem": "ip16window",
+                        "setTimeOutForSub": false
+                      }
+                    ],
+                    "submitValue": "Index View",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "IP Address Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "4fc1567a-d621-46d0-b688-02c960892e4b",
+                        "name": "ip16a",
+                        "placeholder": "IP Address",
+                        "type": "text",
+                        "size": 7
+                      },
+                      {
+                        "id": "cbbe0b45-cc54-4b64-880b-53fd648d637e",
+                        "name": "ip16b",
+                        "placeholder": "Index Name",
+                        "type": "text",
+                        "size": 7
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false
+                  },
+                  {
+                    "id": "96eb321d-9e83-4ee1-9de6-ebc97a8ae648",
+                    "submitUrl": [
+                      {
+                        "url": "http://`{ip17a}`:9200/`{ip17b}`/_search?q=`{ip17c}`&size=10000",
+                        "urlSecondItem": "ip17window",
+                        "setTimeOutForSub": false
+                      }
+                    ],
+                    "submitValue": "Index Search",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "IP Address Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "e3a06a2b-a52c-449c-8f04-70966446b1c6",
+                        "name": "ip17a",
+                        "placeholder": "IP Address",
+                        "type": "text",
+                        "size": 7
+                      },
+                      {
+                        "id": "323da6b9-5e22-46f8-8f65-59b693a58e2f",
+                        "name": "ip17b",
+                        "placeholder": "Index Name",
+                        "type": "text",
+                        "size": 7
+                      },
+                      {
+                        "id": "71a25c0e-adf5-4545-a7a0-a86c19f998e8",
+                        "name": "ip17c",
+                        "placeholder": "Keyword",
+                        "type": "text",
+                        "size": 7
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false
                   }
                 ]
               }
@@ -12084,7 +14001,7 @@
                         "urlSecondItem": "vimeo1window"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "vimeo2window"
                       },
                       {
@@ -12101,10 +14018,10 @@
                       }
                     ],
                     "submitValue": "Submit",
-                    "fetchUrl": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/`{Submit}`",
-                    "afterFetch": "vimoSubmitUrl",
+                    "httpUrl": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/`{Submit}`",
+                    "afterSubmit": "submitUrl",
                     "itemType": "input",
-                    "onSubmit": "fetch",
+                    "onSubmit": "httpGet",
                     "inSection": "Reverse Video Search Tool",
                     "inputItems": [
                       {
@@ -12127,7 +14044,7 @@
                         "urlSecondItem": "FB1window"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "FB2window"
                       },
                       {
@@ -12144,10 +14061,10 @@
                       }
                     ],
                     "submitValue": "Submit",
-                    "fetchUrl": "https://inteltechniques.com/osint/iframe/reverse.facebook.php?video_id=`{Submit}`",
-                    "afterFetch": "facebookSubmitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.facebook.php?video_id=`{Submit}`",
+                    "afterSubmit": "submitUrl",
                     "itemType": "input",
-                    "onSubmit": "fetch",
+                    "onSubmit": "httpGet",
                     "inSection": "Reverse Video Search Tool",
                     "inputItems": [
                       {
@@ -12170,7 +14087,7 @@
                         "urlSecondItem": "ll1window"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "ll2window"
                       },
                       {
@@ -12187,10 +14104,10 @@
                       }
                     ],
                     "submitValue": "Submit",
-                    "fetchUrl": "https://inteltechniques.com/osint/iframe/reverse.vine.php?videoid=`{Submit}`",
-                    "afterFetch": "vineSubmitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.vine.php?videoid=`{Submit}`",
+                    "afterSubmit": "submitUrl",
                     "itemType": "input",
-                    "onSubmit": "fetch",
+                    "onSubmit": "httpGet",
                     "inSection": "Reverse Video Search Tool",
                     "inputItems": [
                       {
@@ -12213,7 +14130,7 @@
                         "urlSecondItem": "ll1windowi"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "ll2windowi"
                       },
                       {
@@ -12230,10 +14147,10 @@
                       }
                     ],
                     "submitValue": "Submit",
-                    "fetchUrl": "https://inteltechniques.com/osint/iframe/reverse.instagram.php?videoid=`{Submit}`",
-                    "afterFetch": "instaSubmitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.instagram.php?videoid=`{Submit}`",
+                    "afterSubmit": "submitUrl",
                     "itemType": "input",
-                    "onSubmit": "fetch",
+                    "onSubmit": "httpGet",
                     "inSection": "Reverse Video Search Tool",
                     "inputItems": [
                       {
@@ -12249,6 +14166,48 @@
                     "description": "Reverse Instagram Video Search  - ex: https://www.instagram.com/p/<span class=\"red-text\">-e1adclZYk</span>"
                   },
                   {
+                    "id": "6d4d6f2e-e51a-4f03-985a-0b1af7461ee3",
+                    "submitUrl": [
+                      {
+                        "url": "https://www.google.com/searchbyimage?site=search&sa=X&image_url=`{LLVideoID}`",
+                        "urlSecondItem": "ll1window"
+                      },
+                      {
+                        "url": "http://www.tineye.com/search/?url=`{LLVideoID}`",
+                        "urlSecondItem": "ll2window"
+                      },
+                      {
+                        "url": "https://www.yandex.com/images/search?img_url=`{LLVideoID}`&rpt=imageview",
+                        "urlSecondItem": "ll3window"
+                      },
+                      {
+                        "url": "http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=`{LLVideoID}`",
+                        "urlSecondItem": "ll4window"
+                      },
+                      {
+                        "url": "https://image.baidu.com/pcdutu?queryImageUrl=`{LLVideoID}`ll5window",
+                        "urlSecondItem": "XMLHttpRequest"
+                      }
+                    ],
+                    "submitValue": "Submit",
+                    "itemType": "input",
+                    "onSubmit": "httpGet",
+                    "inSection": "Reverse Video Search Tool",
+                    "inputItems": [
+                      {
+                        "id": "6fc4b7c5-3a52-4937-9e26-fe2fcddfd164",
+                        "name": "LLVideoID",
+                        "placeholder": "LiveLeak Video ID",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "afterSubmit": "submitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.liveleak.php?videoid=`{LLVideoID}`",
+                    "description": "Reverse LiveLeak Video Search  - ex: http://www.liveleak.com/view?i=<span class=\"red-text\">9d4_1447939701</span><br />"
+                  },
+                  {
                     "id": "8e3a6f24-182e-4547-a3e2-5bf5c376af65",
                     "submitUrl": [
                       {
@@ -12256,7 +14215,7 @@
                         "urlSecondItem": "BP1window"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "BP2window"
                       },
                       {
@@ -12273,10 +14232,10 @@
                       }
                     ],
                     "submitValue": "Submit",
-                    "fetchUrl": "https://inteltechniques.com/osint/iframe/reverse.backpage.php?backpage_url=`{Submit}`",
-                    "afterFetch": "backPageSubmitUrl",
+                    "httpUrl": "https://inteltechniques.com/osint/iframe/reverse.backpage.php?backpage_url=`{Submit}`",
+                    "afterSubmit": "submitUrl",
                     "itemType": "input",
-                    "onSubmit": "fetch",
+                    "onSubmit": "httpGet",
                     "inSection": "Reverse Video Search Tool",
                     "inputItems": [
                       {
@@ -12299,7 +14258,7 @@
                         "urlSecondItem": "image1window"
                       },
                       {
-                        "url": "http://www.tineye.com/search/?url={Submit}`",
+                        "url": "http://www.tineye.com/search/?url=`{Submit}`",
                         "urlSecondItem": "image2window"
                       },
                       {
@@ -13404,6 +15363,12 @@
                     "isSubmitAll": true
                   }
                 ]
+              },
+              {
+                "id": "dffa9f98-5f10-4921-987e-d0a63a736d90",
+                "hasPapulate": false,
+                "title": "Document Search Tool (by google)",
+                "items": []
               }
             ]
           },
@@ -17340,7 +19305,31 @@
               {
                 "id": "30e49f75-b5c1-400d-8bb5-a8eaf95161a1",
                 "hasPapulate": false,
-                "items": [],
+                "items": [
+                  {
+                    "id": "b9793b2f-2822-44e4-b8f6-cae6931c97b0",
+                    "submitUrl": [
+                      {
+                        "url": "https://inteltechniques.com/osint/iframe/wigle.php?username=`{username}`",
+                        "urlSecondItem": "frame1"
+                      }
+                    ],
+                    "submitValue": "GO",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "SSID Mapping by Wigle.net API",
+                    "inputItems": [
+                      {
+                        "id": "9e14ab81-3245-4099-8903-c08e4fdf8672",
+                        "name": "username",
+                        "placeholder": "SSID",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false
+                  }
+                ],
                 "title": "SSID Mapping by Wigle.net API"
               }
             ]
@@ -17892,6 +19881,30 @@
                     "url": "http://boatinfoworld.com",
                     "target": "_blank",
                     "itemType": "link"
+                  },
+                  {
+                    "id": "68e4b1f4-a5ad-490f-a599-108b4e8b0180",
+                    "submitUrl": [
+                      {
+                        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/`{vin2}`?format=json",
+                        "urlSecondItem": "vin2window"
+                      }
+                    ],
+                    "submitValue": "GO",
+                    "itemType": "input",
+                    "onSubmit": "submitUrl",
+                    "inSection": "Vehicles & Transportation Resources",
+                    "inputItems": [
+                      {
+                        "id": "d59a8039-cf91-4a86-b507-c1d3019bfcc6",
+                        "name": "vin2",
+                        "placeholder": "VIN",
+                        "type": "text"
+                      }
+                    ],
+                    "isSubmitAll": false,
+                    "breaking": false,
+                    "description": "VIN to Vehicle Details"
                   }
                 ],
                 "title": "Vehicles & Transportation Resources"

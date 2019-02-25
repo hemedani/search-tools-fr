@@ -7,6 +7,7 @@ import PapullateForm from "../utils-components/PapullateForm";
 import YoutubeSearchTxt from "./YoutubeSearchTxt";
 import ReverseVideoTxt from "./ReverseVideoTxt";
 import PasteSiteSearch from "./PasteSiteSearch";
+import SearchDocByGoogle from "./SearchDocByGoogle";
 
 export interface PagesProps {
   PageItem: SubItem;
@@ -86,6 +87,7 @@ class Pages extends React.PureComponent<PagesProps, IPState> {
                   item={item as TItem}
                 />
               ))}
+              {section.title === "Document Search Tool (by google)" && <SearchDocByGoogle />}
             </section>
           </div>
         ))}

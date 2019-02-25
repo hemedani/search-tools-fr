@@ -9,16 +9,21 @@ import React from "react";
 // }
 
 export default () => (
-  <div>
-    <form method="get" title="Search Form" action="https://cse.google.com/cse/publicurl">
+  <div className="inp-section-wrapper">
+    <form
+      className="input-form"
+      target="_blank"
+      method="get"
+      title="Search Form"
+      action="https://cse.google.com/cse/publicurl"
+    >
       <div>
-        <input type="text" id="q" name="q" title="Search this site" alt="Search Text" />
+        <input className="input-text" type="text" id="q" name="q" title="Search this site" alt="Search Text" />
         <input type="hidden" id="cx" name="cx" value="001580308195336108602:mhdmrvbspnm" />
         <input
-          type="image"
-          id="searchSubmit"
+          type="submit"
+          className="sbmt-btn inp-btn i-rod last-child"
           name="submit"
-          src="https://www.flaticon.com/free-icon/active-search-symbol_34148"
           alt="Go"
           title="Submit Search Query"
         />
