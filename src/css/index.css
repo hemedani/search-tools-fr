@@ -14,6 +14,7 @@
   flex: 8;
 }
 .encrypted-data {
+  flex: 1 1 100%;
   display: flex;
   margin-top: 1rem;
 }
@@ -30,6 +31,10 @@
 .encrypted-data .value {
   flex: 12;
   font-size: 0.8rem;
+}
+.encrypted-section {
+  flex: 1 1 100%;
+  display: flex;
 }
 .menu-side {
   min-height: 10rem;
@@ -112,6 +117,7 @@
   opacity: 1;
 }
 .section-wrapper {
+  flex: 1 1 100%;
   margin: 2rem 1.5rem;
   border-radius: 0.6rem;
   border: 1px solid #143a5e;

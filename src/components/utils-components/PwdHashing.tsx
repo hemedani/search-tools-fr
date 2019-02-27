@@ -45,14 +45,14 @@ class PwdHashing extends React.PureComponent<IPwdProps, IPwdState> {
   }
 
   hashPwd() {
-    axios.post("http://localhost:1366/crypto/encrypt", { text: this.state.pwd }).then(resp => {
+    axios.post("/api/crypto/encrypt", { text: this.state.pwd }).then(resp => {
       const encrypted = resp.data as encrypted;
       this.setState({ encrypted });
     });
   }
   decryptPwd() {
     axios
-      .post("http://localhost:1366/crypto/decrypt", { encryptedPwd: this.state.encryptedPwd })
+      .post("/api/crypto/decrypt", { encryptedPwd: this.state.encryptedPwd })
       .then(resp => this.setState({ decryptedPwd: resp.data.decrypted }));
   }
   render() {

@@ -2,6 +2,7 @@
   "name": "search-tools",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:1366/",
   "dependencies": {
     "@types/jest": "23.3.12",
     "@types/node": "10.12.18",
